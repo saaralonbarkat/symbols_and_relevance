@@ -64,18 +64,14 @@ N_1_center = filter(SVIVA2_01,AREA==0)%>%nrow()
 
 ```
 
-
-
-
 <br>
 
 ---
 
 # Abstract
 
-*Previous public administration studies have examined whether public communications can increase citizens trust in government organizations. Recent experimental studies have demonstrated that these communications can enhance trust not only by conveying substantive information, but also by incorporating strategically desigened symbolic element that evoke positive feelings and associations (e.g. logos, images and celebrities). Still, previous studies did not examine the conditions under which citizens are more/less susceptible to these symbols.        
+*Previous public administration studies have examined whether public communications can affect citizens trust in government organizations and their policies. Recent experimental studies have demonstrated that these communications can enhance trust not only by conveying substantive information, but also by incorporating strategically desigened symbolic element that evoke positive feelings and associations (e.g. logos, images and celebrities). Still, under which conditions are citizens more/less likely to be emotionally persuaded by these symbols? Building on the social psychology Elaboration Likelihood Model (ELM), I theorize that citizens are less susceptible to symbols when they perceive the policy issue in the communication as having personal relevance for themselves, which enhances their motivation to invest in elaborate processing. I put this theory to test through a survey experiment, where I examine circa `r SVIVA2_01%>%nrow()%>%round(-1)` Israeli citizens' trust in the Environment Protection Ministry's policies for reducing the air pollution in a specific area (the Haifa-Bay) and reducing domestic waste. I operationalize personal relevance both experimentally, and by comparing between citizens from the polluted Haifa-Bay area and others. The experimental results do not support the hypothesis that higher personal relevance attenuates the effect of symbols. They tentatively suggest that symbols are more likely to persuade citizens who have predominant negative attitudes.*  
 
-Effective public communications have been proposed as a remedy for citizens' distrust in government. The studies that explored the effectiveness of government communications have focused mainly on the extent to which they provide substantive information about bureaucracies' performance and policies. Recently, a few studies pointed to the effect of symbolic elements, entangled in these communications (e.g. logos, images and celebrities). Still, we lack theoretical understanding of the mechanisms underlying citizens' responses to symbolic elements, and the interaction between symbols and substantive information. Building on the Elaboration Likelihood Model (ELM) from social psychology, I hypothesize that symbolic elements can increase citizens' trust via two mechanisms: First, directly, by evoking positive feelings that are transferred to the organizations and policies presented in the communication. Second, indirectly, by leading citizens to dedicate less attention to the substantive information in the communication, and thus causing them to disregard negative of logically unpersuasive content that would have otherwise decreased their trust. I examine these expectations via a survey experiment, focusing on communications of the Israeli Environment Protection Ministry about its policy plans. The results confirm that symbolic elements in communications increase citizens' trust. The effect was greater among those who saw the logically unpersuasive policy plans, who were distracted by the symbols and thus were less inclined to scrutinize their content. I discuss the implications of these findings for democratic responsiveness and accountability.*
 
 
 ---
@@ -85,72 +81,33 @@ Effective public communications have been proposed as a remedy for citizens' dis
 
 # Introduction
 
-Public administration scholars are highly concerned about the implications of citizens’ low trust in government, and their undervaluation of public-service performance. One of the main remedies which has been proposed for this problem is greater investment in direct government communications with citizens. Congruently, over the past generation, economically-developed democratic countries have witnessed an increase in government public communications, specifically through advertising, social media, and e-government platforms [@deacon_2001; @eshuis_2012; @marland_2017; @mergel_2013; @mickoleit_2014]. In the US, for example, federal government agencies spend approximately 1.5 Billion dollars annually on contracts related to public relations and advertising activities in traditional and digital media [@unitedstatesgovernmentaccountabilityoffice_2017]. 
+Public administration scholars have explored whether government organizations can enhance citizens' trust in them by employing public communications. Whereas most of the studies on the effect of government public communications on citizens attitudes has focused on the *informative* aspects of these communications [e.g. @marvel_2015; @im_2014; @porumbescu_2017; @porumbescu_2016; @porumbescu_2017a; @porumbescu_2017b; @grimmelikhuijsen_2015; @ho_2017], recent experimental studies further pointed to the emotive effect of *symbolic* elements that are entangled in government communications, such as  agencies' names [@teodoro_2018], brand logos [@karens_2016], and figures in public campaigns [@alonbarkat_2017]. These studies demonstrated that these familiar and well-designed symbolic elements can enhance citizens' trust irratioanlly through a mechanism of "evaluative conditioning" - unconscious transfer of affect from the symbols to the public organizations and policies associated with them [@dehouwer_2012]. 
 
-The public administration research on the effect of government public communications on citizens attitudes has focused mostly on the *informative* aspects of these communications, whereby government organizations provide citizens with evidence about their performance and details and explanations about their policies and actions [e.g. @marvel_2015; @im_2014; @porumbescu_2017; @porumbescu_2016; @porumbescu_2017a; @porumbescu_2017b; @porumbescu_2018; @grimmelikhuijsen_2015; @ho_2017]. Public communications are expected to increase citizens' trust insofar as they provide citizens with favorable information on organizations' performance and logically persuasive explanations for their policies. At the same time, experiment-based studies that explored the responses of citizens to substantive information revealed cognitive biases that distort their processing of information in communications, and undermine its effectiveness [@baekgaard_2016; @grimmelikhuijsen_2013; @grimmelikhuijsen_2014; @hvidman_2016; @james_2011; @james_2014; @james_2017; @marvel_2015; @olsen_2017; @james_2017a; @grimmelikhuijsen_2017].  
+While the abovementioned studies have substantiated the distinct effect of symbols, they did not theorize, nor empirically examine the conditions under which are these symbols are likely to be more/less effective in persuading citizens. The research gap has great significance. From the organizations' practical point of view, ... 
 
-Recently, a few studies pointed to the additional effect of *symbolic* elements that are entangled in government communications, such as  agencies' names and brand logos, figures, images and celebrity endorsements [@alonbarkat_2017; @karens_2016; @teodoro_2018]. These studies demonstrated that government organizations may cause citizens to view them more favorably through familiar and well-designed symbolic elements that evoke positive associations and emotions. Still, we lack a theory and robust empirical evidence of the exact mechanisms through which these symbols increase citizens trust. Additionally, these previous studies did not examine the interaction between the symbolic elements and the substantive content of information in public communications. 
+Employing a broader, democratic normative stance, we should be also concerned from the effect of symbols. Symbolic elements can elicit undue trust in poorly performing organizations and in ill-conceived policies. Accordingly, it may enable public organizations to escape justified public criticism [@alonbarkat_2017]. Hence, by understanding when citizens are more likely to be affected by symbols, we  may enable us to identify the  
 
-This research gap has normative significance. Whereas the responsiveness of citizens to substantive information is perceived favorably from a normative view of democratic theory, the potential effect of symbolic elements can be problematic. One can argue that shaping citizens' perceptions of governments by evoking associations and emotions stands in tension with the normative expectation that citizens' judgments should be based on their critical thinking. Mainly, we should be concerned about the possibility that symbolic communication may elicit undue trust in poorly performing organizations and in ill-conceived policies, and enable public organizations to escape justified public criticism [@alonbarkat_2017]. Therefore, this study focuses on the following questions: *What are the psychological mechanisms by which symbolic elements in governemnt communications affect citizens' trust in government organizations and their policies?* Accordingly, *does the effect of symbolic elements depend on the substantive content of communications?* *Do symbols offset the rational, negative effect of unfavorable or logically unpersuasive information?* 
+Therefore, this study focuses on the following questions: *What are the psychological mechanisms by which symbolic elements in governemnt communications affect citizens' trust in government organizations and their policies?* Accordingly, *under what conditions do symbolic elements  increase citizens' trust in governemnt policy?* And specifically, *does the effect of symbolic elements depend on the substantive content of communications?* *Do symbols offset the rational, negative effect of unfavorable or logically unpersuasive information?* 
 
-To address these research questions, I draw upon the social psychology Elaboration Likelihood Model (ELM). ELM provides a comprehensive theoretical framework for the varying psychological processes underlying individuals' responses to persuasive communication, and their consequences for attitude change  [@petty_1986; @petty_2011]. Based on ELM, I suggest that symbolic elements in public communications can affect citizens' trust via two mechanisms: *First*, they may evoke positive feelings and associations that are transferred from the symbols to the relevant government entities and policies, and thereby increase citizens' trust in them. *Second*, symbolic elements may increase citizens' trust in government entities and policies by causing them to disregard negative of logically unpersuasive content that would have otherwise decreased their trust.  
+To address these research questions, I draw upon the social psychology Elaboration Likelihood Model (ELM). ELM provides a comprehensive theoretical framework for the varying psychological processes underlying individuals' responses to persuasive communication, and their consequences for attitude change  [@petty_1986; @petty_2011]. Based on ELM, I suggest that symbolic elements in public communications can affect citizens' trust via two mechanisms: *First*, they may evoke positive feelings and associations that are transferred from the symbols to the relevant government entities and policies, and thereby increase citizens' trust in them. I expect that this effect is attenuated the more citizens perceive the communications as personally relevant, because they are more motivated to think about their messages. *Second*, symbolic elements may increase citizens' trust in government entities and policies by causing them to disregard negative of logically unpersuasive content that would have otherwise decreased their trust.  
 
-To empirically test these theoretical expectations, I conducted a large randomized survey experiment among circa `r SVIVA2_01%>%nrow()%>%round(-1)` Israeli citizens. The experiment focuses on the empirical case of the Israeli Environment Protection Ministry. I explore citizens' responses to public communications about two policy plans of the Ministry, and specifically the extent to which their trust in these policies are affected by the substantive information of the communications (logically persuasive vs. unpersuasive policy plans) and by symbolic elements in them (real symbols vs. fake symbols and no symbols conditions). 
+To empirically test these theoretical expectations, I conducted a large randomized survey experiment among circa `r SVIVA2_01%>%nrow() %>% round(-1)` Israeli citizens. The experiment focuses on the empirical case of the Israeli Environment Protection Ministry. I explore citizens' responses to public communications about two policy plans of the Ministry, and specifically the extent to which their trust in these policies are affected by the substantive information of the communications (logically persuasive vs. unpersuasive policy plans) and by symbolic elements in them (real symbols vs. fake symbols and no symbols conditions). In addition, I examine the moderating role of the perceived personal relevance of these policies. 
 
-I find that the symbolic elements increased citizens' trust in these policies. In line with my theoretical expectations, the effect was greater among those who saw the logically unpersuasive policy plans, who were distracted by the symbols and thus were less inclined to think about its content. I discuss the theoretical and normative implications of these findings.   
+I find that the symbolic elements increased citizens' trust in these policies. In line with my theoretical expectations, the effect was greater among those who saw the logically unpersuasive policy plans, who were distracted by the symbols and thus were less inclined to think about its content. I did not find support for the hypothesis that the effect of the symbolic elements is attenuated by the perceived personal relevance of the policy issue. I discuss the theoretical and normative implications of these findings.   
+
 
 <br>
 
-# Symbolic elements in government communications and their shaping of citizens' attitudes: what do we know?
+# The Elaboration Likelihood Model (ELM) and the effect of symbols and information in communicaions. 
 
-
-Symbols are fundamental for almost any form of human interaction, as acknowledged by early scholars of social science [@blumer_1986]. A symbol can be broadly defined as *"any object used by human beings to index meanings that are not inherent in, nor discernible from, the object itself"* [@elder_1983, pp. 28-29]. My focus is on those symbols that are strategically used by government organizations in their public communications, and are designed to distinguish organizations and to evoke associations and emotions that stimulate audiences’ positive affect towards organizations and their operations. Prominent examples are unique logos, colors associated with specific meanings, icons, images, and the use of celebrities as endorsers. These elements are widely used by businesses and political candidates to attract targeted consumers and voters. Yet, they can be also found in the communications of government bureaucracies with citizens, including their mass-media advertising campaigns, social media accounts, internet pages, official publications, signboards in public places and personal mail notifications to citizens. 
-
-By comparison with the abundant research on citizens’ responses to informative elements in public communications [for reviews see: @cucciniello_2016; @grimmelikhuijsen_2017; @james_2017], public administration literature has devoted relatively little attention to the effect of symbolic elements. Recently, however, a few experimental studies tackled the issue. @marvel_2015 analyzed US citizens' responses to a television advertisement of the public Postal Service, which involved various symbolic elements, including the organization's logo, workers' images and background music. His study shows that participants who watched the advertisement evaluated the organization's performance more positively. @teodoro_2018 suggested that the name of US federal agencies not only represents information about their activities, but may also carry specific symbolic meaning and affect that can shape citizens' support for government policy (depending on citizens' political party identification). These two studies provide examples for the role of symbols in shaping citizens' attitudes. Still, they did not effectively disentangle the effects of the symbolic and informational aspects of the studied public communications.   
-
-A study by @karens_2016 did examine the distinct effect of symbols in communications on citizens' trust. The scholars surveyed university students from three European countries and examined their trust in two policy plans of the European Commission, and it's shaping by the appearance of the organization's logo in the communication of the policy plans. They found that including the Commission’s logo significantly increased citizens' trust in these policies. Their results show an impressive effect size equivalent to 0.7 standard deviations. [^footnote_karens] 
-
-[^footnote_karens]: The effect size they found was smaller with regard to the "air quality" policy compared with the "digital skills" policy which were presented (Cohen's d = 0.7 vs. 0.6). Also, the effect was smaller among subjects from the Netherlands, compared with those from Belgium and Poland (Cohen's d = 0.5 vs. 0.7). 
-
-@alonbarkat_2017 examined Israeli citizens' trust in the Israel Electricity Corporation, a state owned company, and it's shaping by their exposure to comic cartoon figures that were routinely presented in the organization's public campaigns. They compared between citizens who were personally exposed to prolonged power outages, and others who were not. They found that the symbolic element had a positive effect on citizens' trust in the organization, including among those who personally experienced poor performance (a modest effect size equivalent to 0.25 standard deviations). Building on social psychology theory and marketing research, they suggested that the symbols enhance trust by inducing an unconscious transfer of affect from the symbols to the organizations and policies associated with them ("evaluative conditioning"). They proposed that the effectiveness of government symbolic elements depends on their familiarity, and aesthetic design, as well as on the ambiguity of the assessed government quality.  
-
-The aforementioned studies tend to suggest that public communications increase citizens' trust in government organizations and their policies, not only by conveying valuable substantive information, but also by incorporating symbolic elements that evoke positive associations and emotions. Moreover, the findings of @alonbarkat_2017 suggest that incorporating symbolic elements in public communications can unduly compensate for poor government performance, thus pointing to their potential detrimental implications.                  
-
-Even though these studies substantiate a link between the appearance of symbolic elements in communications and citizens' favorable attitudes, they did not directly investigate the causal mechanisms that underlie this effect. Therefore, we still lack understanding of the circumstances under which symbols are likely to be more/less effective in shaping citizens' trust. Specifically, these studies neither theorized nor empirically tested the interaction between symbolic elements and citizens’ processing of substantive information in communications. We do not know whether well-designed symbols reinforce, or offset, citizens' rational responses to information. Specifically, as explained above, it is essential to assess the possibility that symbols can unduly compensate for unfavorable or logically unpersuasive information that should yield negative responses. 
-
-To address this theoretical gap in public administration research, I propose a nuanced theoretical framework for the effects of symbols in communications and their interaction with information, building on social psychology theory on persuasive communication. 
-
-<br>
-
-# The Elaboration Likelihood Model and the various mechanisms of persuasion by elements in communications 
-
-The social psychology Elaboration Likelihood Model (ELM) provides a comprehensive theoretical framework for investigating peoples' varying responses to "persuasive" communications [@petty_1986; @petty_2011]. In addition to its general theoretical application in psychological research, this model has been applied to studies on persuasion in various areas, including commercial advertising [@petty_1983; @swasy_1985; @dotson_2000; @drge_1989; @wheeler_2005; @moore_1987], public health campaigns [@wilson_2007; @angst_2009; @ruiter_2001; @briol_2006], media coverage [@petty_2002; @vanderwurff_2016] and media entertainment [@young_2008; @slater_2002]. Yet, thus far, the relevance of ELM has not been directly examined in relation to citizens' responses to government communications. 
-
-According to ELM, the responses of individuals to persuasive communications depends on the amount of thinking that they dedicate to the message content. Persuasion can occur when thinking is "high" or "low", but the processes and consequences are likely to differ in each situation. This range between high and low degrees of thought is referred to as the "elaboration continuum". People's location along this continuum is associated with different psychological processes of persuasion. At the high end of the elaboration continuum, also called the "central route", people are likely to respond by cognitively scrutinizing the arguments central to the merits of the issue. At the low end, also called "the peripheral route" people respond to simple cues automatically and unconsciously through primitive psychological processes that require very little amount of cognitive effort, such as an unconscious transfer of affect[^footnote_dual_process_theories]. In turn, these different persuasion mechanisms are likely to cause divergent types of attitudinal change. Persuasion through the central route is expected to be more enduring, resistant and predictive of behavior, compared with peripheral route persuasion. Of course, much of the time, people are located in between the two ends of the continuum, and thus persuasion is determined by a mixture of these processes. 
-
-[^footnote_dual_process_theories]: The conceptual distinction between the "central and peripheral routes for persuasion" largely resembles the distinctions between heuristic and systematic processing [@chaiken_1980], and systems 1 and 2 [@kahneman_2011]. 
-
-ELM enables to disentangle the distinct effects of different elements in communications. Some elements are processed differently by people at different locations along the elaboration continuum. Consider for instance a text that contains a series of logical arguments supporting a certain position. Those at the high end of the continuum would regard this text as arguments, and systematically scrutinize it based on its logical persuasive quality (central route processing). Conversely, those at the low end of the continuum are likely to disregard the content of the text, and instead, rely on the number of lines in the text, for example, as a cue for its strength (peripheral route processing). Some elements provide potential cues that lack any logical quality at all. For example, the physical attractiveness of the source normally does not represent any substantive argument, yet it can serve as a simple cue. These latter elements may affect the attitudes of those at the low end, but are less likely to persuade those at the high end [@petty_1986]. 
-
-ELM further postulates that the placement of people along the elaboration continuum in any given situation is determined by their *motivation* and *ability* to think about the message. Accordingly, the literature proposes a variety of such motivational and ability factors. Among others, studies have demonstrated that the more people are distracted, the more difficult it is for them to scrutinize the message arguments, a mechanism that has been referred to as "elaboration disruption" [@petty_1976; @petty_1986]. Another prominent factor that influences people's inclination to elaborate on the message is their affective state, or mood. Positive mood (compared with neutral or negative moods) reduces people's cognitive ability and attenuates their motivation to think, due to their desire to maintain their positive mood and avoid message processing that would depress it [@worth_1987; @mackie_1989; @bless_1990; @schwarz_1991; @petty_2015; but see: @wegener_1995].[^footnote_elm_factors] Affecting the amount of thinking can cause attitude change in interaction with elements in the communication that can function as arguments or peripheral cues. Decreasing the amount of thinking weakens the effect the substantive arguments and enhances the effect of peripheral cues (and vice versa).
-
-[^footnote_elm_factors]: For a thorough review of motivational and ability factors affecting likelihood to elaborate see @petty_1998.
-
-Elements in communications can also function as factors that affect people's motivation and/or ability to think. For example, Background music in commercials can distract people and prevent them from scrutinizing their content [@park_1986]; The use of humor in television shows stimulates positive mood and reduces people's ability and motivation to scrutinize their substantive arguments [@nabi_2007; @young_2008]. Hence, elements can have more than one function, and can shape attitudes through several mechanisms. They can serve both as variables that affect the amount of thinking and as potential peripheral cues or arguments. Continuing with the above-mentioned examples, background music and humor can serve as simple cues that persuades people directly through the peripheral route, yet at the same time they can also as factors that reduce elaboration. Accordingly, they can affect people both directly (as peripheral cues) and indirectly (by decreasing elaboration and thus attenuating the effect of arguments and enhancing the effect of peripheral cues).[^footnote_multifunction_factors] 
-
-
-[^footnote_multifunction_factors]: @petty_1986 have suggested that we are more likely to find complex relations of multiple mechanisms in those situations where people are located in the middle of the elaboration continuum. When people are neither extremely motivated or unmotivated to think, they may rely on different elements in the communications to decide if the message is worth or needs considering.     
-
+The social psychology Elaboration Likelihood Model (ELM) provides a comprehensive theoretical framework for investigating peoples' varying responses to "persuasive" 
 <br>
 
 
-# ELM and the roles of symbolic elements and information in government public communications
+# The moderating role of perceived personal relevance on citizens' responses to symbols and information in communications
 
 How may we apply the theoretical framework of ELM to the study of the effects of symbolic elements in government communications with citizens and their interaction with substantive information?
 
-In light of the conceptualization of ELM, substantive information elements in government public communications represent issue-related arguments, which can be scrutinized or processed systematically based on their logical quality (via the central route), at least by those who are sufficiently motivated and capable to do so. Conversely, symbolic elements are potential peripheral cues, which can affect citizens' trust through the peripheral route, by evoking positive emotions and associations that are attributed to government organizations and their policies [@alonbarkat_2017]. However, in addition to their direct effect as peripheral cues, symbolic elements may also increase citizens' trust indirectly. They can decrease the amount of thought citizens dedicate to the communication, and thus prevent them from scrutinizing negative information (e.g. information on poor performance) and weak arguments (e.g. logically unpersuasive description of their policy plans). 
-
-Symbolic elements may decrease citizens' ability and motivation to think about the message in several ways. First, they can cause elaboration disruption, by distracting citizens and absorbing their attention and cognitive efforts [@petty_1976; @petty_1986]. Second, they can decrease citizens' motivation and ability to think about the message content by creating a positive affect and placing citizens in a positive mood. As explained above, the postulation that positive mood decreases elaboration has been explained, in part, by a mood maintenance mechanism [@mackie_1989; @bless_1990; @schwarz_1991]. This mechanism is particularly relevant to the context of government communications, in which thinking about the content of the message - government organizations and policies - is likely to yield negative mood among most people [@marvel_2015; @marvel_2015a; @hvidman_2016]. Therefore, when citizens are exposed to symbolic elements that evoke positive feelings, they may seek to avoid thinking about tedious bureaucratic affairs, which would depress their positive mood. The latter expectation entails an interaction between symbols and the substantive information in the communications. Symbolic elements are likely to increase citizens' trust insofar as they reduce citizens' inclination to scrutinize information that would have decreased their trust. 
 
 In sum, I expect that:  
 
@@ -166,730 +123,49 @@ The theoretical hypotheses are graphically displayed in **Figure 1**.
 
 <br>
 **Figure 1: Theoretical model**
-![](D:/UNIVERSITY/R/SVIVA/experiment 2 01-2018/myfigures/theoretical_model.png) 
+
 <br>
 
-
-
-Analytically, the expectation that symbolic elements decrease message elaboration also entails that symbols may decrease citizens' trust in communications about highly positive performance and persuasive policy plans. Nevertheless, one can make the argument that neutralizing the effect of "positive" information with symbols may not actually yield significant differences, since citizens are more likely to "punish" bureaucracies for publishing negative information than to "praise" them for publishing positive information [@james_2011; @nielsen_2017; @james_2017b]. Congruently, the effect of positive information (versus a medium level) is likely to be relatively small, and hence neutralizing this effect may not make much difference. Given the focus of this study on the interaction between symbols and ill-conceived policies, the research design does not directly addresses this latter interaction.            
- 
 
 <br>
 
 
 # Methodology
 
-To empirically test the above mentioned hypotheses, I designed a randomized survey experiment, which simulates citizens' responses to government organizations' communications about their policy plans. Such communications can be found in publicized reports, pamphlets, websites, new media pages and ads. Focusing on communication of future policy plans, as opposed to communications on performance of existing policies, enables me to utilize a real-world empirical case without compromising the reliability  of the manipulation of the content. This is because most citizens do not have prior knowledge of organizations' future policy plans, and thus they will be more willing to trust a fictional communication of an organization with regard to its future policy. 
-
-In addition to the above-mentioned hypotheses, the experiment is also designed to test an additional set of hypotheses regarding the interaction between symbols and the perceived personal relevance of communications. The selection of policy plans and the construction of the population sample were designed to account for variation in that variable. In this paper, I focus on those methodological and empirical parts of the study that are consequential for the examination of the interaction between symbols and information.[^footnote_relevance_paper]                     
-
-
-[^footnote_relevance_paper]: The methodological aspects which are relevant for examining the additional hypotheses (i.e. the interaction between symbols with personal relevance) are described in a separate paper. An English translation of the full survey is available from the supplementary appendix.
 
 <br>
 
 ##*The empirical case*
 
-Empirically, I focused on the case of the Israeli Environment Protection Ministry (hereafter: EPM), a national level bureau responsible for the formulation, co-ordination and execution of environmental policy in Israel, both at the national and local levels. I analyzed the effects of informative and symbolic elements in EPM's communications of two policy plans on citizens' trust in these policies, and the extent to which they elaborated on them. In the survey, the communications about the two policy plans, in which I manipulated the informative and symbolic elements, are presented to the participants as sections from the EPM's official publication of its annual work plan. 
-
-Methodologically, EPM makes a good case for this study since has invested greatly over the past years in public communications. In these various communications, the EPM used an array of symbolic elements, which became widely recognized by the public. Here, I focused on three prominent symbolic elements used in the EPM's public communications, and displayed below in **Figure 2**. The first symbolic element is the unique brand logo of the EPM (image a. in figure 1). This logo consists of pair of green and orange leaves that resemble two hands, designed to symbolize peace and harmony with the environment. The second symbolic element in which I focused is the green color, which is strongly associated with taking care of the environment. The EPM's logo and the green color can be seen in almost all of the visual communications of the EPM, and they represent key elements of its unique "visual identity" [@vandenbosch_2005]. The third element is celebrity endorsements. Specifically, I selected two high-profile celebrity comedians, *Tal Friedman* and *Ido Rosenblum*, that previously endorsed two salient advertising campaigns of the EPM. The campaign starring the comedian Tal Friedman (image b.) was launched in 2010, and included a series of advertisements in which Friedman was presented with a green grass head, and accordingly the campaign's slogan was: "starting to think green". The campaign starring the comedian Ido Rosenblum (image c.) was launched in 2017, and was focused on reducing the use of disposable bags.[^footnote_campaigns] The two campaigns were highly successful in terms of their recognizability and likability, as suggested by their evaluation reports by the Government advertising agency. 
-
-In the course of the survey experiment, I confirmed that the EPA logo and the images of the celebrities from the campaigns are familiar to the participants. `r round((nrow(filter(SVIVA2_01,RECOGNIZE_SVIVA_logo>1))/N_1)*100,0)`% of the participants reported that they recognize EPA logo to some extent and a vast majority of them reported that they recognize the campaign images of Friedman and Rosenblum (`r round((nrow(filter(SVIVA2_01,RECOGNIZE_air_real>1))/N_1)*100,0)`% and `r round((nrow(filter(SVIVA2_01,RECOGNIZE_waste_real>1))/N_1)*100,0)`% , respectively). In robust analyses I further exclude those who do not recognize these symbols.[^footnote_prior_studies] 
-
-[^footnote_campaigns]: Multimedia files of these campaigns are available in EPM's website: http://www.sviva.gov.il/InfoServices/ReservoirInfo/ResearchAndPublications/Pages/default.aspx.
-
-[^footnote_prior_studies]: In two prior online survey tests, which I conducted before the experiment, I collected further information about the affect and symbolic associations of these symbols. These results, which are reported in the supplementary appendix, substantiate my empirical assumption that these elements evoke positive emotions Israeli citizens, and that citizens automatically associate them with EPM and its policies. These results also indicate that the images of the celebrity comedians from EPM campaigns are perceived as humoristic, and accordingly, they are expected to position people in a positive mood.               
-
 
 <br>
-**Figure 2: symbolic elements of EPM**
-![](D:/UNIVERSITY/R/SVIVA/experiment 2 01-2018/myfigures/EPM_symbols.png) 
-<font size="0.5">
 
-Notes:
 
-a. EPM logo.
-b. Tal Friedman, comedian,  EPM campaign “starting to think green” (2010): "Isn't money growing on trees? Moving to environmental consumption and saving at least 6,000 NIS per year!", "starting to think green", "The Environmental Protection Ministry".
-c. Ido Rosenblum, comedian, EPM campaign  “taking every bag seriously” (2017): "The reusable bag is again left at home? A tip from Ido: Hang it on the door handle and you will not leave without it", "Taking every bag seriously", "The Environmental Protection Ministry".
-
-</font>
+##*Data collection*
 
 
 <br>
 
-## *Procedure and sample population*
 
-The survey was presented to the participants as a study about citizens' attitudes regarding environmental policy issues. The participants were first asked pre-manipulation questions about their political ideology and their perceptions about the pubic sector.[^footnote_relevance_manipulation] Thereafter, they were told that they will be presented with two government policy plans regarding specific environmental issues, obtained from EPM's official publication of its annual work plan for the year 2018. The policy plans regarded to reducing air-pollution in the Bay of Haifa (an area in Israel) and reducing domestic waste and increasing recycling. The two policy plans were presented to each subject in a random order. Each policy plan included the title of the policy goal (i.e. "reducing the levels of air pollution in the Haifa bay"), followed by short descriptions of two actions to be taken by EPM in order to fulfill this goal (30-50 words each).
+## *Procedure*
 
-[^footnote_relevance_manipulation]: This section also included a manipulation of participants' perceived personal relevance. Participants in the treatment group were asked a series of questions about environmental government policy, whereas participants in the control group were asked instead equivalent questions about their field of occupation.       
-
-Per each policy, the subjects were randomly allocated to one of two conditions of substantive information (hereafter: information): strong policy (i.e. logically persuasive policy plan) or weak policy (i.e. logically unpersuasive). The policy activities which were mentioned in the strong policy plans condition were taken from the real EPM work plan and from other reports and official sources of EPM. The activities that were included in the weak policy plans condition were fictional, and were designed to represent measures which are likely to be perceived by subjects as extremely incompatible with achieving the policy goals, yet still sufficiently reliable. For instance, the proposed actions for the air-pollution strong policy involved increasing the supervision of polluting factories, and reducing diesel smoke emissions by vehicles, whereas the actions for the weak policy were increasing the supervision of polluting factories, and raising citizens' awareness of the Ministry's efforts to improve air quality. The full texts of the weak and strong conditions for the two policy plans is displayed in **Appendix A**. For each subject, one of the two policies was strong and the other was weak. For example, a subject who first received a strong air-pollution policy, later received the weak recycling policy, and vice versa.  
-
-In addition to information manipulation, the participants are randomly assigned to one of three conditions of symbolic elements in the communication (hereafter: symbols): treatment (real symbols), control no symbols and control fake symbols. In the symbol treatment condition, the two policies (again, one weak and one strong) are displayed with the above-mentioned three symbolic elements: the titles and the footer are colored with green, EPM logo is displayed at the top of the page, and the celebrities' images from the campaigns are attached and labeled "EPM advertisement". Each communication included the image of one celebrity: Rosenblum's image from the campaign for reducing the use of disposable bags is attached to the recycling policy; Friedman's image from the "starting to think green" campaign was attached to the air-pollution policy. In the control no-symbols condition, the two policies are displayed in a minimal black and white design, and without the logo and the celebrities images. Finally, in the control fake-symbols condition, the green color is replaced with blue, the EPM logo is replaced by a fake logo and the images of celebrities from the campaigns are replaced with two edited images of unfamiliar people. The purpose of the fake-logo condition is to isolate the symbolic meaning of the EPM's graphic identifiers and distinguish it from the possible effect of their aesthetic design. Accordingly, I specifically designed the "fake" symbols to that they will resemble the real symbols and have equivalent aesthetic qualities, without activating emotions and associations which can be attached to the government ministry and environmental issues.[^footnote_symbols_manipulation_checks] In that sense, it can be regarded as a placebo. The symbols conditions are displayed in **Appendix B**. Further details about the images in the real and fake symbols conditions are found in the supplementary appendix. That each subject received two policies which were presented under the same symbol condition, but under different information conditions (i.e. one strong and one weak), enables me later to analyze the interaction between these two manipulations both via between- and within-subjects. 
-
-[^footnote_symbols_manipulation_checks]: In two prior surveys, I empirically confirmed that the fake symbols are unfamiliar, do not have strong positive or negative affect, and are not strongly associated with environment policy and EPM. The results of these examinations are reported in the supplementary appendix. 
-
-Each policy plan was followed by six questions questions about respondents' trust in the policy. Afterwards, the subjects conducted a memory test on the last policy that was presented to them, and were asked about the extent to which they elaborated on it and about the personal relevance of the policy plans. Thereafter, I included an instructional manipulation check (IMC) item, which aims to assess participants’ diligence. After a set of demographic questions, I conducted a manipulation check, in which I asked the participants whether they recognize the Ministry's logo, and the two images of the celebrities. Finally, the participants were debriefed about the manipulations, and the possible deception. An English translation of the full survey is available from the supplementary appendix.
-
-Altogether, for each policy plan, the survey experiment has a factorial design of 3 (symbols: real symbols, fake-symbols, no-symbols) x 2 (information: strong vs. weak policy). The assignment to the different experimental groups is graphically presented in **Figure 3**. The experimental groups are fairly balanced with respect to demographics, and pre-manipulation variables. Throughout the rest of the paper, I will analyze the results at the policy level, in order to simplify the analyses. Accordingly, I transformed the dataset into a multilevel structure of policies nested within subjects.[^footnote_combined_analyses] 
-
-[^footnote_combined_analyses]: In the supplementary appendix I further replicate the analyses below, while adding the interactions between the manipulations and the policy plans. In these models, the interactions between the policy plans and the symbols are far from significance, with no major changes to the results. 
 
 
 <br>
 **Figure 3: Experimental design for policy plan communications**
-![](D:/UNIVERSITY/R/SVIVA/experiment 2 01-2018/myfigures/experiment_flow.png) 
-
-The survey experiment was conducted online through Qualtrics Survey Software. To subjects, adult Israeli citizens, were recruited via an Israeli internet research panel company - *iPanel*. The online survey link was sent by iPanel, between 28.1-1.2.2018 to 5,077 people. A total of `r N_0` respondents completed the survey (a response rate of `r round((N_0/5077)*100,1)`%).[^footnote_responserate] Of these, I later filtered out `r N_0-N_1` observations (`r round(((N_0-N_1)/N_0)*100,1)`%) due to multiple entries from the same IP address (n=`r filter_IP`), failure at the instructional manipulation test (n=`r filter_IMC`), submitting the survey in less than 3 or more than 30 minutes (n=`r filter_time`), and respondents under the age of 18 (n=`r filter_age`). These filters are not significantly associated with the experimental conditions. Ultimately, following this rigorous screening, I ended up with a sizable sample of `r N_1` subjects (Mean age = `r SVIVA2_01%>%summarise(mean(AGE,na.rm=T))%>%max()%>%round(1)`, `r SVIVA2_01%>%summarise(mean(GENDER,na.rm=T)*100)%>%max()%>%round(1)`% women).[^footnote_sample_areas] Because each subjects evaluated two different policy plans, my dataset has a multilevel structure of `r SVIVA2_01_comb%>%nrow()` observations nested within these `r N_1` subjects.  
-
-[^footnote_responserate]: According to iPanel's reporting, 330 women entered the survey, but were eventually denied of access, to avoid the over-representation of women in the sample. Hence, the response rate, when reducing those who were denied of access, is slightly higher  and reaches `r round((N_0)/(5077-330)*100,1)`%.   
-
-[^footnote_sample_areas]: To capture variation in the personal relevance of the air-pollution policy, I sampled citizens from the major cities in the Haifa-Bay area, and matched them with citizens from cities with a similar profile and population size at the center of the country. The final sample consists of `r SVIVA2_01_haifa%>%nrow()` subjects from the Haifa-bay cities, and `r SVIVA2_01_center%>%nrow()` from the center cities. The two areas received the exact same link to the online survey, and they were equally, randomly assigned to the experimental conditions.   
+<br>
 
 
-##*Operationalization of variables*
-
-```{r, echo=FALSE, warning=FALSE, message=F}
-alpha_air_trust = psych::alpha(select(SVIVA2_01, TRUST_air_q1,
-                               TRUST_air_q2,
-                               TRUST_air_q3,
-                               TRUST_air_q4,
-                               TRUST_air_q5,
-                               TRUST_air_q6))[["total"]][["raw_alpha"]]%>%round(2)
-
-
-alpha_waste_trust = psych::alpha(select(SVIVA2_01, TRUST_waste_q1,
-                               TRUST_waste_q2,
-                               TRUST_waste_q3,
-                               TRUST_waste_q4,
-                               TRUST_waste_q5,
-                               TRUST_waste_q6))[["total"]][["raw_alpha"]]%>%round(2)
-
-alpha_trust_comb = ((alpha_air_trust+alpha_waste_trust)/2)%>%round(2)
-
-
-cor_elaboration_air = cor.test(SVIVA2_01$MEMORY_air_score,SVIVA2_01$ELABORATION_air_time_log,method="spearman")$estimate%>%mean()%>%round(2)
-
-cor_elaboration_waste = cor.test(SVIVA2_01$MEMORY_waste_score,SVIVA2_01$ELABORATION_waste_time_log,method="spearman")$estimate%>%mean()%>%round(2)
-
-cor_RT_delta = cor.test(SVIVA2_01$ELABORATION_total_time_log,
-                          SVIVA2_01$WITHIN_DELTA)$estimate%>%mean()%>%round(2)
-
-cor_memory_delta = cor.test(SVIVA2_01$MEMORY_total,
-                          SVIVA2_01$WITHIN_DELTA)$estimate%>%mean()%>%round(2)
-
-
-t_air_information = t.test(TRUST_air_INDEX~INFORMATION_air,SVIVA2_01)
-t_waste_information = t.test(TRUST_waste_INDEX~INFORMATION_waste,SVIVA2_01)
- 
-```
-
-
-My main independent variables are the above mentioned manipulations for information and symbols, and the interaction between them. My outcome variable is citizens' trust in policy (or the perceived trustworthiness of the policy). This variable is measured in the survey for each policy plan using a composite index of six likert scale items (Cronbach’s alpha = `r alpha_waste_trust`), which were adopted and slightly modified from validated trust scales used by previous public administration studies on trust in government [@grimmelikhuijsen_2013; @grimmelikhuijsen_2014; @karens_2016; @porumbescu_2016; @grimmelikhuijsen_2017]. Participants were asked to indicate their agreement with the following statements, between 1 (weakly agree) and 7(strongly agree): (1) I believe that the actions mentioned in the policy plan will assist in fulfilling the policy goal; (2) I believe that the actions mentioned in the policy plan were designed in a professional manner; (3) I believe that the policy plan is in the interest of citizens; (4) I believe that the policy plan reflects a genuine attempt to improve the well-being of citizens; (5) I believe that EPM made an honest attempt to design a good policy plan; (6) I believe that the Ministry of Environmental Protection aims to keep its commitments in that policy plan. The mean of this trust index is `r SVIVA2_01_comb%>%summarise(mean(trust))%>%max()%>%round(2)`, the standard variation is `r SVIVA2_01_comb%>%summarise(sd(trust))%>%max()%>%round(2)` and the median is `r SVIVA2_01_comb%>%summarise(median(trust))%>%max()%>%round(2)`. Higher levels of trust are associated with higher trust in government, left-wing ideology and lower levels of education. In addition to measuring participants trust in each policy, per each subject, I also calculated the delta between her trust in the strong and weak policy plans which were presented to her (*Mean* = `r SVIVA2_01%>%summarise(mean(WITHIN_DELTA))%>%max()%>%round(2)`, *SD* = `r SVIVA2_01%>%summarise(sd(WITHIN_DELTA))%>%max()%>%round(2)`, *Median* = `r SVIVA2_01%>%summarise(median(WITHIN_DELTA))%>%max()%>%round(2)`). I used this Trust in policy delta to analyze the interaction between symbols and information within subjects. 
-
-To assess the levels of thinking or elaboration on the policy plans, I used two distinct measures: First, I counted the number of seconds participants spent on scanning each of the policy plans (hereafter – reaction time), log transformed to reduce skewness (*Mean* = `r SVIVA2_01_comb%>%summarise(mean(ELABORATION_time_log))%>%max()%>%round(2)`, *SD* = `r SVIVA2_01_comb%>%summarise(sd(ELABORATION_time_log))%>%max()%>%round(2)`). Second, I used a memory test, asking participants whether a list of four items were included in the policy plan, of which two were/were not included (participants could also select "I don't know"). The memory score is calculated as the number of correct items selected by the participant minus the number of incorrect items, with a minimum score of zero. Accordingly, participants could receive the scores of 0 (`r filter(SVIVA2_01_comb,MEMORY_score==0)%>%nrow()`, `r ((filter(SVIVA2_01_comb,MEMORY_score==0)%>%nrow())/N_1*100)%>%round(1)`%), 1 (`r filter(SVIVA2_01_comb,MEMORY_score==1)%>%nrow()`, `r ((filter(SVIVA2_01_comb,MEMORY_score==1)%>%nrow())/N_1*100)%>%round(1)`%) or 2 (`r filter(SVIVA2_01_comb,MEMORY_score==2)%>%nrow()`, `r ((filter(SVIVA2_01_comb,MEMORY_score==2)%>%nrow())/N_1*100)%>%round(1)`%).[^footnote_elaboration] These two measures are correlated with each other (Spearman rho = `r ((cor_elaboration_air+cor_elaboration_waste)/2)%>%round(2)`, which substantiates their validity. 
-
-[^footnote_elaboration]: In addition, I included in the survey a battery of five items that measure participants' subjective perception of their level of elaboration. I initially sought to use these items as an additional measure for elaboration. However, I decided to forgo this subjective measure, due to its lack of correlation with the reaction time and memory test score, and its possible bias by people's disinclination to admit that they did not thoroughly read the policy plans.          
-
-In addition to the above independent variables, the survey also included control items regarding respondents’ age, gender, education, income, home ownership, age of their children, political ideology, trust in government, interest in environmental issues and residence in the Haifa-Bay area. Summary statistics and correlation matrix for all variables are available in the supplementary appendix.
+##*Variables*
 
 <br>
     
 
 # Results
 
-I now turn to analyzing the experimental results. I begin by examining my first and second hypotheses, that regard the effect of symbols on trust and its interaction with information. Thereafter, I will examine hypotheses 3 and 4, that regard the mediating role on elaboration. For each section, I conducted both *between-subjects* and *within-subjects* analyses.       
-
-##*The interaction bewteen symbols and information*
-
-According to my first hypothesis, I expect that the real symbols condition will have a positive main effect on subjects' trust in the policy plans. According to my second hypothesis, I expect a positive interaction between the real symbols and weak policy plan. Namely, the effect of the real symbols is expected to be greater among those subjects who were assigned to the weak policy. In **Table 1**, I test these two hypotheses via regression analyses. To account for the multilevel structure of the data, I use GLS regressions with random intercept at the subject level via `lme4` R package (ICC1 = `r multilevel::ICC1(aov(trust~as.factor(IP),data=SVIVA2_01_comb))%>%round(2)`, ICC2 = `r multilevel::ICC2(aov(trust~as.factor(IP),data=SVIVA2_01_comb))%>%round(2)`). In Model 1 I regress trust in policy on the symbols manipulation. Thereafter, in Models 2 and 3, I add the information manipulation, and the interaction between them. In these models, I the reference category for the symbols manipulation is the no-symbols condition.   
-
-
-```{r, echo=FALSE,warning=FALSE,message=FALSE}
-x_realsymbol = filter(SVIVA2_01_comb,SYMBOL==2)%>%summarise(mean(trust))%>%max()
-x_fakesymbol = filter(SVIVA2_01_comb,SYMBOL==1)%>%summarise(mean(trust))%>%max()
-x_nosymbol = filter(SVIVA2_01_comb,SYMBOL==0)%>%summarise(mean(trust))%>%max()
-sd_trust = SVIVA2_01_comb%>%summarise(sd(trust))%>%max()
-
-x_realsymbol_delta = filter(SVIVA2_01,SYMBOL==2)%>%summarise(mean(WITHIN_DELTA))%>%max()
-x_fakesymbol_delta = filter(SVIVA2_01,SYMBOL==1)%>%summarise(mean(WITHIN_DELTA))%>%max()
-x_nosymbol_delta = filter(SVIVA2_01,SYMBOL==0)%>%summarise(mean(WITHIN_DELTA))%>%max()
-sd_trust_delta = SVIVA2_01%>%summarise(sd(WITHIN_DELTA))%>%max()
-
-
-```
-
-
-**Table 1: Regression analyses – the effect of symbols on trust in policy**
-
-```{r,results="asis",echo=FALSE,warning=FALSE,message=FALSE}
-library(lme4)
-
-mod_1.1 = lmer(trust~SYMBOL_t+(1|IP),data=SVIVA2_01_comb)
-mod_1.2 = lmer(trust~SYMBOL_t+INFORMATION_weak+(1|IP),data=SVIVA2_01_comb)
-mod_1.3 = lmer(trust~SYMBOL_t*INFORMATION_weak+(1|IP),data=SVIVA2_01_comb)
-
-stargazer(mod_1.1,mod_1.2,mod_1.3,
-          type="html",style = "apsr",
-          dep.var.labels=c("Trust in policy (combined)"),
-          covariate.labels=c("Real symbols",
-                             "Fake-symbols",
-                             "Weak policy (0=strong policy)",
-                             "Weak policy x Real symbols",
-                             "Weak policy x Fake symbols"),
-          initial.zero = FALSE,
-          omit.stat = c("aic","bic"),
-          notes = "*Notes*: Table entries are non-standardized random-effect GLS regression coefficients, clustered at the subject level. Standard errors are in parentheses. The reference category for the symbols manipulation conditions is the control no-symbols.",
-          notes.append = FALSE)
-
-mod_1.1.r_1 = lmer(trust~SYMBOL_t.r+(1|IP),data=SVIVA2_01_comb)
-mod_1.2.r_1 = lmer(trust~SYMBOL_t.r+INFORMATION_weak+(1|IP),data=SVIVA2_01_comb)
-mod_1.3.r_1 = lmer(trust~SYMBOL_t.r*INFORMATION_weak+(1|IP),data=SVIVA2_01_comb)
-
-
-mod_1.3.r_2 = lmer(trust~SYMBOL_t*INFORMATION+(1|IP),data=SVIVA2_01_comb)
-
-mod_1.3.r_3 = lmer(trust~SYMBOL_t.r*INFORMATION+(1|IP),data=SVIVA2_01_comb)
-
-mod_1.3.r_4 = lmer(trust~SYMBOL_t.r_2*INFORMATION_weak+(1|IP),data=SVIVA2_01_comb)
-
-```
-
-&ast;*p*<.1; &ast;&ast;*p*<.05; &ast;&ast;&ast;*p*<.01 (two-tailed).
-
-The real symbols condition has a positive main effect on trust in Model 1.1. The effect is significant at the 95% level compared with the no symbols condition (*Coef* = `r mod_1.1%>%tidy()%>%filter(term=="SYMBOL_t1")%>%select(estimate)%>%max()%>%round(2)` [`r ((mod_1.1%>%tidy()%>%filter(term=="SYMBOL_t1")%>%select(estimate)%>%max())-1.96*(mod_1.1%>%tidy()%>%filter(term=="SYMBOL_t1")%>%select(std.error)%>%max()))%>%round(2)`, `r ((mod_1.1%>%tidy()%>%filter(term=="SYMBOL_t1")%>%select(estimate)%>%max())+1.96*(mod_1.1%>%tidy()%>%filter(term=="SYMBOL_t1")%>%select(std.error)%>%max()))%>%round(2)`]), and at the 90% level compared with the fake symbols (`r mod_1.1.r_1%>%tidy()%>%filter(term=="SYMBOL_t.r1")%>%select(estimate)%>%max()%>%round(2)` [`r ((mod_1.1.r_1%>%tidy()%>%filter(term=="SYMBOL_t.r1")%>%select(estimate)%>%max())-1.96*(mod_1.1.r_1%>%tidy()%>%filter(term=="SYMBOL_t.r1")%>%select(std.error)%>%max()))%>%round(2)`, `r ((mod_1.1.r_1%>%tidy()%>%filter(term=="SYMBOL_t.r1")%>%select(estimate)%>%max())+1.96*(mod_1.1.r_1%>%tidy()%>%filter(term=="SYMBOL_t.r1")%>%select(std.error)%>%max()))%>%round(2)`]). These differences are equivalent to `r ((mod_1.1%>%tidy()%>%filter(term=="SYMBOL_t1")%>%select(estimate)%>%max())/sd_trust)%>%round(2)%>%abs()` and `r ((mod_1.1.r_1%>%tidy()%>%filter(term=="SYMBOL_t.r1")%>%select(estimate)%>%max())/sd_trust)%>%round(2)%>%abs()` standard variations, respectively. The graphic elements in the fake symbols condition also increased participants' trust, but to a lesser extent, presumably due to their unfamiliarity, and their weaker positive affect. 
-
-In Model 1.2, the effect of the symbols remains intact, and the effect of the weak policy condition is negative and significant (*Coef* = `r mod_1.2%>%tidy()%>%filter(term=="INFORMATION_weak")%>%select(estimate)%>%max()%>%round(2)` [`r ((mod_1.2%>%tidy()%>%filter(term=="INFORMATION_weak")%>%select(estimate)%>%max())-1.96*(mod_1.2%>%tidy()%>%filter(term=="INFORMATION_weak")%>%select(std.error)%>%max()))%>%round(2)`, `r ((mod_1.2%>%tidy()%>%filter(term=="INFORMATION_weak")%>%select(estimate)%>%max())+1.96*(mod_1.2%>%tidy()%>%filter(term=="INFORMATION_weak")%>%select(std.error)%>%max()))%>%round(2)`]). In Model 1.3, the interaction between weak policy and real symbols is positive and significant, whereas the interaction with the fake symbols is insignificant. The interpretation of this model suggests that the real symbols had a greater effect on trust when the policy plan was weak (*Coef* = `r mod_1.3.r_2%>%tidy()%>%filter(term=="SYMBOL_t1")%>%select(estimate)%>%max()%>%round(2)` [`r ((mod_1.3.r_2%>%tidy()%>%filter(term=="SYMBOL_t1")%>%select(estimate)%>%max())-1.96*(mod_1.3.r_2%>%tidy()%>%filter(term=="SYMBOL_t1")%>%select(std.error)%>%max()))%>%round(2)`, `r ((mod_1.3.r_2%>%tidy()%>%filter(term=="SYMBOL_t1")%>%select(estimate)%>%max())+1.96*(mod_1.3.r_2%>%tidy()%>%filter(term=="SYMBOL_t1")%>%select(std.error)%>%max()))%>%round(2)`] and `r mod_1.3.r_3%>%tidy()%>%filter(term=="SYMBOL_t.r1")%>%select(estimate)%>%max()%>%round(2)` [`r ((mod_1.3.r_3%>%tidy()%>%filter(term=="SYMBOL_t.r1")%>%select(estimate)%>%max())-1.96*(mod_1.3.r_3%>%tidy()%>%filter(term=="SYMBOL_t.r1")%>%select(std.error)%>%max()))%>%round(2)`, `r ((mod_1.3.r_3%>%tidy()%>%filter(term=="SYMBOL_t.r1")%>%select(estimate)%>%max())+1.96*(mod_1.3.r_3%>%tidy()%>%filter(term=="SYMBOL_t.r1")%>%select(std.error)%>%max()))%>%round(2)`] Compared with the no symbols and fake symbols, respectively). When added to the strong policy plan, the effect of the real symbols is weaker, and significant only compared with the no symbols condition (*Coef* = `r mod_1.3%>%tidy()%>%filter(term=="SYMBOL_t1")%>%select(estimate)%>%max()%>%round(2)`, *p*<.1, one-tailed). Congruently, the symbols decreased the differences in trust between the strong and weak policies by `r ((mod_1.3.r_4%>%tidy()%>%filter(term=="INFORMATION_weak")%>%select(estimate)%>%abs()%>%max())/(mod_1.3%>%tidy()%>%filter(term=="INFORMATION_weak")%>%select(estimate)%>%abs()%>%max())*100)%>%round(0)`%, compared with the no symbols group (from `r mod_1.3%>%tidy()%>%filter(term=="INFORMATION_weak")%>%select(estimate)%>%abs()%>%max()%>%round(2)` [`r ((mod_1.3%>%tidy()%>%filter(term=="INFORMATION_weak")%>%select(estimate)%>%abs()%>%max())-1.96*(mod_1.3%>%tidy()%>%filter(term=="INFORMATION_weak")%>%select(std.error)%>%abs()%>%max()))%>%round(2)`, `r ((mod_1.3%>%tidy()%>%filter(term=="INFORMATION_weak")%>%select(estimate)%>%abs()%>%max())+1.96*(mod_1.3%>%tidy()%>%filter(term=="INFORMATION_weak")%>%select(std.error)%>%abs()%>%max()))%>%round(2)`] to `r mod_1.3.r_4%>%tidy()%>%filter(term=="INFORMATION_weak")%>%select(estimate)%>%abs()%>%max()%>%round(2)` [`r ((mod_1.3.r_4%>%tidy()%>%filter(term=="INFORMATION_weak")%>%select(estimate)%>%abs()%>%max())-1.96*(mod_1.3.r_4%>%tidy()%>%filter(term=="INFORMATION_weak")%>%select(std.error)%>%abs()%>%max()))%>%round(2)`, `r ((mod_1.3.r_4%>%tidy()%>%filter(term=="INFORMATION_weak")%>%select(estimate)%>%abs()%>%max())+1.96*(mod_1.3.r_4%>%tidy()%>%filter(term=="INFORMATION_weak")%>%select(std.error)%>%abs()%>%max()))%>%round(2)`]). The interaction between symbols and information significantly contributes to the model fit (Chi2 = `r anova(mod_1.3,mod_1.2)%>%tidy()%>%filter(term=="mod_1.3")%>%select(statistic)%>%max()%>%round(2)`, *p*<.05). To facilitate the interpretation of this interaction, **Figure 4** provides a descriptive demonstration of the effects of the real symbols on trust in policy, under weak and strong information quality. 
-
-**Figure 4: The effect of symbolic elements on trust under weak vs. strong information**
-
-```{r, echo=FALSE,warning=FALSE,message=FALSE, fig.width=6,fig.height=4}
-ggplot(SVIVA2_01_comb, aes(factor(SYMBOL_n),trust,shape=factor(INFORMATION_n)))+ 
-  theme_classic()+
-  #geom_boxplot(width=0.25,color="gray70")+
-  stat_summary(fun.data = mean_cl_normal, geom = "errorbar",
-               fun.args = list(mult = 1.65),
-               width=0.2,size=0.5,position=position_dodge(0.1),color="gray70") + 
-  stat_summary(fun.y = mean, geom = "point", size=1.6,position=position_dodge(0.1))+
-  stat_summary(fun.y = mean, geom = "line", size=0.6, aes(group = INFORMATION_n,linetype=INFORMATION_n),position=position_dodge(0.1))+
-  scale_shape_manual(guide=F,values=c(19,1))+
-  scale_linetype_manual(name="Information",values=c(1,4),labels=c("Weak policy","Strong policy"))+
-  scale_x_discrete(name="",labels=c("No symbols","Fake symbols","Real symbols"))+
-  scale_y_continuous(name = "Trust in policy",breaks = seq(1,7,by=0.1))
-```
-
-<font size="0.5">
-
-*Note*: Error bars represent 90% confidence intervals.
-
-</font>
-
-
-```{r, echo=FALSE,warning=FALSE,message=FALSE}
-
-x_realsymbol_delta=filter(SVIVA2_01,SYMBOL==2)%>%summarise(mean(WITHIN_DELTA))%>%max()
-x_fakesymbol_delta=filter(SVIVA2_01,SYMBOL==1)%>%summarise(mean(WITHIN_DELTA))%>%max()
-x_nosymbol_delta=filter(SVIVA2_01,SYMBOL==0)%>%summarise(mean(WITHIN_DELTA))%>%max()
-
-t_delta_symbol_nosymbol = t.test(WITHIN_DELTA~SYMBOL,filter(SVIVA2_01,SYMBOL!=1))
-t_delta_symbol_fakesymbol = t.test(WITHIN_DELTA~SYMBOL,filter(SVIVA2_01,SYMBOL!=0))
-t_delta_nosymbol_fakesymbol = t.test(WITHIN_DELTA~SYMBOL,filter(SVIVA2_01,SYMBOL!=2))
-
-```
- 
-
-The interaction between between symbols can be also tested *within-subjects*, by comparing the averaged delta across the different symbols conditions. Based on my second hypothesis, I expect that the averaged delta will be lower among subjects in the real symbols condition. This comparison is graphically displayed in **Figure 5**. The averaged delta in the real symbols is significantly lower than in the no symbols and fake symbols control groups (differences are `r (x_realsymbol_delta-x_nosymbol_delta)%>%abs()%>%round(2)` [`r t_delta_symbol_nosymbol[["conf.int"]][1]%>%round(2)`,`r t_delta_symbol_nosymbol[["conf.int"]][2]%>%round(2)`] and `r (x_realsymbol_delta-x_fakesymbol_delta)%>%abs()%>%round(2)` [`r t_delta_symbol_fakesymbol[["conf.int"]][1]%>%round(2)`,`r t_delta_symbol_fakesymbol[["conf.int"]][2]%>%round(2)`], *t*= `r t_delta_symbol_nosymbol[["statistic"]][["t"]]%>%round(3)` and `r t_delta_symbol_fakesymbol[["statistic"]][["t"]]%>%round(3)`, respectively). The differences between the two control groups are insignificant. These results further support my above finding that familiar symbols decrease subjects' inclination to differentiate between the strong and weak policy plans.   
-
-**Figure 5: The effect of symbolic elements on within-subject delta between strong and weak policies**
-
-```{r, echo=FALSE,warning=FALSE,message=FALSE, fig.width=4,fig.height=4}
-ggplot(SVIVA2_01, aes(factor(SYMBOL_n), WITHIN_DELTA))+
-  theme_classic()+
-  #geom_boxplot(width=0.25,color = "gray70")+
-  stat_summary(fun.data = mean_cl_normal, geom = "errorbar",
-                              fun.args = list(mult = 1.65),
-                              width=0.1,size=0.5,color="gray70") + 
-  stat_summary(fun.y = mean, geom = "point", size=2)+
-  stat_summary(fun.y = mean, aes(group = 1), geom = "line", size=0.5)+
-  scale_x_discrete(name="Symbolic elements",labels=c("No symbols","Fake symbols","Real symbols"))+
-  scale_y_continuous(name = "Within subject delta", breaks = seq(0,1,by=0.1))
-
-```
-
-<font size="0.5">
-
-*Note*: Error bars represent 90% confidence intervals.
-
-</font>
-
-Altogether, the above between- and within-subject analyses largely support my first two hypothesis. They suggest that familiar symbolic elements in communications increase citizens' trust in policies which are presented, and that the effect is greater the less logically persuasive is the information in the communications. Symbols attenuate the negative effect of weak or logically unpersuasive information in communications. In other statistical models, shown in the supplementary appendix, I tested additional specifications, including analyzing the unfilterred sample, adding control variables, excluding subjects who did not recognize the real symbols and adding interactions with the policy plans. In all these robust analyses, the main effect of the real symbols remains positive and significant, and the interaction between the real symbols and the weak information remains positive and significant. 
-
-How can we explain the finding that the real symbols only had a marginally significant effect on participants' trust in the strong policy, compared with the no logo, and did not increase their trust compared with the fake logo (Model 1.3)? One tentative explanation could be that symbolic elements are more effective in shifting people from low to medium levels of trust, than shifting them from medium to high levels. Stated otherwise, symbols may be more effective in reducing citizens' distrust, as opposed to increasing their trust. If this explanation holds, then result will be a ceiling effect. This explanation can be also linked, theoretically, to the notion of public sector negative bias, which is well established in the Public Administration. Since most citizens tend to have implicit negative attitudes towards the public sector, they can trust public organizations up until a certain degree.[^footnote_ceiling_effect]           
-
-[^footnote_ceiling_effect]: This explanation is partly supported by a descriptive comparison of the distributions of the different groups. The comparison of the quartiles in the different groups indicates that the increase in the average was mainly due to the increase in the first quartile (i.e. the lower 25% observations). In the weak policy condition, the first quartile increased by `r (quantile(SVIVA2_01_comb$trust[SVIVA2_01_comb$SYMBOL==2&SVIVA2_01_comb$INFORMATION==0])[2]- quantile(SVIVA2_01_comb$trust[SVIVA2_01_comb$SYMBOL==0&SVIVA2_01_comb$INFORMATION==0])[2])%>%max()%>%round(1)` points compared with the no symbols, whereas the third quartile (i.e. the higher 25% observations) increased by `r (quantile(SVIVA2_01_comb$trust[SVIVA2_01_comb$SYMBOL==2&SVIVA2_01_comb$INFORMATION==0])[4]- quantile(SVIVA2_01_comb$trust[SVIVA2_01_comb$SYMBOL==0&SVIVA2_01_comb$INFORMATION==0])[4])%>%max()%>%round(1)` points. In the strong policy condition, we can find similar pattern of decreasing marginal effect. The first quartile increased by `r (quantile(SVIVA2_01_comb$trust[SVIVA2_01_comb$SYMBOL==2&SVIVA2_01_comb$INFORMATION==1])[2]- quantile(SVIVA2_01_comb$trust[SVIVA2_01_comb$SYMBOL==0&SVIVA2_01_comb$INFORMATION==1])[2])%>%max()%>%round(1)` points, whereas the third quartile (i.e. the higher 25% observations) increased by `r (quantile(SVIVA2_01_comb$trust[SVIVA2_01_comb$SYMBOL==2&SVIVA2_01_comb$INFORMATION==1])[4]- quantile(SVIVA2_01_comb$trust[SVIVA2_01_comb$SYMBOL==0&SVIVA2_01_comb$INFORMATION==1])[4])%>%max()%>%round(1)` points.   
-
-##*The mediating role of elaboration*
-
-In the following section, I test the postulation that the interaction between symbols and information is explained or mediated by a decrease in elaboration. To reiterate, in the survey, I used reaction time (log) and memory score as measures for participants' level of elaboration of the policy plans. Based on my third hypothesis, I expect to find a negative effect of the real symbols on these two measures. Thereafter, my fourth hypothesis entails moderated mediation relations: the decrease in elaboration mediates the effect of symbols of trust under the weak policy, but not under the strong policy (see Figure 1). 
-
-```{r, echo=FALSE,warning=FALSE,message=FALSE}
-x_realsymbol_RT=filter(SVIVA2_01_comb,SYMBOL==2)%>%summarise(mean(ELABORATION_time))%>%max()
-x_fakesymbol_RT=filter(SVIVA2_01_comb,SYMBOL==1)%>%summarise(mean(ELABORATION_time))%>%max()
-x_nosymbol_RT=filter(SVIVA2_01_comb,SYMBOL==0)%>%summarise(mean(ELABORATION_time))%>%max()
-
-t_RT_symbol_nosymbol = t.test(ELABORATION_time~SYMBOL,filter(SVIVA2_01_comb,SYMBOL!=1))
-t_RT_symbol_fakesymbol = t.test(ELABORATION_time~SYMBOL,filter(SVIVA2_01_comb,SYMBOL!=0))
-t_RT_nosymbol_fakesymbol = t.test(ELABORATION_time~SYMBOL,filter(SVIVA2_01_comb,SYMBOL!=2))
-
-x_realsymbol_RT_log=filter(SVIVA2_01_comb,SYMBOL==2)%>%summarise(mean(ELABORATION_time_log))%>%max()
-x_fakesymbol_RT_log=filter(SVIVA2_01_comb,SYMBOL==1)%>%summarise(mean(ELABORATION_time_log))%>%max()
-x_nosymbol_RT_log=filter(SVIVA2_01_comb,SYMBOL==0)%>%summarise(mean(ELABORATION_time_log))%>%max()
-
-
-cor_memory_nosymbol = cor.test(as.numeric(filter(SVIVA2_01_comb,SYMBOL!=1)$SYMBOL),
-                               filter(SVIVA2_01_comb,SYMBOL!=1)$MEMORY_score, 
-                               method="spearman")$estimate%>%mean()%>%round(2)
-
-cor_memory_fakesymbol = cor.test(as.numeric(filter(SVIVA2_01_comb,SYMBOL!=0)$SYMBOL),
-                               filter(SVIVA2_01_comb,SYMBOL!=0)$MEMORY_score, 
-                               method="spearman")$estimate%>%mean()%>%round(2)
-```
-
-In **Table 2**, I test the effects of the real symbols on the elaboration measures via regression analyses. I regressed each measure on the symbols manipulation (Models 2.1, 2.3), and than added the information manipulation (Models 2.2, 2.4). The first two models, which refer to reaction time, are random intercept models which are similar to the statistical models in table 1. As for the memory score analyses, given that each subject was asked only about one policy (the second in order), I used an OLS regression. 
-
-**Table 2: Regression analyses – the effect of symbols on elaboration**
-
-```{r,results="asis",echo=FALSE,warning=FALSE,message=FALSE}
-mod_2.1 = lmer(ELABORATION_time_log~SYMBOL_t+(1|IP),data=SVIVA2_01_comb)
-mod_2.2 = lmer(ELABORATION_time_log~SYMBOL_t+INFORMATION_weak+(1|IP),data=SVIVA2_01_comb)
-mod_2.3 = lm(MEMORY_score~SYMBOL_t,data=SVIVA2_01_comb)
-mod_2.4 = lm(MEMORY_score~SYMBOL_t+INFORMATION_weak,data=SVIVA2_01_comb)
-
-stargazer(mod_2.1,mod_2.2,mod_2.3,mod_2.4,
-          type="html",style = "apsr",
-          dep.var.labels=c("Reaction time (log)","Memory score"),
-          covariate.labels=c("Real symbols",
-                             "Fake-symbols",
-                             "Weak policy (0=strong policy)"),
-          initial.zero = FALSE,
-          omit.stat = c("f","ser","aic","bic"),
-          notes = "*Notes*: Table entries are non-standardized regression coefficients. Standard errors are in parentheses. The reference category for the symbols manipulation conditions is the control no-symbols.",
-          notes.append = FALSE)
-
-mod_2.1.r_1 = lmer(ELABORATION_time~SYMBOL_t.r+(1|IP),data=SVIVA2_01_comb)
-
-mod_2.3.r_1 = lm(MEMORY_score~SYMBOL_t.r,data=SVIVA2_01_comb)
-
-```
-
-&ast;*p*<.1; &ast;&ast;*p*<.05; &ast;&ast;&ast;*p*<.01 (two-tailed).
-
-In all four models, the coefficients of the real symbols are negative and significant, and the coefficients of the fake symbols are insignificant. The real symbols decreased the number of second subjects spent on the pages of the policy plans in the online survey, compared with both control groups.[^footnote_RT_symbols] The effect is significant at the 95% level compared with the no symbols condition (*Coef* = `r mod_2.1%>%tidy()%>%filter(term=="SYMBOL_t1")%>%select(estimate)%>%max()%>%round(2)` [`r ((mod_2.1%>%tidy()%>%filter(term=="SYMBOL_t1")%>%select(estimate)%>%max())-1.96*(mod_2.1%>%tidy()%>%filter(term=="SYMBOL_t1")%>%select(std.error)%>%max()))%>%round(2)`, `r ((mod_2.1%>%tidy()%>%filter(term=="SYMBOL_t1")%>%select(estimate)%>%max())+1.96*(mod_2.1%>%tidy()%>%filter(term=="SYMBOL_t1")%>%select(std.error)%>%max()))%>%round(2)`]), yet it is not sufficiently significant compared with the fake symbols. The averaged memory score of subjects who saw the real symbols was significantly lower, compared with both the no logo and the fake logo groups (*Coef* = `r mod_2.3%>%tidy()%>%filter(term=="SYMBOL_t1")%>%select(estimate)%>%max()%>%round(2)` [`r ((mod_2.3%>%tidy()%>%filter(term=="SYMBOL_t1")%>%select(estimate)%>%max())-1.96*(mod_2.3%>%tidy()%>%filter(term=="SYMBOL_t1")%>%select(std.error)%>%max()))%>%round(2)`, `r ((mod_2.3%>%tidy()%>%filter(term=="SYMBOL_t1")%>%select(estimate)%>%max())+1.96*(mod_2.3%>%tidy()%>%filter(term=="SYMBOL_t1")%>%select(std.error)%>%max()))%>%round(2)`], and `r mod_2.3.r_1%>%tidy()%>%filter(term=="SYMBOL_t.r1")%>%select(estimate)%>%max()%>%round(2)` [`r ((mod_2.3.r_1%>%tidy()%>%filter(term=="SYMBOL_t.r1")%>%select(estimate)%>%max())-1.96*(mod_2.3.r_1%>%tidy()%>%filter(term=="SYMBOL_t.r1")%>%select(std.error)%>%max()))%>%round(2)`, `r ((mod_2.3.r_1%>%tidy()%>%filter(term=="SYMBOL_t.r1")%>%select(estimate)%>%max())+1.96*(mod_2.3.r_1%>%tidy()%>%filter(term=="SYMBOL_t.r1")%>%select(std.error)%>%max()))%>%round(2)`], respectively).[^footnote_memory_symbols] There is no significant change to the results when adding the the effects of the information manipulation (in Models 2.2, 2.4). The coefficients of the weak policy in these models suggest that those who saw the fictitious, weak policy plans, spent more time on their pages, yet were less likely to state items that were included in them. **Figure 6** graphically displays the descriptive comparison of the elaboration measures across the symbols conditions. The left side shows its effect on reaction time (logged), and the right side shows its effect on the memory-test scores. 
-
-[^footnote_RT_symbols]: The difference in seconds compared with the no symbols group, as extracted from the coefficients in logs is: `r (mod_2.1%>%tidy()%>%filter(term=="SYMBOL_t1")%>%select(estimate)%>%max())%>%abs()%>%exp()%>%round(1)`-`r (x_realsymbol_RT_log-x_fakesymbol_RT_log)%>%abs()%>%exp()%>%round(1)`. The difference between the raw averages is `r (x_realsymbol_RT-x_fakesymbol_RT)%>%abs()%>%round(1)` seconds.    
-
-[^footnote_memory_symbols]: Descriptively, `r (((filter(SVIVA2_01_comb,SYMBOL==2,MEMORY_score==0)%>%nrow())/(filter(SVIVA2_01_comb,SYMBOL==2,MEMORY_score>=0)%>%nrow()))*100)%>%round(0)`% of those in the real symbols group received the minimum score of 0, compared with `r (((filter(SVIVA2_01_comb,SYMBOL==0,MEMORY_score==0)%>%nrow())/(filter(SVIVA2_01_comb,SYMBOL==0,MEMORY_score>=0)%>%nrow()))*100)%>%round(0)`% and `r (((filter(SVIVA2_01_comb,SYMBOL==1,MEMORY_score==0)%>%nrow())/(filter(SVIVA2_01_comb,SYMBOL==1,MEMORY_score>=0)%>%nrow()))*100)%>%round(0)`% in the no symbols and fake symbols control groups. Congruently, the percentage of those who managed to correctly identify the two items dropped from `r (((filter(SVIVA2_01_comb,SYMBOL==0,MEMORY_score==2)%>%nrow())/(filter(SVIVA2_01_comb,SYMBOL==0,MEMORY_score>=0)%>%nrow()))*100)%>%round(0)`% and `r (((filter(SVIVA2_01_comb,SYMBOL==1,MEMORY_score==2)%>%nrow())/(filter(SVIVA2_01_comb,SYMBOL==1,MEMORY_score>=0)%>%nrow()))*100)%>%round(0)`% in the control groups to only `r (((filter(SVIVA2_01_comb,SYMBOL==2,MEMORY_score==2)%>%nrow())/(filter(SVIVA2_01_comb,SYMBOL==2,MEMORY_score>=0)%>%nrow()))*100)%>%round(0)`%.  Given that the measure of memory score is ordinal, I also tested it's correlation with the symbols manipulation via Spearman test. Spearman rho = `r cor_memory_nosymbol` and `r cor_memory_fakesymbol`, compared with the no symbols and fake symbols control groups. 
-
-**Figure 6: The effect of symbolic elements on elaboration**
-
-```{r, echo=FALSE,warning=FALSE,message=FALSE, out.width=c('50%', '50%'),fig.show='hold', fig.width=4,fig.height=4}
-ggplot(SVIVA2_01_comb, aes(factor(SYMBOL_n), ELABORATION_time_log))+
-  theme_classic()+
-  #geom_boxplot(width=0.25,color = "gray70")+
-  stat_summary(fun.data = mean_cl_normal, geom = "errorbar",
-                              fun.args = list(mult = 1.65),
-                              width=0.1,size=0.5,color="gray70") + 
-  stat_summary(fun.y = mean, geom = "point", size=1.5)+
-  stat_summary(fun.y = mean, aes(group = 1), geom = "line", size=0.5)+
-  scale_x_discrete(name="",labels=c("no symbols","fake symbols","real symbols"))+
-  scale_y_continuous(name = "Reaction Time (log)")
-
-ggplot(SVIVA2_01_comb, aes(factor(SYMBOL_n), MEMORY_score))+
-  theme_classic()+
-  #geom_boxplot(width=0.25,color = "gray70")+
-  stat_summary(fun.data = mean_cl_normal, geom = "errorbar",
-                              fun.args = list(mult = 1.65),
-                              width=0.1,size=0.5,color="gray70") + 
-  stat_summary(fun.y = mean, geom = "point", size=1.5)+
-  stat_summary(fun.y = mean, aes(group = 1), geom = "line", size=0.5)+
-  scale_x_discrete(name="",labels=c("no symbols","fake symbols","real symbols"))+
-  scale_y_continuous(name = "Memory score")
-```
-
-<font size="0.5">
-
-*Note*: Error bars represent 90% confidence intervals.
-
-</font>
-
-Next, I tested the hypothesis that the decrease in reaction time and memory score mediate the effect of the real symbols on trust in the weak policy plans. To do so, I used the causal mediation analysis method via `mediate` R package, which was developed by Imai et al. [@imai_2010; @imai_2011], and was also recently also implemented in Public Administration research [@porumbescu_2018]. This method predicts the change in the outcome variable (here: trust in policy) given the causal change in the mediator that would be induced by the treatment (here: decreased elaboration inducted by the real symbols). Accordingly, it enables to decipher the proportion of the causal mediation effect from the total effect. Causal mediation analysis is based on counter-factual comparisons, as opposed to the traditional method of @baron_1986, which is based on linear structural equation modeling. It is advantaged in terms of its accuracy as well as its ability to identify causality. **Table 3** displays the results of the causal mediation of reaction time (log) and memory test, under the weak policy plans.    
-
-```{r, echo=FALSE,warning=FALSE,message=FALSE}
-library(mediation)
-set.seed(2018)
-
-#RT
-med.fit_RT_nosymbol = 
-  lm(ELABORATION_time_log~SYMBOL*INFORMATION,
-     data=filter(SVIVA2_01_comb,SYMBOL!=1))
-
-med.out_RT_nosymbol = 
-  lm(trust~SYMBOL*INFORMATION+ELABORATION_time_log*INFORMATION,
-     data=filter(SVIVA2_01_comb,SYMBOL!=1))
-
-med.fit_RT_fakesymbol = 
-  lm(ELABORATION_time_log~SYMBOL*INFORMATION,
-     data=filter(SVIVA2_01_comb,SYMBOL!=0))
-
-med.out_RT_fakesymbol = 
-  lm(trust~SYMBOL*INFORMATION+ELABORATION_time_log*INFORMATION,
-     data=filter(SVIVA2_01_comb,SYMBOL!=0))
-
-
-med_RT__nosymbol_INFORMTION_0 = mediate(med.fit_RT_nosymbol,
-                                med.out_RT_nosymbol,
-                                treat = "SYMBOL",
-                                mediator = "ELABORATION_time_log", 
-                                covariates = list(INFORMATION = 0), sims = 100)
-
-med_RT__fakesymbol_INFORMTION_0 = mediate(med.fit_RT_fakesymbol,
-                                  med.out_RT_fakesymbol,
-                                  treat = "SYMBOL",
-                                  mediator = "ELABORATION_time_log", 
-                                  covariates = list(INFORMATION = 0), sims = 100)
-
-med_RT__nosymbol_INFORMTION_1 = mediate(med.fit_RT_nosymbol,
-                                med.out_RT_nosymbol,
-                                treat = "SYMBOL",
-                                mediator = "ELABORATION_time_log", 
-                                covariates = list(INFORMATION = 1), sims = 100)
-
-med_RT__fakesymbol_INFORMTION_1 = mediate(med.fit_RT_fakesymbol,
-                                  med.out_RT_fakesymbol,
-                                  treat = "SYMBOL",
-                                  mediator = "ELABORATION_time_log", 
-                                  covariates = list(INFORMATION = 1), sims = 100)
-
-#memory
-med.fit_memory_nosymbol = 
-  lm(MEMORY_score~SYMBOL*INFORMATION,
-     data=filter(SVIVA2_01_comb,SYMBOL!=1))
-
-med.out_memory_nosymbol = 
-  lm(trust~SYMBOL*INFORMATION+MEMORY_score*INFORMATION,
-     data=filter(SVIVA2_01_comb,SYMBOL!=1))
-
-med.fit_memory_fakesymbol = 
-  lm(MEMORY_score~SYMBOL*INFORMATION,
-     data=filter(SVIVA2_01_comb,SYMBOL!=0))
-
-med.out_memory_fakesymbol = 
-  lm(trust~SYMBOL*INFORMATION+MEMORY_score*INFORMATION,
-     data=filter(SVIVA2_01_comb,SYMBOL!=0))
-
-
-
-med_memory__nosymbol_INFORMTION_0 = mediate(med.fit_memory_nosymbol,
-                                med.out_memory_nosymbol,
-                                treat = "SYMBOL",
-                                mediator = "MEMORY_score", 
-                                covariates = list(INFORMATION = 0), sims = 100)
-
-med_memory__fakesymbol_INFORMTION_0 = mediate(med.fit_memory_fakesymbol,
-                                  med.out_memory_fakesymbol,
-                                  treat = "SYMBOL",
-                                  mediator = "MEMORY_score", 
-                                  covariates = list(INFORMATION = 0), sims = 100)
-
-med_memory__nosymbol_INFORMTION_1 = mediate(med.fit_memory_nosymbol,
-                                med.out_memory_nosymbol,
-                                treat = "SYMBOL",
-                                mediator = "MEMORY_score", 
-                                covariates = list(INFORMATION = 1), sims = 100)
-
-med_memory__fakesymbol_INFORMTION_1 = mediate(med.fit_memory_fakesymbol,
-                                  med.out_memory_fakesymbol,
-                                  treat = "SYMBOL",
-                                  mediator = "MEMORY_score", 
-                                  covariates = list(INFORMATION = 1), sims = 100)
-
-
-extract_mediation_summary <- function (x) { 
-
-  clp <- 100 * x$conf.level
-  isLinear.y <- ((class(x$model.y)[1] %in% c("lm", "rq")) || 
-                   (inherits(x$model.y, "glm") && x$model.y$family$family == 
-                      "gaussian" && x$model.y$family$link == "identity") || 
-                   (inherits(x$model.y, "survreg") && x$model.y$dist == 
-                      "gaussian"))
-
-  printone <- !x$INT && isLinear.y
-
-  if (printone) {
-
-    smat <- c(x$d1, x$d1.ci, x$d1.p)
-    smat <- rbind(smat, c(x$z0, x$z0.ci, x$z0.p))
-    smat <- rbind(smat, c(x$tau.coef, x$tau.ci, x$tau.p))
-    smat <- rbind(smat, c(x$n0, x$n0.ci, x$n0.p))
-
-    rownames(smat) <- c("ACME", "ADE", "Total Effect", "Prop. Mediated")
-
-  } else {
-    smat <- c(x$d0, x$d0.ci, x$d0.p)
-    smat <- rbind(smat, c(x$d1, x$d1.ci, x$d1.p))
-    smat <- rbind(smat, c(x$z0, x$z0.ci, x$z0.p))
-    smat <- rbind(smat, c(x$z1, x$z1.ci, x$z1.p))
-    smat <- rbind(smat, c(x$tau.coef, x$tau.ci, x$tau.p))
-    smat <- rbind(smat, c(x$n0, x$n0.ci, x$n0.p))
-    smat <- rbind(smat, c(x$n1, x$n1.ci, x$n1.p))
-    smat <- rbind(smat, c(x$d.avg, x$d.avg.ci, x$d.avg.p))
-    smat <- rbind(smat, c(x$z.avg, x$z.avg.ci, x$z.avg.p))
-    smat <- rbind(smat, c(x$n.avg, x$n.avg.ci, x$n.avg.p))
-
-    rownames(smat) <- c("ACME (control)", "ACME (treated)", 
-                        "ADE (control)", "ADE (treated)", "Total Effect", 
-                        "Prop. Mediated (control)", "Prop. Mediated (treated)", 
-                        "ACME (average)", "ADE (average)", "Prop. Mediated (average)")
-
-  }
-
-  colnames(smat) <- c("Estimate", paste(clp, "% CI Lower", sep = ""), 
-                      paste(clp, "% CI Upper", sep = ""), "p-value")
-  smat
-
-}
-
-```
-
-
-```{r, echo=FALSE,warning=FALSE,message=FALSE}
-#RT
-table_med_RT__nosymbol_INFORMTION_0 = 
-summary(med_RT__nosymbol_INFORMTION_0)%>%
-extract_mediation_summary() 
-
-table_med_RT__fakesymbol_INFORMTION_0 = 
-summary(med_RT__fakesymbol_INFORMTION_0)%>%
-extract_mediation_summary()
-
-table_med_RT__nosymbol_INFORMTION_1 = 
-summary(med_RT__nosymbol_INFORMTION_1)%>%
-extract_mediation_summary()
-
-table_med_RT__fakesymbol_INFORMTION_1 = 
-summary(med_RT__fakesymbol_INFORMTION_1)%>%
-extract_mediation_summary()
-
-#memory
-table_med_memory__nosymbol_INFORMTION_0 = 
-summary(med_memory__nosymbol_INFORMTION_0)%>%
-extract_mediation_summary() 
-
-table_med_memory__fakesymbol_INFORMTION_0 = 
-summary(med_memory__fakesymbol_INFORMTION_0)%>%
-extract_mediation_summary()
-
-table_med_memory__nosymbol_INFORMTION_1 = 
-summary(med_memory__nosymbol_INFORMTION_1)%>%
-extract_mediation_summary()
-
-table_med_memory__fakesymbol_INFORMTION_1 = 
-summary(med_memory__fakesymbol_INFORMTION_1)%>%
-extract_mediation_summary()
-```
-
-
-**Table 3: Causal mediation analysis**
-
-*Mediator: Reaction time*
-```{r, echo=FALSE,warning=FALSE,message=FALSE}
-table_med_RT_INFORMTION_0 = 
-  cbind.data.frame(table_med_RT__nosymbol_INFORMTION_0,
-                   table_med_RT__fakesymbol_INFORMTION_0)
-library(kableExtra)
-
-kable(table_med_RT_INFORMTION_0, "html",digits = 3) %>%
-  kable_styling(bootstrap_options = c("striped","condensed"), full_width = F, position = "left", font_size = 11)%>%
-  add_header_above(c(" " = 1, "real vs. no symbols" = 4, "real vs. fake symbols" = 4))
-```
-
-*Mediator: Memory score*
-```{r, echo=FALSE,warning=FALSE,message=FALSE}
-table_med_memory_INFORMTION_0 = 
-  cbind.data.frame(table_med_memory__nosymbol_INFORMTION_0,
-                   table_med_memory__fakesymbol_INFORMTION_0)
-
-kable(table_med_memory_INFORMTION_0, "html",digits = 3) %>%
-  kable_styling(bootstrap_options = c("striped","condensed"), full_width = F, position = "left", font_size = 11)%>%
-  add_header_above(c(" " = 1, "real vs. no symbols" = 4, "real vs. fake symbols" = 4))
-```
-
-*Notes*: "ACME": Averaged causal mediated effect; "ADE": Averaged direct effect. Mediate function uses bootstrap to estimate the confidence intervals. In all these analyses I used `set.seed=2018`.
-
-The results suggest that the decreased reaction time significantly mediates the effect of the real symbols on trust in the weak policies. The estimated proportion of the mediation is `r (table_med_RT__nosymbol_INFORMTION_0["Prop. Mediated","Estimate"]*100)%>%round(1)`% compared with the no symbols, and `r (table_med_RT__fakesymbol_INFORMTION_0["Prop. Mediated","Estimate"]*100)%>%round(1)`% compared with the fake symbols. The decreased memory score also mediates the effect (*p*<.1), but only compared with the no symbols group.[^footnote_mediation_memory] 
-
-[^footnote_mediation_memory]: The differences between the analyses of the two measures can be also explained by the fact that memory score is calculated with regard to half of the observations.  
-
-Finally, I also tested this moderated mediation hypothesis via within-subjects analysis. Given that each subject represents one observation, the memory score remains the same, and for the reaction time, I summed the number of seconds subjects spent on both policies (log transformed). The results of this causal mediation analysis are summarized in **Table 4**. 
-
- 
-```{r, echo=FALSE,warning=FALSE,message=FALSE}
-med.fit_RT_nosymbol_delta = 
-  lm(ELABORATION_total_time_log~SYMBOL,
-     data=filter(SVIVA2_01,SYMBOL!=1))
-
-med.out_RT_nosymbol_delta = 
-  lm(WITHIN_DELTA~SYMBOL+ELABORATION_total_time_log,
-     data=filter(SVIVA2_01,SYMBOL!=1))
-
-med.fit_RT_fakesymbol_delta = 
-  lm(ELABORATION_total_time_log~SYMBOL,
-     data=filter(SVIVA2_01,SYMBOL!=0))
-
-med.out_RT_fakesymbol_delta = 
-  lm(WITHIN_DELTA~SYMBOL+ELABORATION_total_time_log,
-     data=filter(SVIVA2_01,SYMBOL!=0))
-
-
-med_RT__nosymbol_delta = mediate(med.fit_RT_nosymbol_delta,
-                                med.out_RT_nosymbol_delta,
-                                treat = "SYMBOL",
-                                mediator = "ELABORATION_total_time_log", 
-                                sims = 100)
-
-med_RT__fakesymbol_delta = mediate(med.fit_RT_fakesymbol_delta,
-                                med.out_RT_fakesymbol_delta,
-                                treat = "SYMBOL",
-                                mediator = "ELABORATION_total_time_log", 
-                                sims = 100)
-
-
-med.fit_memory_nosymbol_delta = 
-  lm(MEMORY_total~SYMBOL,
-     data=filter(SVIVA2_01,SYMBOL!=1))
-
-med.out_memory_nosymbol_delta = 
-  lm(WITHIN_DELTA~SYMBOL+MEMORY_total,
-     data=filter(SVIVA2_01,SYMBOL!=1))
-
-med.fit_memory_fakesymbol_delta = 
-  lm(MEMORY_total~SYMBOL,
-     data=filter(SVIVA2_01,SYMBOL!=1))
-
-med.out_memory_fakesymbol_delta = 
-  lm(WITHIN_DELTA~SYMBOL+MEMORY_total,
-     data=filter(SVIVA2_01,SYMBOL!=1))
-
-
-med_memory__nosymbol_delta = mediate(med.fit_memory_nosymbol_delta,
-                                med.out_memory_nosymbol_delta,
-                                treat = "SYMBOL",
-                                mediator = "MEMORY_total", 
-                                sims = 100)
-
-med_memory__fakesymbol_delta = mediate(med.fit_memory_fakesymbol_delta,
-                                med.out_memory_fakesymbol_delta,
-                                treat = "SYMBOL",
-                                mediator = "MEMORY_total", 
-                                sims = 100)
-```
-  
-
-```{r, echo=FALSE,warning=FALSE,message=FALSE}
-#RT
-table_med_RT__nosymbol_delta = 
-summary(med_RT__nosymbol_delta)%>%
-extract_mediation_summary() 
-
-table_med_RT__fakesymbol_delta = 
-summary(med_RT__fakesymbol_delta)%>%
-extract_mediation_summary()
-
-#memory
-table_med_memory__nosymbol_delta = 
-summary(med_memory__nosymbol_delta)%>%
-extract_mediation_summary() 
-
-table_med_memory__fakesymbol_delta = 
-summary(med_memory__fakesymbol_delta)%>%
-extract_mediation_summary()
-```
-
-**Table 4: Causal mediation analysis (within subjects)**
-
-*Mediator: Reaction time*
-
-```{r, echo=FALSE,warning=FALSE,message=FALSE}
-table_med_RT_delta = 
-  cbind.data.frame(table_med_RT__nosymbol_delta,
-                   table_med_RT__fakesymbol_delta)
-
-kable(table_med_RT_delta, "html",digits = 3) %>%
-  kable_styling(bootstrap_options = c("striped","condensed"), full_width = F, position = "left", font_size = 11)%>%
-  add_header_above(c(" " = 1, "real vs. no symbols" = 4, "real vs. fake symbols" = 4))
-```
-
-*Mediator: Memory score*
-
-```{r, echo=FALSE,warning=FALSE,message=FALSE}
-table_med_memory_delta = 
-  cbind.data.frame(table_med_memory__nosymbol_delta,
-                   table_med_memory__fakesymbol_delta)
-
-kable(table_med_memory_delta, "html",digits = 3) %>%
-  kable_styling(bootstrap_options = c("striped","condensed"), full_width = F, position = "left", font_size = 11)%>%
-  add_header_above(c(" " = 1, "real vs. no symbols" = 4, "real vs. fake symbols" = 4))
-```
-<br>
-
-
-```{r, echo=FALSE,warning=FALSE,message=FALSE}
-t1<- medsens(med_RT__nosymbol_INFORMTION_0, rho.by = 0.1, effect.type = "indirect", 
-             sims = 100)
-t2<- medsens(med_RT__fakesymbol_INFORMTION_0, rho.by = 0.1, effect.type = "indirect", 
-             sims = 100)
-
-t3<- medsens(med_memory__nosymbol_INFORMTION_0, rho.by = 0.1, effect.type = "indirect",              sims = 100)
-
-t4<- medsens(med_RT__nosymbol_delta, rho.by = 0.1, effect.type = "indirect",              sims = 100)
- 
-t5<- medsens(med_RT__fakesymbol_delta, rho.by = 0.1, effect.type = "indirect",              sims = 100)
-
-t6<- medsens(med_memory__nosymbol_delta, rho.by = 0.1, effect.type = "indirect",              sims = 100)
-
-t7<- medsens(med_memory__fakesymbol_delta, rho.by = 0.1, effect.type = "indirect",              sims = 100)
-
-
-#summary(t1)
-```
-
-
-The results of the within subjects mediation analysis similarly supports the moderated mediation hypothesis. The negative effect of the real symbols on the delta within subjects (between trust in the strong and weak policies) is significantly mediated by the negative effect of the real symbols on reaction the time and the memory score. With respect to the reaction time, the estimated proportional mediation is `r (table_med_RT__nosymbol_delta["Prop. Mediated","Estimate"]*100)%>%round(1)`% compared with the no symbols, and `r (table_med_RT__fakesymbol_delta["Prop. Mediated","Estimate"]*100)%>%round(1)`% compared with the fake symbols. Regarding the memory score,the estimated proportional mediation is `r (table_med_memory__nosymbol_delta["Prop. Mediated","Estimate"]*100)%>%round(1)`% and `r (table_med_memory__fakesymbol_delta["Prop. Mediated","Estimate"]*100)%>%round(1)`%, respectively.[^footnote_mediation_sensitivity] 
-
-[^footnote_mediation_sensitivity]: I also conducted a robustness test of "formal sensitivity" for the significant causal mediation models, as proposed by Imai et al. [-@imai_2010]. The sensitivity test examines the extent to which the causal mediation would change as a result of a correlation between the error terms of the mediator and the outcome variable (the "sequential ignorability" assumption). With regard to mediation by reaction time, the sensitivity factors range between 0.2-0.3, which suggest that a correlation greater than these values would violate the sequential ignorability assumption. Imai et al. did not offer any rule of thumb with regard to these factors. Yet, these results are consistent with sensitivity factors reported in previous studies, and therefore the mediation can be considered fairly reliable. The sensitivity factors for the mediation by the memory score are 0.1, which entails that it is less reliable. 
-
-Altogether, the between- and within-subjects analyses are consistent with my third and fourth hypotheses. They demonstrate that subjects who saw the policy plans with the familiar symbols of EPM, were less likely to elaborate on the content of the EPM policies, which in turn attenuated the negative effect of the weak information, and increased their trust in the weak policies. The partial mediation by reaction time is strongly significant, whereas the mediation by the memory test is not sufficiently significant in all models. In some of these models, the familiar symbols also had a significant direct positive effect, which can be theoretically explained by the peripheral effect of symbols via transfer of affect, in accordance with my first hypothesis. 
 
 
 #Discussion and conclusion 
-
-A growing body of Public-Administration research seeks to assess whether and how government organizations can increase citizens' trust through direct communications with citizens. This study contributes to this discussion, by pointing to the influence of symbolic elements in public communications, and unpacking the theoretical mechanisms underlying their effect. Using a rigorous experimental design, embedded in a realistic setting focused on the case of the Israeli Environmental Protection Ministry, I tested the effect of symbolic elements on trust, and its interactions with the substantive content of communications. To the best of my knowledge, this is the first study to explore this interactions in the context of government communications. 
-
-I found that participants' exposure to the familiar symbols of EPM increased their trust in its policy plans, and that the effect was greater when they were presented with a weak policy plan. The latter interaction is partly explained by the negative effect of the symbols on the elaboration of the policy plans. These findings are based the analyses of the responses of more than `r (SVIVA2_01%>%nrow()%>%round(-2))-100` participants to two different policies, and are robust for various model specifications. Moreover, they are evidenced in both between- and within-subjects analysis. These results, if generalizable, suggest that incorporating familiar symbolic elements in public communications increase citizens' trust in government organizations and their actions, via two mechanisms: First, they evoke general positive feelings that are transferred to the specific organizations and policies. Second, by putting citizens in a positive mood, they distract them from thinking about the substantive content of the communication, and thereby, they cause them to disregard its weaknesses. These two supplementary mechanisms are theorized using the framework of the social psychology elaboration likelihood model [@petty_1986; @petty_2011]. 
-
-Certainly, we must be cautious when drawing general conclusions from our findings. This study focuses, empirically, on one public organization, characterized by relatively high investment in symbolic communications, including the use of salient public campaigns with high-profile celebrity comedians. Future studies may further examine the proposed theory by focusing on additional cases of public organizations and policy areas. In addition, this study focuses on policy plans, and therefore we must be cautious about generalizing from these findings to other types of communications.   Specifically, future studies may seek to test my theory with regard to communications that include evidence about performance, and examine the interaction between symbols and information on good/bad outcomes. Another limitation of the study regards the fact that it examines the accumulated effect of a bundle of symbolic elements, without disentangling the distinct effect of each symbol. Future studies may compare the effectiveness of different types of symbolic elements.
-
-Keeping these limitations in mind, this study has several important implications for public administration research. Most importantly, my findings highlight the significant role of branding and symbolic communication in shaping citizens' attitudes about government. Citizens' responses to symbolic elements in communications thus far received relatively little attention in Public administration literature, compared with the abounded research on their responses to information. Yet, this study, and others, demonstrated that symbols can be fairly effective in increasing citizens' trust, and mitigating their negative attitudes [@alonbarkat_2017; @karens_2016; @teodoro_2018]. Furthermore, my findings suggest that symbols decrease citizens' "rational", systematic processing of substantive information. This is good news as far as we are concerned mainly about citizens' *undervaluation* of government performance, and the negative biases that undermine the effectiveness of positive information.[^footnote_biases_ELM]. On the other hand, the emotive effect of government symbols on public opinion is highly problematic, insofar as it challenges the democratic ideal that citizens form their opinions about their government and its actions on the basis of rational thinking [@dahl_1973; @soroka_2010]. Moreover, it becomes especially problematic when symbols are used by poorly performing organizations, or organizations that lack professional expertise. It those cases, symbolic elements can mitigate justified public criticism of government failures. Ultimately, by preserving citizens' trust in them and escaping from public blame, organizations can nurture their long-term positive reputation, which provides them political power and attenuates elected politicians' incentives to monitor and oversight them [@busuioc_2016; @bertelli_2018]. Hence, whereas government communication with citizens is normally perceived as a tool for enhancing democratic responsiveness and accountability, organizations can also use it as a means to undermine them. 
-
-[^footnote_biases_ELM]: This possibility is supported, theoretically, by ELM. According to ELM, biased processing occurs in the central route, whereby people give proportional weight for strong or weak arguments. Accordingly, decreasing the amount of thinking may also decrease biased processing [@petty_1986]. Future research might put this expectation to test. 
-
-This study also contributes to existing behavioral Public Administration research by introducing ELM and applying it as a comprehensive theoretical framework for studying citizens' attitudes formation, and citizens' responses to government communications. ELM has various postulations and implications, but most importantly, it stresses that people respond differently to different communications, depending on people's motivation and ability to think about the subject, and on the quality of arguments and the peripheral cues in the communication. In this study, I applied ELM to theorize the direct and indirect effects of symbolic elements on trust. Future Public-Administration studies may apply ELM and further explore the effects of other peripheral, heuristic cues in government communications, and the moderating role of motivation and ability factors, to enhance our understanding of the conditions under which government communications are likely to be more/less effective. Future studies may also examine the postulations of ELM that persuasion via arguments is more likely to be enduring,  and to increase citizens' cooperation with government policies, compared with persuasion via symbolic elements and heuristic cues.  
-
-Finally, ELM has important methodological implications regarding the external validity of survey experiment studies of citizens' responses to government communications. The participants of these studies, including this particular one, have relatively high motivation to elaborate on the information that scholars presented them, because they may assume that they will be asked about it afterwards. In case they receive payment or other compensation for their participation, this further increases their motivation. By comparison, in the "real world", citizens are far less motivated to invest in thinking about government messages, and they probably also have lower ability to do so, given the high competition on their time and attention. Accordingly, their responses to performance information will less affected by asymmetrical processing of information, because most of them are not likely to process this information in the first place. Instead, most of them will rely on simple cues and heuristic shortcuts. I expect, tentatively, that these differences exacerbate biases due to partisan and political ideology [@james_2017a; @baekgaard_2016] and implicit attitudes about the public-sector [@marvel_2015; @marvel_2015a; @hvidman_2016], while attenuating the role of negativity bias [@nielsen_2017; @olsen_2017]. Future studies may empirically explore these interactions. Regardless, scholars should also take to account this methodological issue when designing survey experiments, and attempt to simulate real world conditions, as much as possible. For instance, they can add filler sections in the survey before the real manipulation to attenuate participants' motivation and ability to elaborate. In addition, because the graphic design of communications also affects motivation and ability to elaborate, as shown here, scholars should simulate the design of real communications.  
-
-
-
-
 
 
 <br>
