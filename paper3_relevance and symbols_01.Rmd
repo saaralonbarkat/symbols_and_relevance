@@ -3,6 +3,9 @@ title: "The persuasion of symbolic elements in government public communications,
 author: '**Saar Alon-Barkat**, PhD candidate; the Hebrew University of Jerusalem;   saar.barkat@mail.huji.ac.il'
 date: " "
 output:
+  word_document: default
+  pdf_document:
+    toc: yes
   html_document:
     theme: flatly
     toc: yes
@@ -10,9 +13,6 @@ output:
       collapsed: no
       smooth_scroll: yes
       toc_depth: 3
-  pdf_document:
-    toc: yes
-  word_document: default
 link-citations: yes
 bibliography: phd_paper_2.bib
 urlcolor: blue
@@ -120,24 +120,11 @@ These theoretical hypotheses are graphically displayed in **Figure 1**.
 
 # Methodology
 
-I tested the above mentioned hypotheses via a randomized survey experiment, which simulates citizens' responses to government organizations' communications about their policy plans. 
+I tested the above mentioned hypotheses via a randomized survey experiment, focusing on the case of the Israeli Environment Protection Ministry (hereafter: EPM). I examined citizens' responses to communications of EPM regarding two of its current policy plans. The first policy regards *reducing the air pollution in the Haifa-Bay area*, located in the north of Israel. This policy issue offers a fortunate case for examining the moderating role of perceived personal relevance. The differences between those who reside in the polluted area and those who do not represent natural variation in this factor. Moreover, because this policy issue is intangible, ambiguous and complicated, the differences in personal relevance are not strongly confounded with differences in personal knowledge, as it is the case in many other policy issues [@petty_1983]. Congruently, those who reside in the polluted Haifa-Bay area are more motivated to scrutinize a communication about the air-pollution in their area of residence, yet are not more capable to do so than those who reside elsewhere. As explained below, the sample population of the study consists of residents of Haifa-bay area, matched with residents of cities at the center of Israel with similar aggregate socio-economic profile. The second policy plan regards *reducing domestic waste and increasing recycling*. This topic is assumed to be equally relevant for Haifa-bay residents and others. Therefore, adding this policy plan enables to further confirm that their different responses to the air-pollution policy, if found, are explained by differences in perceived personal relevance. For the sake of simplicity, I henceforth refer to these two policy plans as "air-pollution" and "recycling" policies. 
 
-<br>
+EPM also makes a good case for this study due to its significant investment in public communications, and its deployment of various symbolic elements. Here, I focused on three symbolic elements which have been used in the EPM's public communications, and became widely recognized by the public. The first symbolic element is the unique brand logo of the EPM, which consists a pair of green and orange leaves that resemble two hands, designed to symbolize peace and harmony with the environment. The second element is the green color, which is strongly associated with taking care of the environment. The third element is the images of two high-profile celebrity comedians which were taken from advertising campaigns of the EPM. Further details about these symbolic elements are found in the supplementary appendix.   
 
-
-##*The empirical case*
-
-Empirically, I focused on the case of the Israeli Environment Protection Ministry (hereafter: EPM), a national level bureau responsible for the formulation, co-ordination and execution of environmental policy in Israel, both at the national and local levels. I examined citizens' responses to communications of EPM regarding two of its current policy plans. The first policy regards reducing the air pollution in the Haifa-Bay area. This policy issue was selected insofar as it offers a fortunate case for examining the moderating role of perceived personal relevance in a natural and realistic setting. The comparison between those who reside in the polluted area and those who don't represents natural variation in the perceived personal relevance of this policy issue. At the same time, because this policy issue is intangible, invisible, ambiguous and complicated, the differences in personal relevance are not strongly confounded with differences in personal knowledge, as it is the case in many other policy issues [@petty_1983]. Accordingly, those who reside in the polluted Haifa-Bay area are more motivated to scrutinize a communication about the air-pollution in their area of residence, yet are not more capable to do so than those who reside elsewhere. As explained below, the sample population of the experiment consists of residents of Haifa-bay area, matched with residents of cities at the center of Israel with similar aggregate socio-economic profile. The second policy plan regards reducing domestic waste and increasing recycling. This policy issue is assumed to be equally relevant for Haifa-bay residents and others. Therefore, comparing between these two policies enables me to confirm that differences between the two groups, if found, are explained by differences in the perceived personal relevance of the policy issue. For the sake of simplicity, I henceforth refer to these two policy plans as "air-pollution" and "recycling" policies. 
-
-EPM also makes a good case for this study due to its significant investment in public communications, and its deployment of various symbolic elements. Here, I focused on three symbolic elements which have been used in the EPM's public communications, and became widely recognized by the public. The first symbolic element is the unique brand logo of the EPM, which consists a pair of green and orange leaves that resemble two hands, designed to symbolize peace and harmony with the environment. The second symbolic element is the green color, which is strongly associated with taking care of the environment. The third element is the images of two high-profile celebrity comedians which were taken from advertising campaigns of the EPM. Further details about these symbolic elements are found in the supplementary appendix.   
-
-<br>
-
-##*Sample selection and recruitment*
-
-The survey was conducted in late January 2018. To capture natural variation in the personal relevance of the air-pollution policy, I sampled citizens from the major cities in the Haifa-Bay area (*Haifa*, *Nesher*, *Qiryat-Hayiim*, *Qiryat-Bialik*, *Qiryat-Mozkin*, *Qiryat-Ata* and *Qiryat-Yam*), and matched them with citizens from cities with a similar profile and population size at the center of the country (*Natania*, *Petach-Tikva* and *Rishon-Lezion*). I will henceforth refer to these two groups of cities as Haifa-bay and center. 
-
-I conducted the survey experiment through Qualtrics Survey Software. To select and recruit residents of these specific cities, I was assisted by an Israeli internet research panel company *iPanel*. The online survey link was sent by iPanel, between 28.1-1.2.2018. A total of `r N_0` respondents completed the survey (a response rate of `r round((N_0/5077)*100,1)`%).[^footnote_responserate] Of these, I later filtered out `r N_0-N_1` observations (`r round(((N_0-N_1)/N_0)*100,1)`%) due to multiple entries from the same IP address (n=`r filter_IP`), failure at the instructional manipulation test (n=`r filter_IMC`), submitting the survey in less than 3 or more than 30 minutes (n=`r filter_time`), and respondents under the age of 18 (n=`r filter_age`). These filters are not significantly associated with the areas or the experimental conditions. Ultimately, following this rigorous screening, I ended up with a sizable sample of `r N_1` subjects, of whom `r SVIVA2_01_haifa%>%nrow()` live in the Haifa-bay cities, and `r SVIVA2_01_center%>%nrow()` live in the center cities.
+The survey was conducted online through Qualtrics Survey Software. To capture natural variation in the personal relevance of the air-pollution policy, I sampled citizens from the major cities in the Haifa-Bay area (*Haifa*, *Nesher*, *Qiryat-Hayiim*, *Qiryat-Bialik*, *Qiryat-Mozkin*, *Qiryat-Ata* and *Qiryat-Yam*), and matched them with citizens from cities with a similar profile and population size at the center of the country (*Natania*, *Petach-Tikva* and *Rishon-Lezion*). I will henceforth refer to these two groups of cities as Haifa-bay and center. To select and recruit residents of these specific cities, I was assisted by an Israeli internet research panel company *iPanel*. The online survey link was sent by iPanel, between 28.1-1.2.2018. A total of `r N_0` respondents completed the survey (a response rate of `r round((N_0/5077)*100,1)`%).[^footnote_responserate] Of these, I later filtered out `r N_0-N_1` observations (`r round(((N_0-N_1)/N_0)*100,1)`%) due to multiple entries from the same IP address (n=`r filter_IP`), failure at the instructional manipulation test (n=`r filter_IMC`), submitting the survey in less than 3 or more than 30 minutes (n=`r filter_time`), and respondents under the age of 18 (n=`r filter_age`). These filters are not significantly associated with the areas or the experimental conditions. Ultimately, following this rigorous screening, I ended up with a sizable sample of `r N_1` subjects, of whom `r SVIVA2_01_haifa%>%nrow()` live in the Haifa-bay cities, and `r SVIVA2_01_center%>%nrow()` live in the center cities.
 
 [^footnote_responserate]: According to iPanel's reporting, 5,077 people were invited to fill the survey. Of these people, approximately 330 women entered the survey, but were eventually denied of access, to avoid the over-representation of women in the sample. Hence, the response rate, when reducing those who were denied of access, is slightly higher  and reaches `r round((N_0)/(5077-330)*100,1)`%.   
 
@@ -145,44 +132,69 @@ I conducted the survey experiment through Qualtrics Survey Software. To select a
 
 ## *Procedure*
 
-To disguise the purpose of the experiment, the survey was presented to the participants as a study about citizens' attitudes regarding environmental policies in general, as opposed to attitudes about EPM or the specific two policies. The participants were first asked pre-manipulation questions about their political ideology and their trust in government ministries in general and evaluation of their performance. Thereafter, they were asked about their interest in environmental policy issues, the extent to which they follow these issues in the media, their preference for more/less government investment in this field. They were also asked to describe the most salient environmental issue in their particular area of residence.[^footnote_relevance_manipulation] 
+To disguise the purpose of the experiment, the survey was presented to the participants as a study about citizens' attitudes regarding environmental policies in general, as opposed to attitudes about EPM or the specific two policies. The participants were first asked pre-manipulation questions about their political ideology and their trust in government ministries in general and evaluation of their performance. Thereafter, they are assigned to treatment and control conditions of perceived personal relevance (hereafter: relevance). Subjects in the relevance treatment group are asked three questions about their interest in environmental policy issues, the extent to which they follow these issues in the media, and their preference for more/less government investment in this field. In addition to these three likert-scale questions, they are also asked to describe the most salient environmental issue in their particular area of residence. These treatment items were designed to prime subjects to think about environmental issue and their relevance to their own lives. In addition, the latter open-ended question was designed specifically to prime Haifa-bay residents to think about the issue of the air pollution and its personal relevance. Subjects in the relevance control group are asked equivalent questions about their field of occupation.
 
-[^footnote_relevance_manipulation]: The latter questions about environmental policy was initially designed as a manipulation of for perceived personal relevance (specifically for Haifa-Bay subjects with regard to the air-pollution policy). The questions which are mentioned above were included in the treatment group, whereas subjects in the control group were asked instead equivalent questions about their field of occupation. However, manipulation checks suggested that these priming questions did not enhance the perceived personal relevance of these policies for the participants (either from Haifa-Bay or center cities). Therefore, I will not regard to this treatment in the paper.      
+Thereafter, participants were told that they will be presented with two government policy plans regarding specific environmental issues, obtained from EPM's official publication of its annual work plan for the year 2018. Each policy plan included the title of the policy goal (i.e. "reducing the levels of air pollution in the Haifa bay"), followed by short descriptions of two actions to be taken by EPM in order to fulfill this goal (30-50 words each). Per each policy, subjects were randomly allocated to one of two conditions of substantive information (hereafter: information): strong policy (i.e. logically persuasive policy plan) or weak policy (i.e. logically unpersuasive). Each subject, moreover, was exposed to one strong and one weak policy communication. For example, a subject who first received a strong air-pollution policy, later received the weak recycling policy, and vice versa. The actions which were mentioned in the strong policy plans condition were taken from the real EPM work plan and from other reports and official sources of EPM. The activities that were included in the weak policy plans condition were fictional, and were designed to represent measures that are likely to be perceived by subjects as extremely incompatible with achieving the policy goals, yet still sufficiently reliable. For instance, the proposed actions for the air-pollution strong policy involved increasing the supervision of polluting factories, and reducing diesel smoke emissions by vehicles, whereas the actions for the weak policy were decreasing the supervision of polluting factories, and raising citizens' awareness of the Ministry's efforts to improve air quality. The full texts of the weak and strong conditions for the two policy plans is displayed in the supplementary appendix. 
 
-Thereafter, participants were told that they will be presented with two government policy plans regarding specific environmental issues, obtained from EPM's official publication of its annual work plan for the year 2018. Each policy plan included the title of the policy goal (i.e. "reducing the levels of air pollution in the Haifa bay"), followed by short descriptions of two actions to be taken by EPM in order to fulfill this goal (30-50 words each). 
+In addition to information manipulation, the participants were randomly assigned to one of three conditions of symbolic elements in the communication (hereafter: symbols): treatment ("real symbols"), control-"no symbols" and control-"fake symbols". In the symbol treatment condition, the two policies (again, one weak and one strong) are displayed with the above-mentioned three symbolic elements. In the control no-symbols condition, the two policies are displayed in a minimal black and white design, and without the logo and the celebrities images. In the control fake-symbols condition, the green color is replaced with blue, the EPM logo is replaced by a fake logo and the images of celebrities from the campaigns are replaced with two edited images of unfamiliar people. The purpose of the fake-logo condition is to isolate the symbolic meaning of the EPM's graphic identifiers and distinguish it from the possible effect of their aesthetic design.[^footnote_symbols_manipulation_checks] The symbols conditions are displayed in **Appendix B**. Further details about the images in the real and fake symbols conditions are found in the supplementary appendix. That each subject received two policies which were presented under the same symbol condition, but under different information conditions (i.e. one strong and one weak), enables me later to analyze the interaction between the areas and the information conditions both via between- and within-subjects. 
 
-The air-pollution and recycling policy plans were presented to each subject in a random order. Per each policy, the subjects were randomly allocated to one of two conditions of substantive information (hereafter: information): strong policy (i.e. logically persuasive policy plan) and weak policy (i.e. logically unpersuasive). The policy activities which were mentioned in the strong policy plans condition were taken from the real EPM work plan and from other reports and official sources of EPM. The proposed actions for the air-pollution strong policy involved increasing the supervision of polluting factories, and reducing diesel smoke emissions by vehicles in the Haifa-Bay area. The strong recycling policy regarded increasing the supervision of manufacturers and reducing the use of disposable bags. The activities that were included in the weak policy plans condition were fictional, and were designed to represent measures which are likely to be perceived by subjects as extremely incompatible with achieving the policy goals, yet still sufficiently reliable. Accordingly, the weak policy plans regarded reducing of regulatory burden on the factories/ manufacturers, and raising citizens' awareness of the efforts to improve air quality/reduce waste. The full texts of the weak and strong conditions for the two policy plans is displayed in Appendix A. For each subject, one of the two policies was strong and the other was weak, which enables me to compare both between- and within-subjects. For example, a subject who first received a strong air-pollution policy, later received the weak recycling policy, and vice versa.  
+[^footnote_symbols_manipulation_checks]: In two prior surveys, I empirically confirmed that the fake symbols are unfamiliar, do not have strong positive or negative affect, and are not strongly associated with environment policy and EPM. The results of these examinations are reported in the supplementary appendix. 
 
-The participants are also randomly assigned to one of three conditions of symbolic elements in the communication (hereafter: symbols): treatment, control no-symbols and control fake-symbols. In the symbol treatment condition, the two policies (again, one weak and one strong) are displayed with the above-mentioned three symbolic elements: the titles and the footer are colored with green, EPM logo is displayed at the top of the page, and the celebrities' images from the campaigns are attached and labeled "EPM advertisement". Each communication included the image of one celebrity: Rosenblum's image from the campaign for reducing the use of disposable bags is attached to the recycling policy, given the relevance of the campaign to the policy plan; Friedman's image from the campaign of "starting to think green", which was more general and regarded to a variety of environmental issues, was attached to the air-pollution policy. In the control no-symbols condition, the two policies are displayed in a minimal black and white design, and without the logo and the celebrities images. Finally, in the control fake-symbols condition, the green color is replaced with blue, the EPM logo is replaced by a fake logo and the images of celebrities from the campaigns are replaced with two edited images of unfamiliar people. The purpose of the fake-logo condition is to isolate the symbolic meaning of the EPM's graphic identifiers and distinguish it from the possible effect of their aesthetic design. Accordingly, I specifically designed the "fake" symbols to that they will resemble the real symbols and have equivalent aesthetic qualities, without activating emotions and associations which can be attached to the government ministry and environmental issues. In that sense, it can be regarded as a placebo. In two prior surveys, I empirically confirmed that the fake symbols are unfamiliar, do not have strong positive or negative affect, and are not strongly associated with environment policy and EPM (supplementary appendix ##TBA##). The symbols conditions are displayed in the Appendix B. 
+Each policy plan was followed by six questions questions about respondents' trust in the policy. Afterwards, the subjects conducted a memory test on the last policy that was presented to them, and were asked about the extent to which they elaborated on it and about the personal relevance of the policy plans. Thereafter, I included an instructional manipulation check (IMC) item, which aims to assess participants’ diligence. After a set of demographic questions, I conducted a manipulation check, in which I asked the participants whether they recognize the Ministry's logo, and the two images of the celebrities. Finally, the participants were debriefed about the manipulations, and the possible deception. An English translation of the full survey is available from the supplementary appendix.
 
-Each policy plan was followed by questions about respondents' trust in the policy. Afterwards, the subjects were asked about their perceived level of elaboration on the last policy that was presented to them, conducted a memory test. They were also asked about the extent to which they perceive the two policies as personally relevant to themselves. Thereafter, I included an instructional manipulation check (IMC) item, which aims to assess participants’ diligence. After a set of demographic questions, I conducted a manipulation check, in which I asked the participants whether they recognize the Ministry's logo, and the two images of the celebrities. Finally, the participants are debriefed about the manipulations, and the possible deception. An English translation of the full survey
-is available from the supplementary appendix.
-
-Altogether, for each policy plan, the survey experiment has a factorial design of 3 (symbols: real symbols, fake-symbols, no-symbols) x 2 (information: strong vs. weak policy). The experimental groups are fairly balanced with respect to demographics, pre-manipulation variables and the two areas. The assignment to the different experimental groups is graphically presented in Figure 3.  
+Altogether, for each policy plan, the survey experiment has a factorial design of 3 (symbols: real symbols, fake-symbols, no-symbols) x 2 (information: strong vs. weak policy) x 2 (relevance: treatment vs. control).[^footnote_information_symbols_paper]  The assignment to the different experimental groups, across the two areas, is graphically presented in **Figure 2**. The experimental groups are fairly balanced with respect to the two areas, as well as to demographics, and pre-manipulation variables.
 
 
-
-
+[^footnote_information_symbols_paper]: In addition to the above-mentioned hypotheses, the experiment was also designed to test a different set of hypotheses regarding the interaction between symbols and information, and its moderation by the effect of symbols on elaboration. In this paper, however, I focus on those methodological and empirical parts of the study that are consequential for the examination of the moderating role or perceived personal relevance. The methodological aspects which are relevant for examining the additional hypotheses are described in a separate paper. 
 
 <br>
+**Figure 2: Experimental design for policy plan communications**
+![](D:/UNIVERSITY/R/SVIVA/experiment 2 01-2018/myfigures/experiment_flow_relevance.png) 
 
-
-##*Data collection*
-
-
-<br>
-
-
-## *Procedure*
-
-
-
-<br>
-**Figure 3: Experimental design for policy plan communications**
 <br>
 
 
 ##*Variables*
+
+
+```{r, echo=FALSE, warning=FALSE, message=F}
+alpha_air_trust = psych::alpha(select(SVIVA2_01, TRUST_air_q1,
+                               TRUST_air_q2,
+                               TRUST_air_q3,
+                               TRUST_air_q4,
+                               TRUST_air_q5,
+                               TRUST_air_q6))[["total"]][["raw_alpha"]]%>%round(2)
+
+
+alpha_waste_trust = psych::alpha(select(SVIVA2_01, TRUST_waste_q1,
+                               TRUST_waste_q2,
+                               TRUST_waste_q3,
+                               TRUST_waste_q4,
+                               TRUST_waste_q5,
+                               TRUST_waste_q6))[["total"]][["raw_alpha"]]%>%round(2)
+
+alpha_trust_comb = ((alpha_air_trust+alpha_waste_trust)/2)%>%round(2)
+
+
+cor_elaboration_air = cor.test(SVIVA2_01$MEMORY_air_score,SVIVA2_01$ELABORATION_air_time_log,method="spearman")$estimate%>%mean()%>%round(2)
+
+cor_elaboration_waste = cor.test(SVIVA2_01$MEMORY_waste_score,SVIVA2_01$ELABORATION_waste_time_log,method="spearman")$estimate%>%mean()%>%round(2)
+
+cor_RT_delta = cor.test(SVIVA2_01$ELABORATION_total_time_log,
+                          SVIVA2_01$WITHIN_DELTA)$estimate%>%mean()%>%round(2)
+
+cor_memory_delta = cor.test(SVIVA2_01$MEMORY_total,
+                          SVIVA2_01$WITHIN_DELTA)$estimate%>%mean()%>%round(2)
+
+
+t_air_information = t.test(TRUST_air_INDEX~INFORMATION_air,SVIVA2_01)
+t_waste_information = t.test(TRUST_waste_INDEX~INFORMATION_waste,SVIVA2_01)
+ 
+```
+
+My outcome variable is citizens' trust in policy. This variable is measured in the survey for each policy plan using a composite index of six likert scale items (Cronbach’s alpha = `r alpha_air_trust` and `r alpha_waste_trust` for the air-pollution and waste policies respectively), which were adopted and slightly modified from validated trust scales used by previous public administration studies on trust in government [@grimmelikhuijsen_2013; @grimmelikhuijsen_2014; @karens_2016; @porumbescu_2016; @grimmelikhuijsen_2017]. Participants were asked to indicate their agreement with the following statements, between 1 (weakly agree) and 7(strongly agree): (1) I believe that the actions mentioned in the policy plan will assist in fulfilling the policy goal; (2) I believe that the actions mentioned in the policy plan were designed in a professional manner; (3) I believe that the policy plan is in the interest of citizens; (4) I believe that the policy plan reflects a genuine attempt to improve the well-being of citizens; (5) I believe that EPM made an honest attempt to design a good policy plan; (6) I believe that the Ministry of Environmental Protection aims to keep its commitments in that policy plan. 
+
+My key independent variables are the manipulations of symbols and information in the communication, as described above, and their interactions with the perceived personal relevance of the communication. I  operationalize the latter variable both experimentally (through the abovementioned priming questions) and observationally (through the distinction between the Haifa-Bay and center). I coded living in Haifa-bay area according to respondents’ reporting on residence, work or studying in one of the Haifa-Bay cities.
 
 <br>
     
@@ -196,53 +208,7 @@ Altogether, for each policy plan, the survey experiment has a factorial design o
 
 <br>
 
-##Appendix A: Information manipulation
-
-**Air-pollution policy** (Reducing the air-pollution in the Haifa-Bay)
-
-EPM is working to reduce the air-pollution in the Haifa-Bay through: 
-
-*Strong*
-
-* **Increasing the supervision of the factories in Haifa-Bay**.
-In order to reduce the emissions of pollutants from the factories in the industrial area, the Ministry is working to increase the supervision of the factories in several ways. The ministry will increase the number of inspection visits, expand the use of unannounced inspections, and increase the amount of fines for pollutants.
-
-* **Reduction of smoke emissions from vehicles in Haifa Bay**.
-The Ministry is taking a number of actions to reduce the amount of air-pollution from vehicles in the area. The ministry promotes the installation of particle filters in hundreds of vehicles in the area, and promotes the operation of a "clean-air area" that restricts the entry of polluting vehicles.
-
-*Weak*
-
-* **Decreasing the supervision of the factories in Haifa-Bay**.
-The Ministry is preparing for a change in the method of supervision of the factories. The ministry will reduce the number of inspection visits and unannounced inspections, rely on factories' self-reports on pollutant emissions, and reduce the amount of fines. The change is coordinated with members of the industry, which are committed to reducing the pollution, and it will assist to build mutual respect between them and the ministry.
-
-* **Raising citizens' awareness of the efforts to improve air quality**.
-In recent years, the Ministry has taken steps to reduce air pollution in Haifa-Bay, which have been partially successful. The Ministry is working to raise awareness of its efforts and to emphasize their success in order to improve its image among the residents. To this end, the ministry has increased its investment in public relations and publicity in this subject.
-
-<br>
-
-**Recycling policy** (Reducing waste and increasing recycling)
-
-EPM is working to reduce the amount of waste and increase its recycling through:
-
-*Strong*
-
-* **Packaging recycling - Increased supervision of manufacturers**.
-In order to reduce the amount of waste generated from packaging and to encourage recycling, the Ministry implements the Packaging act, which imposes on manufacturers and importers the responsibility for recycling the packaging. The Ministry will work to increase enforcement by virtue of this act, and will enforce it with regard to additional manufacturers and importers.
-
-* **Reducing the usage of disposable bags**.
-In order to reduce the use of disposable plastic bags, the Ministry enforces the Bags act, which sets a compulsory charge on bags sold in large retail chains and imposes reporting obligations on the chains. The Ministry works to implement the act, and encourages the transition to reusable grocery bags.
-
-*Weak*
-
-* **Packaging recycling - Decreased supervision of manufacturers**.
-The Ministry is preparing to a change in the method of supervision of the manufacturers, who are responsible for the recycling of product packaging by virtue of the act The ministry will reduce the number of inspections, rely on manufacturers' self-reports regarding their compliance with the requirements of the act, and reduce the amount of fines. The change is coordinated with members of the industry, which are committed to the issue, and it will assist to strengthen mutual respect between them and the ministry.
-
-* **Reducing the usage of disposable bags**.
-In recent years, the Ministry has taken steps to encourage the reduction of waste, which have been partially successful. The Ministry works to raise awareness of the actions taken and to highlight their success in order to improve its image among the public. To this end, the ministry has increased its investment in public relations and publicity in this subject.
-
-<br>
-
-##Appendix B: Symbols manipulation
+##Appendix A: Symbols manipulation
 ![](D:/UNIVERSITY/R/SVIVA/experiment 2 01-2018/myfigures/symbols_manipulation.png) 
 
 <font size="0.5">
