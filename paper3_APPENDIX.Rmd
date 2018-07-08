@@ -209,8 +209,63 @@ SVIVA2_01 %>%
 
 #4. Supplementary analyses
 
+```{r,results="asis",echo=FALSE,warning=FALSE,message=FALSE}
+library(car)
 
-**Table XX: Regression table - subjective reporting of perceived personal relevance**
+SVIVA2_comb_robust_1 = SVIVA2_00 %>%
+  filter(!(AGE %in% 1:17)) %>% 
+  dplyr::select(IP,USER_ID,AREA,AREA_names,
+      RELEVANCE_exp,RELEVANCE_exp_n,
+      SYMBOL,SYMBOL_n,
+      INFORMATION_air,INFORMATION_air_n,
+      INFORMATION_waste,INFORMATION_waste_n,
+      TRUST_air_INDEX,
+      TRUST_waste_INDEX,
+      ELABORATION_air_time_log,
+      ELABORATION_waste_time_log,
+      ELABORATION_air_time,
+      ELABORATION_waste_time,
+      MEMORY_air_score,
+      MEMORY_waste_score,
+      GOV_TRUST,
+      GENDER,
+      AIR_order,
+      WASTE_order) %>% 
+  gather(key=policy,value=trust,TRUST_air_INDEX,TRUST_waste_INDEX) %>% 
+  mutate(INFORMATION = ifelse(policy=="TRUST_air_INDEX",INFORMATION_air,
+                              INFORMATION_waste),
+         INFORMATION_n = ifelse(policy=="TRUST_air_INDEX",INFORMATION_air_n,
+                                INFORMATION_waste_n),
+         ELABORATION_time_log = ifelse(policy=="TRUST_air_INDEX",ELABORATION_air_time_log,
+                                       ELABORATION_waste_time_log),
+         MEMORY_score = ifelse(policy=="TRUST_air_INDEX",MEMORY_air_score,
+                               MEMORY_waste_score),
+         ELABORATION_time = ifelse(policy=="TRUST_air_INDEX",ELABORATION_air_time,
+                                       ELABORATION_waste_time)) %>% 
+  mutate(TRUST_air_INDEX = ifelse(policy=="TRUST_air_INDEX",trust,NA),
+         TRUST_waste_INDEX = ifelse(policy=="TRUST_waste_INDEX",trust,NA),
+         INFORMATION_weak = Recode(INFORMATION,"0=1;1=0"),
+         AREA_center = Recode(AREA,"0=1;1=0"),
+         SYMBOL_t = factor(Recode(SYMBOL,"1=2;2=1")),
+         SYMBOL_t.r = factor(Recode(SYMBOL,"0=2;2=1;1=0")),
+         SYMBOL_t.r_2 = factor(Recode(SYMBOL,"0=2;2=0")),
+         ORDER = ifelse(policy=="TRUST_air_INDEX",AIR_order,WASTE_order))
+
+```
+
+
+
+In the tables below, I report the results of additional robust analyses testing the research hypotheses regarding the moderating role of perceived personal. In **Table A3** I add subjects' subjective reporting on the personal relevance of each of the two policy plans, and its interaction with the symbols and information manipulations, controlling for the areas. Higher scores of perceived personal relevance did not attentuate the positive effect of the real symbols. However, it did slightly increase the effect of the weak information, regarding the air-pollution policy, in line with Hypothesis 2.
+
+In **Tables A4 - A6**, I examine the effect of the operationizations of personal relevance (i.e. the differences between the areas and the relevance manipulation) on three measures for subjects elaboration of the two policy plans. The first measure is the number of seconds participants spent on scanning the policy plans, log transformed (hereafter: reaction time). The second measure is participants' score in a memory test, which was conducted during the survey. Participants were asked to indicate whether a list of four items were included in the second policy plan which was presented to them, of which two were/were not included (participants could also select “I don’t know”). The memory score is calculated as the number of correct items selected by the participant minus the number of incorrect items, with a minimum score of zero. Accordingly, participants could receive the scores of 0, 1 or 2. The third measure is the delta of each subject’s trust in the strong and weak policy plans that were presented to them. The latter, within-subject analysis, utilizes the research design in which every participant was presented with one weak and one strong policies. Neither residing in the Haifa-bay nor the relevance treatment increase the elaboration of policy plans, based on these three measures.  
+
+In **Tables A7** I add additional a set of individual-level control variables, and in **Table A8** I further control for additional factors that can be related to participants' motivation to elaborate, including having young children, general interest in environmental issues and following environmental issues in the media. The two final questions were presented only to those subjects assigned to the relevance treatment condition, and therefore, their analysis is based only on that sample (n = `r SVIVA2_01 %>% filter(RELEVANCE_exp==1) %>% nrow()`).Finally, in **Table A9**, I add those subjects who were filttered, except for those who are under the age of 18 (n_subjects = `r SVIVA2_comb_robust_1 %>%distinct(IP) %>% nrow()`). The effects of the symbols and information manipulations and their interaction with the areas and the relevance manipulation are consistent with the main models presented in the paper in all these analyses.       
+
+<br>
+
+
+
+**Table A3: Regression table - subjective reporting of perceived personal relevance**
 
 ```{r,results="asis",echo=FALSE,warning=FALSE,message=FALSE}
 mod_air_1.1_apx = lm(TRUST_air_INDEX~SYMBOL_t+INFORMATION_weak,data=SVIVA2_01_comb)
@@ -243,7 +298,7 @@ stargazer(mod_air_1.2_apx,mod_air_1.3_apx,
 
 <br>
 
-**Table XX: Regression table - effect of personal relevance on reaction time**
+**Table A4: Regression table - effect of personal relevance on reaction time**
 
 ```{r,results="asis",echo=FALSE,warning=FALSE,message=FALSE}
 mod_RT_air_1.1_apx = lm(ELABORATION_air_time_log~AREA_center+RELEVANCE_exp,data=SVIVA2_01_comb)
@@ -269,7 +324,7 @@ stargazer(mod_RT_air_1.1_apx,mod_RT_air_1.2_apx,
 
 <br>
 
-**Table XX: Regression table - effect of personal relevance on memory score**
+**Table A5: Regression table - effect of personal relevance on memory score**
 
 ```{r,results="asis",echo=FALSE,warning=FALSE,message=FALSE}
 mod_memory_air_1.1_apx = lm(MEMORY_air_score~AREA_center+RELEVANCE_exp,data=SVIVA2_01_comb)
@@ -295,17 +350,16 @@ stargazer(mod_memory_air_1.1_apx,mod_memory_air_1.2_apx,
 
 <br>
 
-**Table XX: Regression table - effect of personal relevance on within-subject delta between strong and weak policies**
+**Table A6: Regression table - effect of personal relevance on within-subject delta between strong and weak policies**
 
 ```{r,results="asis",echo=FALSE,warning=FALSE,message=FALSE}
 mod_delta_1.1_apx = lm(WITHIN_DELTA~AREA_center+RELEVANCE_exp,data=SVIVA2_01)
 mod_delta_1.2_apx = update(mod_delta_1.1_apx,. ~ .+RELEVANCE_exp*AREA_center)
 
 
-stargazer(mod_memory_air_1.1_apx,mod_memory_air_1.2_apx,
-          mod_memory_waste_1.1_apx,mod_memory_waste_1.2_apx,
+stargazer(mod_delta_1.1_apx,mod_delta_1.2_apx,
           type="html",style = "apsr",
-          dep.var.labels=c("Air-pollution","Recycling"),
+          dep.var.labels=c("Within-subject delta"),
           covariate.labels=c("Area (0=Haifa-Bay; 1=center)",
                              "Relevance treatment",
                              "Area x Relevance treatment"),
@@ -319,7 +373,7 @@ stargazer(mod_memory_air_1.1_apx,mod_memory_air_1.2_apx,
 <br>
 
 
-**Table XX: Regression table - adding control variables**
+**Table A7: Regression table - adding control variables**
 
 ```{r,results="asis",echo=FALSE,warning=FALSE,message=FALSE}
 mod_air_1.1_apx = lm(TRUST_air_INDEX~SYMBOL_t+INFORMATION_weak+AREA_center+RELEVANCE_exp+GENDER+IDEOLOGY+GOV_TRUST+INCOME+EDUCATION,data=SVIVA2_01_comb)
@@ -359,7 +413,8 @@ stargazer(mod_air_1.1_apx,mod_air_1.2_apx,
 
 <br>
 
-**Table XX: Regression table - adding personal relevance and motivational control variables**
+
+**Table A8: Regression table - adding personal relevance and motivational control variables**
 
 ```{r,results="asis",echo=FALSE,warning=FALSE,message=FALSE}
 mod_air_1.1_apx = lm(TRUST_air_INDEX~SYMBOL_t+INFORMATION_weak+AREA_center+RELEVANCE_exp+CHILDREN_young,data=SVIVA2_01_comb)
@@ -384,6 +439,41 @@ stargazer(mod_air_1.1_apx,mod_air_1.2_apx,mod_air_1.3_apx,mod_air_1.4_apx,
                              "Follows environmental issues in media",
                              "Having young children (under 12)",
                               "Area x Real symbols",
+                             "Area x Fake symbols",
+                             "Area x Weak Information",
+                             "Relevance treatment x Real symbols",
+                             "Relevance treatment x Fake symbols",
+                             "Relevance treatment x Weak Information"),
+          omit.stat = c("rsq","ser", "f"),
+          initial.zero = FALSE,
+          notes = "*Notes*: Table entries are nonstandardized OLS-regression coefficients, with Standard errors in parentheses. The reference category for the symbols manipulation conditions is the control (no symbols).",
+          notes.append = FALSE)
+
+```
+
+<br>
+
+**Table A9: Regression table - unfiltered sample**
+
+```{r,results="asis",echo=FALSE,warning=FALSE,message=FALSE}
+mod_air_1.1_apx = lm(TRUST_air_INDEX~SYMBOL_t+INFORMATION_weak+AREA_center+RELEVANCE_exp,data=SVIVA2_comb_robust_1)
+mod_air_1.2_apx = update(mod_air_1.1_apx,. ~ . +AREA_center*(SYMBOL_t+INFORMATION_weak)+RELEVANCE_exp*(SYMBOL_t+INFORMATION_weak))
+
+mod_waste_1.1_apx = lm(TRUST_waste_INDEX~SYMBOL_t+INFORMATION_weak+AREA_center+RELEVANCE_exp,data=SVIVA2_comb_robust_1)
+mod_waste_1.2_apx = update(mod_waste_1.1_apx,. ~ . +AREA_center*(SYMBOL_t+INFORMATION_weak)+RELEVANCE_exp*(SYMBOL_t+INFORMATION_weak))
+
+
+
+stargazer(mod_air_1.1_apx,mod_air_1.2_apx,
+          mod_waste_1.1_apx,mod_waste_1.2_apx,
+          type="html",style = "apsr",
+          dep.var.labels=c("Air-pollution","Recycling"),
+          covariate.labels=c("Real symbols",
+                             "Fake-symbols",
+                             "Weak policy (0=strong policy)",
+                             "Area (0=Haifa-Bay; 1=center)",
+                             "Relevance treatment",
+                             "Area x Real symbols",
                              "Area x Fake symbols",
                              "Area x Weak Information",
                              "Relevance treatment x Real symbols",
