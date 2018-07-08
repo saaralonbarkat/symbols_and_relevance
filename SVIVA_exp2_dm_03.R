@@ -43,11 +43,11 @@ mutate(ENVIRONMENT_INTEREST = Recode(SVIVA2_raw$Q3.2,"0=NA"),
        ENVIRONMENT_PREFERENCE = Recode(SVIVA2_raw$Q3.4,"0=NA"),
        GOV_EVALUATION = SVIVA2_raw$Q2.3,
        GOV_TRUST = SVIVA2_raw$Q2.4,
-       IDEOLOGY = SVIVA2_raw$Q2.5,
+       IDEOLOGY = Recode(SVIVA2_raw$Q2.5,"0=NA"),
        CHILDREN = if_else(SVIVA2_raw$Q313==5,0,1),
        CHILDREN_young = if_else(SVIVA2_raw$Q313 %in% c(1,2),1,0),
        FACTORIES_relatives = Recode(SVIVA2_raw$Q314,"0=NA;1=0;2=1"))%>%
-  
+mutate(IDEOLOGY=IDEOLOGY-1) %>%   
   
   ##demographics
   mutate(AGE = Recode(SVIVA2_raw$Q24.2_1,"0=NA"),
@@ -532,7 +532,13 @@ SVIVA2_01_comb = SVIVA2_01 %>%
       EDUCATION,
       RECOGNIZE_SVIVA_logo,
       RECOGNIZE_air_real,
-      RECOGNIZE_waste_real) %>% 
+      RECOGNIZE_waste_real,
+      RELEVANCE_air_obs,
+      RELEVANCE_waste_obs,
+      ENVIRONMENT_INTEREST,
+      ENVIRONMENT_FOLLOW,
+      CHILDREN,
+      CHILDREN_young) %>% 
   gather(key=policy,value=trust,TRUST_air_INDEX,TRUST_waste_INDEX) %>% 
   mutate(INFORMATION = ifelse(policy=="TRUST_air_INDEX",INFORMATION_air,
                               INFORMATION_waste),
@@ -542,8 +548,10 @@ SVIVA2_01_comb = SVIVA2_01 %>%
                                        ELABORATION_waste_time_log),
          MEMORY_score = ifelse(policy=="TRUST_air_INDEX",MEMORY_air_score,
                                MEMORY_waste_score),
-         ELABORATION_time = ifelse(policy=="TRUST_air_INDEX",ELABORATION_air_time,
-                                       ELABORATION_waste_time)) %>% 
+         ELABORATION_time = ifelse(policy=="TRUST_air_INDEX",RELEVANCE_air_obs,
+                                   RELEVANCE_waste_obs),
+         RELEVANCE_obs = ifelse(policy=="TRUST_air_INDEX",ELABORATION_air_time,
+                                ELABORATION_waste_time)) %>% 
   mutate(TRUST_air_INDEX = ifelse(policy=="TRUST_air_INDEX",trust,NA),
          TRUST_waste_INDEX = ifelse(policy=="TRUST_waste_INDEX",trust,NA),
          INFORMATION_weak = Recode(INFORMATION,"0=1;1=0"),
