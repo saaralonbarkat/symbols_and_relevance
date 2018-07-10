@@ -63,56 +63,53 @@ library(stargazer)
 
 #1. Supplementary information about the symbolic elements.
 
-In this section, I provide additional details about the creation of the "real" and "fake" symbolic elements that were included in the policy plans in the survey. 
+In this section, I provide additional details about the of the EPM's symbols which were used in the experiment (the "real" symbols), as well as on the fictional, "fake", symbols.
 
 ##Real symbols
 
-The campaign images which were included in the policy plans in the real symbols condition were downloaded from EPM's official website (http://www.sviva.gov.il), from the section that archives the Ministry's publications and public campaigns. After downloading the images, I cropped them (via GIMP software). The sources of the images are detailed below:
-
-**Air-pollution policy**
-
-Campaign name: "Starting to think green"; Endorser: Tal Friedman.
-
-Source: http://www.sviva.gov.il/InfoServices/ReservoirInfo/ResearchAndPublications/Pages/Publications/P0601-P0700/P0641.aspx
-
-**Recycling policy**
-
-Campaign name: "From now on, every bag is taken seriously"; Endorser: Ido Rosenblum.
-
-Source: http://www.sviva.gov.il/InfoServices/NewsAndEvents/MessageDoverAndNews/Pages/2016/December2016/plastic-bags-campaign-2016-IR.aspx
+The three EPM symbols which were used in the the experiment are displayed in **Figure A1**. The first element is the unique brand logo of the EPM (image a. in figure A1). This logo consists a pair of green and orange leaves that resemble two hands, designed to symbolize peace and harmony with the environment. The second symbol is the green color, which is strongly associated with taking care of the environment. The EPM's logo and the green color can be seen in almost all of the visual communications of the EPM, and they represent key elements of its unique "visual identity". The third element is celebrity endorsements. I selected two high-profile celebrity comedians, *Tal Friedman* and *Ido Rosenblum*, that previously endorsed two salient advertising campaigns of the EPM. The campaign starring the comedian Tal Friedman (image b.) was launched in 2010, and included a series of advertisements in which Friedman was presented with a green grass head, and accordingly the campaign's slogan was: "starting to think green". The campaign starring the comedian Ido Rosenblum (image c.) was launched in 2017, and was focused on reducing the use of disposable bags. The two campaigns were highly successful in terms of their recognizability and likability, as suggested by their evaluation reports by the Government advertising agency.[^footnote_lapam_reports] The campaign images were downloaded from EPM's website, and thereafter were cropped, to remove any text (via GIMP software).
 
 <br>
+**Figure A1: symbolic elements of EPM**
+![](D:/UNIVERSITY/R/SVIVA/experiment 2 01-2018/myfigures/EPM_symbols.png) 
+<font size="0.5">
 
+Notes:
+
+a. EPM logo.
+b. Tal Friedman, comedian,  EPM campaign “starting to think green” (2010): "Isn't money growing on trees? Moving to environmental consumption and saving at least 6,000 NIS per year!", "starting to think green", "The Environmental Protection Ministry".
+c. Ido Rosenblum, comedian, EPM campaign  “taking every bag seriously” (2017): "The reusable bag is again left at home? A tip from Ido: Hang it on the door handle and you will not leave without it", "Taking every bag seriously", "The Environmental Protection Ministry".
+
+</font>
+
+
+[^footnote_lapam_reports]: The Multimedia files and evaluation reports for the  "starting to think green" campaign, starring Tal Friedman, are available in the following link: http://www.sviva.gov.il/InfoServices/ReservoirInfo/ResearchAndPublications/Pages/Publications/P0601-P0700/P0641.aspx The media files for the "reusable bags" campaign, starring Ido Rosenblum, are available at: http://www.sviva.gov.il/InfoServices/NewsAndEvents/MessageDoverAndNews/Pages/2016/December2016/plastic-bags-campaign-2016-IR.aspx. The evaluation report for this campaign is available at: https://cdn.the7eye.org.il/uploads/2017/09/plastic-bags2017.pdf. All these materials are available in Hebrew [last entered: July 2017]. 
+
+<br>
+ 
 ##Fake symbols
 
-The fake logo and campaign images were specifically designed to represent graphical elements that resemble the look and aesthetic qualities of the real symbolic elements, as much as possible, while removing their symbolic aspects. 
+The fake symbols were specifically designed to represent graphical elements that resemble the look and aesthetic qualities of the familiar EPM symbols, as much as possible, while removing their symbolic aspects (i.e. without activating emotions and associations which can be attached to the government ministry and environmental issues). Accordingly, the green color is replaced with blue, the EPM logo is replaced by a fake logo and the images of celebrities from the campaigns are replaced with two edited images of unfamiliar people. 
 
 The fake logo was created via MS paint software. I replaced the leaves/hands from the original logo with a shape of stars with rounded edges, and replaced the green color with blue. I deliberately selected a natural element - star - as opposed to an abstract geometric element, since marketing studies have pointed to the "naturalness" of logos, as one of the key aesthetic characteristics rendering logos more memorable and favorable [@henderson_1998]. 
 
-To create the fake campaign images, I searched for photos of unfamiliar male models that resemble the look of the real endorsers, Tal Friedman and Ido Rosenblum, and their face expressions in the campaign images. For this purpose, I used the website www.istockphoto.com that offers multiple collections of professional images for purchase. The original photos which I purchased from the website, and their sources are detailed below. Thereafter, I took these images of models, and edited them (via GIMP software) to create images which are aesthetically similar to the original campaign images, yet without their symbolic aspects. For the recycling policy, I used the same image from EPM's reusable bags campaign, while replacing Rosenblum's face with the face of the unfamiliar model, and changing the color of the bag from green to blue. For the The Air-pollution policy, I took the purchased image of the unfamiliar model, and added a blue rectangle behind him (instead of the green background behind Friedman). I also added a blue geometric shape above the person's head, which I took from a logo of an Israeli mortgage bank, against Friedman's green hair. The latter addition was important, given that the green hair not only has a symbolic connotation, but also functions as an unusual, surprising element, that attracts people's attention.
+To create the fake campaign images, I searched for photos of unfamiliar male models that resemble the look of the real endorsers, Tal Friedman and Ido Rosenblum, and their face expressions in the campaign images. For this purpose, I used the website www.istockphoto.com that offers multiple collections of professional images for purchase.[^footnote_sources_fake_models] Thereafter, I took these images of models, and edited them (via GIMP software) to create images which are aesthetically similar to the original campaign images, yet without their symbolic aspects. For the recycling policy, I used the same image from EPM's reusable bags campaign, while replacing Rosenblum's face with the face of the unfamiliar model, and changing the color of the bag from green to blue. For the The Air-pollution policy, I took the purchased image of the unfamiliar model, and added a blue rectangle behind him (instead of the green background behind Friedman). I also added a blue geometric shape above the person's head, which I took from a logo of an Israeli mortgage bank, against Friedman's green hair. The latter addition was important, given that the green hair not only has a symbolic connotation, but also functions as an unusual, surprising element, that attracts people's attention. The original and edited photos are displayed below: 
 
-**Air-pollution policy**
-
-Original image: 
-
-```{r, out.width = "400px", echo=FALSE,warning=FALSE,message=FALSE}
-knitr::include_graphics("D:/UNIVERSITY/R/SVIVA/experiment 2 01-2018/myfigures/fake_air_model.jpg")
-```
-
-Source: https://www.istockphoto.com/il/photo/smiling-forty-something-man-gm469597956-62477336
-
-**Recycling policy**
-
-Original image: 
-
-```{r, out.width = "400px", echo=FALSE,warning=FALSE,message=FALSE}
-knitr::include_graphics("D:/UNIVERSITY/R/SVIVA/experiment 2 01-2018/myfigures/fake_waste_model.jpg")
-```
-
-Source: https://www.istockphoto.com/il/photo/young-man-smiling-portrait-gm516728601-48347532
 
 <br>
 
+**Figure A2: fake symbolic elements.**
+![](D:/UNIVERSITY/R/SVIVA/experiment 2 01-2018/myfigures/fake_symbols_appendix.png) 
+
+<br>
+
+
+[^footnote_sources_fake_models]: The original photo for the air-pollution policy was purchased from the following link: https://www.istockphoto.com/il/photo/smiling-forty-something-man-gm469597956-62477336, The original photo for the recycling policy was purchased from the following link:
+https://www.istockphoto.com/il/photo/young-man-smiling-portrait-gm516728601-48347532
+
+<br>
+
+ 
 #2. Manipulation and validity checks
 <br>
 
@@ -255,11 +252,11 @@ SVIVA2_comb_robust_1 = SVIVA2_00 %>%
 
 
 
-In the tables below, I report the results of additional robust analyses testing the research hypotheses regarding the moderating role of perceived personal. In **Table A3** I add subjects' subjective reporting on the personal relevance of each of the two policy plans, and its interaction with the symbols and information manipulations, controlling for the areas. Higher scores of perceived personal relevance did not attentuate the positive effect of the real symbols. However, it did slightly increase the effect of the weak information, regarding the air-pollution policy, in line with Hypothesis 2.
+In the tables below, I report the results of additional robust analyses testing the moderating role of the perceived personal relevance of the communications. In **Table A3** I analyze subjects' subjective reporting on the personal relevance of each of the two policy plans, and its interaction with the symbols and information manipulations, controlling for the areas. These analyses show that higher scores of perceived personal relevance did not attentuate the positive effect of the real symbols. However, in line with Hypothesis 2, it did slightly increase the effect of the weak information with regard to the air-pollution policy.
 
-In **Tables A4 - A6**, I examine the effect of the operationizations of personal relevance (i.e. the differences between the areas and the relevance manipulation) on three measures for subjects elaboration of the two policy plans. The first measure is the number of seconds participants spent on scanning the policy plans, log transformed (hereafter: reaction time). The second measure is participants' score in a memory test, which was conducted during the survey. Participants were asked to indicate whether a list of four items were included in the second policy plan which was presented to them, of which two were/were not included (participants could also select “I don’t know”). The memory score is calculated as the number of correct items selected by the participant minus the number of incorrect items, with a minimum score of zero. Accordingly, participants could receive the scores of 0, 1 or 2. The third measure is the delta of each subject’s trust in the strong and weak policy plans that were presented to them. The latter, within-subject analysis, utilizes the research design in which every participant was presented with one weak and one strong policies. Neither residing in the Haifa-bay nor the relevance treatment increase the elaboration of policy plans, based on these three measures.  
+In **Tables A4 - A6**, I examine the effects of relevance treatment and the differences between the areas on subjects elaboration of the two policy plans, using three additional measures. The first measure is the number of seconds participants spent on scanning the policy plans, log transformed (hereafter: reaction time). The second measure is participants' score in a memory test, which was conducted during the survey. Participants were asked to indicate whether a list of four items were included in the second policy plan which was presented to them, of which two were/were not included (participants could also select “I don’t know”). The memory score is calculated as the number of correct items selected by the participant minus the number of incorrect items, with a minimum score of zero. Accordingly, participants could receive the scores of 0, 1 or 2. The third measure is the delta between trust in the strong and weak policy plans presented to each subject. This within-subject analysis utilizes the research design in which every participant was presented with one weak and one strong policies. Neither residing in the Haifa-bay nor the relevance treatment increase the elaboration of policy plans, based on these three measures.  
 
-In **Tables A7** I add additional a set of individual-level control variables, and in **Table A8** I further control for additional factors that can be related to participants' motivation to elaborate, including having young children, general interest in environmental issues and following environmental issues in the media. The two final questions were presented only to those subjects assigned to the relevance treatment condition, and therefore, their analysis is based only on that sample (n = `r SVIVA2_01 %>% filter(RELEVANCE_exp==1) %>% nrow()`).Finally, in **Table A9**, I add those subjects who were filttered, except for those who are under the age of 18 (n_subjects = `r SVIVA2_comb_robust_1 %>%distinct(IP) %>% nrow()`). The effects of the symbols and information manipulations and their interaction with the areas and the relevance manipulation are consistent with the main models presented in the paper in all these analyses.       
+In **Tables A7 and A8**, I replicate the main analyses while adding additional control variables. In Tables A7, I control for demographics and additional individual-level covariates, including ideology and trust in government ministries in general. In Table A8 I further control for factors that can be related to participants' motivation to elaborate, including having young children, general interest in environmental issues and following environmental issues in the media. The two final variables are based on survey items which were presented only to those subjects assigned to the relevance treatment condition, and therefore, their analysis is based only on that sample (n = `r SVIVA2_01 %>% filter(RELEVANCE_exp==1) %>% nrow()`).Finally, in **Table A9**, I add those subjects who were filttered, except for those who are under the age of 18 (n_subjects = `r SVIVA2_comb_robust_1 %>%distinct(IP) %>% nrow()`). In all these analyses, the effects of the symbols and information manipulations and their interaction with the areas and the relevance manipulation are consistent with the main models.       
 
 <br>
 
