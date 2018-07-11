@@ -111,6 +111,310 @@ https://www.istockphoto.com/il/photo/young-man-smiling-portrait-gm516728601-4834
 
  
 #2. Manipulation and validity checks
+
+In this section, I report the results of manipulation checks for the symbols and relevance manipulations. In addition, I report the results of additional analyses regarding the empirical assumptions underlying the comparison between the two areas. These analyses are based on the survey data, and on two prior surveys, as described below. 
+
+## Symbols manipulation
+
+In two prior surveys, I confirmed that the real EPM symbols are recognizable and have a positive affect, whereas the fake logo is unrecognizable, do not have strong positive or negative affect, and are not strongly associated with environment policy and EPM. 
+
+The first prior survey was conducted on May 2017 among `r SVIVA1_01 %>% nrow()` participants, which were recruited by iPanel. This survey was designed as a survey experiment, which was a first attempt to test the moderating role of personal relevance on the effects of symbols and information. However, after analyzing the results, I came to the conclusion that the experimental procedure had several methodological problems. Mainly, the assignment to experimental conditions yielded imbalanced groups, and the manipulations of symbolic elements and information ware too subtle. In addition, perceived personal relevance was measured only through the comparison between the areas (i.e. without the relevance manipulation), and the information was manipulated only with regard to the air-pollution policy. Despite these weaknesses, the survey included specific questions about the affect and symbolic associations of the logos and the colors, which provide valuable descriptive data.[^footnote_prior_survey_1] In this survey, the participants were assigned to one of three conditions of symbols: real symbols, fake symbols and no symbols. The real and fake symbols conditions included the same logos and colors which were eventually used in the final experiment (but not the campaign images). At the end of the survey, participants were asked about their familiarity with the logos and colors that appeared in their policy plans, and their affect. These items and their descriptive results are presented below. 
+
+[^footnote_prior_survey_1]: Overall, the findings of this limited prior study are consistent Consistent with the findings of the main experiment, reported in the paper. The effect of the real symbols were greater among those who reside in the Haifa-Bay. Congruently, the statistical analyses yielded a negative and significant interaction between the real symbols and residence in the center. Also consistent with the main experiment, the interaction between the areas and the information manipulation was not significant.  
+
+
+"How familiar are you with the symbol [that appeared in the policy plans]?" (1=not at all; 7=very much)
+
+```{r, echo=FALSE,warning=FALSE,message=FALSE, out.width=c('50%', '50%'),fig.show='hold', fig.width=5,fig.height=4}
+set_theme("scatterw")
+
+sjp.frq(filter(SVIVA1_01,SYMBOL==2)$SVIVA_LOGO_recognize,
+        geom.size = 0.9,
+        ylim=c(0,155),
+        axis.title="",
+        title = "Real logo")
+
+sjp.frq(filter(SVIVA1_01,FAKE_LOGO_recognize!=0)$FAKE_LOGO_recognize,
+        geom.size = 0.9,
+        ylim=c(0,155),
+        axis.title="",
+        title = "Fake logo")
+
+```
+
+
+"When you see the symbol [that appeared in the policy plans], what does it make you feel?" (1=very negative feeling; 7=very positive feeling)
+
+```{r, echo=FALSE,warning=FALSE,message=FALSE, out.width=c('50%', '50%'),fig.show='hold', fig.width=5,fig.height=4}
+set_theme("scatterw")
+
+sjp.frq(filter(SVIVA1_01,SYMBOL==2)$SVIVA_LOGO_affect,
+        type="hist",
+        show.mean = T,
+        ylim=c(0,160),
+        axis.title="",
+        title = "Real logo")
+
+sjp.frq(filter(SVIVA1_01,FAKE_LOGO_recognize!=0)$FAKE_LOGO_affect,
+        type="hist",
+        show.mean = T,
+        ylim=c(0,160),
+        axis.title="",
+       title = "Fake logo")
+
+```
+
+
+Overall, these results show that the real logo is relatively recognizable and has a fairly positive affect, whereas the fake logo is unrecognized and neutral. Participants were also asked "What is the first thought / association that comes to mind when you see the symbol?"  With regard to the real logo, many of the participants filled associations related to carting for the environment. Representative examples for such answers are: "environmental protection", "a desire to protect nature and the environment", "green policy", "together for the sake of nature", "connection between nature and man". The participants were similarly asked about the first thought / association that comes to their mind when they see the color. Representative answers for the green color were: "nature", "a green and healthy environment", "environment protection". The responses for the fake logo and the blue color were more diverse, and mostly unrelated to environmental issues. 
+
+The second prior survey was conducted on January 2018 among `r CELEBS_00%>%nrow()` participants, which were similarly recruited via iPanel. This survey was designed as a pre-test that was aimed at assessing the recognizability, affect and associations of the real vs. fake campaign images. Participants were presented with the four campaign images (two real and two fake), in a random order. After every image, they were asked a series of questions regarding the familiarity and affect of the image and of the person presented. The items and their descriptive results are presented below.
+
+"The person presented in the image is familiar to me" (1=weakly agree; 7=strongly agree)
+
+Air-pollution policy
+
+```{r, echo=FALSE,warning=FALSE,message=FALSE, out.width=c('50%', '50%'),fig.show='hold', fig.width=5,fig.height=4}
+sjp.frq(CELEBS_00$air_real_person_familiar,
+        geom.size = 0.9,
+        ylim=c(0,110),
+        axis.title="",
+        title = "Real celeb (Tal Friedman)")
+
+sjp.frq(CELEBS_00$air_fake_person_familiar,
+        geom.size = 0.9,
+        ylim=c(0,110),
+        axis.title="",
+        title = "Unfamiliar model")
+
+```
+
+Recycling policy
+
+```{r, echo=FALSE,warning=FALSE,message=FALSE, out.width=c('50%', '50%'),fig.show='hold', fig.width=5,fig.height=4}
+sjp.frq(CELEBS_00$waste_real_person_familiar,
+        geom.size = 0.9,
+        ylim=c(0,110),
+        axis.title="",
+        title = "Real celeb (Ido Rosenblum)")
+
+sjp.frq(CELEBS_00$waste_fake_person_familiar,
+        geom.size = 0.9,
+        ylim=c(0,110),
+        xlim=c(0,110),
+        axis.title="",
+        title = "Unfamiliar model")
+
+```
+
+"The image is taken from an advertisement commercial of the Environmental Protection Ministry. To what extent to you remember the advertisement?" (1=not at all; 7=very much)
+
+Air-pollution policy
+
+```{r, echo=FALSE,warning=FALSE,message=FALSE, out.width=c('50%', '50%'),fig.show='hold', fig.width=5,fig.height=4}
+sjp.frq(CELEBS_00$air_real_ad_familiar,
+        geom.size = 0.9,
+        ylim=c(0,110),
+        axis.title="",
+        title = "Real campaign (starting to think green)")
+
+sjp.frq(CELEBS_00$air_fake_ad_familiar,
+        geom.size = 0.9,
+        ylim=c(0,110),
+        axis.title="",
+        title = "Fake campaign")
+
+```
+
+Recycling policy
+
+```{r, echo=FALSE,warning=FALSE,message=FALSE, out.width=c('50%', '50%'),fig.show='hold', fig.width=5,fig.height=4}
+sjp.frq(CELEBS_00$waste_real_ad_familiar,
+        geom.size = 0.9,
+        ylim=c(0,110),
+        axis.title="",
+        title = "Real campaign (reusable bags)")
+
+sjp.frq(CELEBS_00$waste_fake_ad_familiar,
+        geom.size = 0.9,
+        ylim=c(0,110),
+        axis.title="",
+        title = "Fake campaign")
+
+```
+
+
+"The image evokes a positive feeling" (1=weakly agree; 7=strongly agree)
+
+Air-pollution policy
+
+```{r, echo=FALSE,warning=FALSE,message=FALSE, out.width=c('50%', '50%'),fig.show='hold', fig.width=5,fig.height=4}
+sjp.frq(CELEBS_00$air_real_positive_affect,
+        type="hist",
+        show.mean = T,
+        ylim=c(0,40),
+        axis.title="",
+        title = "Real campaign (starting to think green)")
+
+sjp.frq(CELEBS_00$air_fake_positive_affect,
+         type="hist",
+        show.mean = T,
+        ylim=c(0,40),
+        axis.title="",
+        title = "Fake campaign")
+
+```
+
+Recycling policy
+
+```{r, echo=FALSE,warning=FALSE,message=FALSE, out.width=c('50%', '50%'),fig.show='hold', fig.width=5,fig.height=4}
+sjp.frq(CELEBS_00$waste_real_positive_affect,
+        type="hist",
+        show.mean = T,
+        ylim=c(0,40),
+        axis.title="",
+        title = "Real campaign (reusable bags)")
+
+sjp.frq(CELEBS_00$waste_fake_positive_affect,
+         type="hist",
+        show.mean = T,
+        ylim=c(0,40),
+        axis.title="",
+        title = "Fake campaign")
+
+```
+
+
+"The image evokes a negative feeling" (1=weakly agree; 7=strongly agree)
+
+Air-pollution policy
+
+```{r, echo=FALSE,warning=FALSE,message=FALSE, out.width=c('50%', '50%'),fig.show='hold', fig.width=5,fig.height=4}
+sjp.frq(CELEBS_00$air_real_negative_affect,
+        type="hist",
+        show.mean = T,
+        ylim=c(0,80),xlim=c(0.5,7.5),
+        axis.title="",
+        title = "Real campaign (starting to think green)")
+
+sjp.frq(CELEBS_00$air_fake_negative_affect,
+         type="hist",
+        show.mean = T,
+        ylim=c(0,80),
+        axis.title="",
+        title = "Fake campaign")
+
+```
+
+Recycling policy
+
+```{r, echo=FALSE,warning=FALSE,message=FALSE, out.width=c('50%', '50%'),fig.show='hold', fig.width=5,fig.height=4}
+sjp.frq(CELEBS_00$waste_real_negative_affect,
+        type="hist",
+        show.mean = T,
+        ylim=c(0,80),xlim=c(0.5,7.5),
+        axis.title="",
+        title = "Real campaign (reusable bags)")
+
+sjp.frq(CELEBS_00$waste_fake_negative_affect,
+         type="hist",
+        show.mean = T,
+        ylim=c(0,80),
+        axis.title="",
+        title = "Fake campaign")
+
+```
+
+
+These results similarly show that the real campaign images are relatively recognizable and have a fairly positive affect, whereas the fake images and models are unrecognized and do not evoke strong negative of positive feelings. Finally, I similarly asked subjects to describe their first thoughts/associations regarding the images of Friedman and Rosenblum from their campaigns (without any text). Most of the participants associated Rosenblum's image to the reducing the use of disposable grocery bags, in line with the campaign's message (e.g. "reusable bag", "reusable instead of disposable bag for protecting the environment"). With regard to Friedman's grass-head image from his "starting to think green" campaign, participants mostly mentioned associations related to environmental awareness (e.g. "green head, thinking about the environment", "green environment", "think green"), and to the humoristic aspect (e.g. "funny", "comedian", "Funny advertisement", "hahaha"). 
+
+<br>
+
+## Areas: Haifa-Bay vs. Center
+
+To confirm the assumption that the Air-pollution policy is perceived as more personally relevant by Haifa-Bay subjects, whereas the recycling policy is perceived as equally relevant by both groups, I relied on the following question, which was included in the survey, regarding both policy plans: 
+
+"To what extent did you feel that the policy on ["Reducing the air-pollution in the Haifa-Bay" / “reducing waste and increasing recycling”] is personally relevant to you?" (1="very little"; 7="very much").
+
+The distribution of this variable for the two policies, across the two areas, is displayed in the following plots. These comparisons confirm the assumption.   
+
+Air-pollution policy
+
+```{r, echo=FALSE,warning=FALSE,message=FALSE, out.width=c('50%', '50%'),fig.show='hold', fig.width=5,fig.height=4}
+sjp.frq(filter(SVIVA2_01_comb,AREA==0)$RELEVANCE_air_obs,
+        type="hist",
+        show.mean = T,
+        ylim=c(0,600),xlim=c(0.5,7.5),
+        axis.title="",
+        title = "Center")
+
+sjp.frq(filter(SVIVA2_01_comb,AREA==1)$RELEVANCE_air_obs,
+        type="hist",
+        show.mean = T,
+        ylim=c(0,600),xlim=c(0.5,7.5),
+        axis.title="",
+        title = "Haifa-bay")
+
+```
+
+Recycling policy
+
+```{r, echo=FALSE,warning=FALSE,message=FALSE, out.width=c('50%', '50%'),fig.show='hold', fig.width=5,fig.height=4}
+sjp.frq(filter(SVIVA2_01_comb,AREA==0)$RELEVANCE_waste_obs,
+        type="hist",
+        show.mean = T,
+        ylim=c(0,600),xlim=c(0.5,7.5),
+        axis.title="",
+        title = "Center")
+
+sjp.frq(filter(SVIVA2_01_comb,AREA==1)$RELEVANCE_waste_obs,
+        type="hist",
+        show.mean = T,
+        ylim=c(0,600),xlim=c(0.5,7.5),
+        axis.title="",
+        title = "Haifa-bay")
+
+```
+
+
+I also examined the assumption that Haifa-bay subjects do not have greater knowledge on the air-pollution in their area issue, compared with the participants who reside in the Center. To test that assumption I relied on three incdicators. First, I assessed participants prior knowledge about the causes of the phenomenon. Participants were given a list of causes and were asked to rank them based on their contribution to air-pollution. There were no significant differences between the two samples for this task. Additionally, I assessed participants knowledge of the effectiveness of the Ministry’s previous policy by asking participants whether air-pollution has increased, decreased, or remained the same during the past years. Haifa-bay residents were only slightly more likley to indicate correctly that it had decreased according to EPM reports (`r filter(SVIVA1_01,AREA==1)%>%summarise(mean(HAIFA_knowledge_2)*100)%>%max()%>%round(0)`% compared with `r filter(SVIVA1_01,AREA==0)%>%summarise(mean(HAIFA_knowledge_2)*100)%>%max()%>%round(0)`%). Still, even among Haifa-bay subjects, the vast majority of subjects were incorrect.
+
+
+<br>
+
+## Relevance manipulation
+
+I tested whether the priming questions in the relevance treatment condition increased the perceived personal relevance of the two policy plans. For this purpose, I relied on the following question, which was included in the survey, regarding both policy plans: 
+
+"To what extent did you feel that the policy on ["Reducing the air-pollution in the Haifa-Bay" / “reducing waste and increasing recycling”] is personally relevant to you?" (1="very little"; 7="very much").
+
+I analyze the effect of the relevance manipulation, across the two areas, on this variable, via OLS regression. Table AX shows the results of these regression analyses. For each of the two policy plans, I first regress perceived personal relevance on the relevance treatment and the areas, and thereafer I add their interaction. Counter to my expectations, the relevance manipulation did not have a positive main effect on either of these two policy plans. In Model 2, the interaction between the relevance treatment and the center area is positive and significant and the coefficient of the relevance treatment is negative and significant. The interpretation of this interaction model suggests that the priming questions had a negative effect on Haifa-Bay subjects, and a positive effect on those who reside in the Center. Regarding the recycling policy, the interaction is insignificant in Model 4.      
+
+**Table AX: Regression table - effect of relevance manipulation, across areas, on perceived personal relevance**
+
+```{r,results="asis",echo=FALSE,warning=FALSE,message=FALSE}
+mod_relevance_air_1.1_apx = lm(RELEVANCE_air_obs~AREA_center+RELEVANCE_exp,data=SVIVA2_01_comb)
+mod_relevance_air_1.2_apx = update(mod_relevance_air_1.1_apx,. ~ .+RELEVANCE_exp*AREA_center)
+
+mod_relevance_waste_1.1_apx = lm(RELEVANCE_waste_obs~AREA_center+RELEVANCE_exp,data=SVIVA2_01_comb)
+mod_relevance_waste_1.2_apx = update(mod_relevance_waste_1.1_apx,. ~ .+RELEVANCE_exp*AREA_center)
+
+stargazer(mod_relevance_air_1.1_apx,mod_relevance_air_1.2_apx,
+          mod_relevance_waste_1.1_apx,mod_relevance_waste_1.2_apx,
+          type="html",style = "apsr",
+          dep.var.labels=c("Air-pollution","Recycling"),
+          covariate.labels=c("Area (0=Haifa-Bay; 1=center)",
+                             "Relevance treatment",
+                             "Area x Relevance treatment"),
+          omit.stat = c("rsq","ser", "f"),
+          initial.zero = FALSE,
+          notes = "*Notes*: Table entries are nonstandardized OLS-regression coefficients, with Standard errors in parentheses. The reference category for the symbols manipulation conditions is the control (no symbols).",
+          notes.append = FALSE)
+```
+
+<br>
+
+
+
 <br>
 
 #3. Summary statistics
