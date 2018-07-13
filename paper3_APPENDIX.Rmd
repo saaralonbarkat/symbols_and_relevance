@@ -3,6 +3,9 @@ title: "Supplementary appendix"
 author: '**Saar Alon-Barkat**, PhD candidate; the Hebrew University of Jerusalem;   saar.barkat@mail.huji.ac.il'
 date: " "
 output:
+  word_document: default
+  pdf_document:
+    toc: yes
   html_document:
     theme: flatly
     toc: yes
@@ -10,9 +13,6 @@ output:
       collapsed: no
       smooth_scroll: yes
       toc_depth: 3
-  pdf_document:
-    toc: yes
-  word_document: default
 link-citations: yes
 bibliography: phd_paper_2.bib
 urlcolor: blue
@@ -34,6 +34,9 @@ CELEBS_00 = read.csv("CELEBS.csv")
 
 SVIVA2_01 = SVIVA2_01 %>%  
 mutate(AREA_center = Recode(AREA,"0=1;1=0"))
+
+SVIVA2_01_haifa = filter(SVIVA2_01,AREA==1)
+SVIVA2_01_center = filter(SVIVA2_01,AREA==0)
 
 ```
 
@@ -112,7 +115,7 @@ https://www.istockphoto.com/il/photo/young-man-smiling-portrait-gm516728601-4834
  
 #2. Manipulation and validity checks
 
-In this section, I report the results of manipulation checks for the symbols and relevance manipulations. In addition, I report the results of additional analyses regarding the empirical assumptions underlying the comparison between the two areas. These analyses are based on the survey data, and on two prior surveys, as described below. 
+In this section, I report the results of the manipulation checks for the symbols and relevance manipulations, and analyses regarding the validity of the comparison between the two areas. These analyses are based on the survey data, and on two prior surveys, as described below. 
 
 ## Symbols manipulation
 
@@ -329,13 +332,13 @@ These results similarly show that the real campaign images are relatively recogn
 
 <br>
 
-## Areas: Haifa-Bay vs. Center
+## Comparison between Haifa-Bay and Center
 
-To confirm the assumption that the Air-pollution policy is perceived as more personally relevant by Haifa-Bay subjects, whereas the recycling policy is perceived as equally relevant by both groups, I relied on the following question, which was included in the survey, regarding both policy plans: 
+The comparison between the two areas is based on the assumption that the Air-pollution policy is perceived as more personally relevant by Haifa-Bay subjects, whereas the recycling policy is perceived as equally relevant by both groups. To test that assumption, I relied on the following question, which was included in the survey, regarding both policy plans: 
 
 "To what extent did you feel that the policy on ["Reducing the air-pollution in the Haifa-Bay" / “reducing waste and increasing recycling”] is personally relevant to you?" (1="very little"; 7="very much").
 
-The distribution of this variable for the two policies, across the two areas, is displayed in the following plots. These comparisons confirm the assumption.   
+The air-pollution policy is perceived as more personally relevant by Haifa Bay residents compared with center residents. As for the recycling policy, it is perceived by both groups as relatively personally relevant by both groups, with no statistically significant differences between them. The distribution of the perceived personal relevance variable of the two policies, across the two areas, is displayed in the following figures. 
 
 Air-pollution policy
 
@@ -375,21 +378,18 @@ sjp.frq(filter(SVIVA2_01_comb,AREA==1)$RELEVANCE_waste_obs,
 
 ```
 
+Moreover, Participants in the relevance treatment group were asked to describe the most salient environmental issue in their particular area of residence. Indeed, most of the Haifa-Bay subjects regarded in their responses to the air-pollution generated from the industrial area, and many of them linked it to higher morbidity rates in the area. Subjects from center cities regarded to a variety of issues, including recycling, traffic jams and cleanliness, whereas relatively few of them mentioned air-pollution as a prominent environmental concern in their area.   
 
-I also examined the assumption that Haifa-bay subjects do not have greater knowledge on the air-pollution in their area issue, compared with the participants who reside in the Center. To test that assumption I relied on three incdicators. First, I assessed participants prior knowledge about the causes of the phenomenon. Participants were given a list of causes and were asked to rank them based on their contribution to air-pollution. There were no significant differences between the two samples for this task. Additionally, I assessed participants knowledge of the effectiveness of the Ministry’s previous policy by asking participants whether air-pollution has increased, decreased, or remained the same during the past years. Haifa-bay residents were only slightly more likley to indicate correctly that it had decreased according to EPM reports (`r filter(SVIVA1_01,AREA==1)%>%summarise(mean(HAIFA_knowledge_2)*100)%>%max()%>%round(0)`% compared with `r filter(SVIVA1_01,AREA==0)%>%summarise(mean(HAIFA_knowledge_2)*100)%>%max()%>%round(0)`%). Still, even among Haifa-bay subjects, the vast majority of subjects were incorrect.
+In the first prior survey, I also tested the empirical assumption that Haifa-bay subjects do not have greater knowledge on the air-pollution in their area issue, compared with the participants who reside in the Center. *First*, I assessed participants prior knowledge about the causes of the air-pollution in that area. Participants were given a list of three causes, and were asked to rank them based on their contribution to air-pollution.[^footnote_air-pollution_causes] There were no significant differences between the two areas regarding the performance in this task. *Second*, I examined participants knowledge of the effectiveness of the previous EPM policy by asking participants whether air-pollution during the past years has decreased (the correct answer), increased, or remained the same, according to EPM reports. In both groups, the vast majority of subjects were incorrect. Haifa-bay residents were only slightly more likely to state that it had decreased (`r filter(SVIVA1_01,AREA==1)%>%summarise(mean(HAIFA_knowledge_2)*100)%>%max()%>%round(0)`% compared with `r filter(SVIVA1_01,AREA==0)%>%summarise(mean(HAIFA_knowledge_2)*100)%>%max()%>%round(0)`%). *Third*, subjects were asked about the frequency in which they monitor the air quality (in their area of residence). Haifa-bay subjects reported that they tend to monitor air pollution more frequently. Congruently, 48.9% of them reported that they tend to monitor it occasionally ("from time to time", but less than once a week), compared with only 28.2% of Center subjects. 34.6% of Center subjects reported that they do not monitor air pollution at all, compared with only 18.7% of Center subjects. Still, in both areas, only 2-3% of subjects reported that they monitor air pollution once a week or more frequently. Taken together, these comparisons indicate that in both areas, most people tend to have relatively little prior knowledge of the air-pollution. At the same time, some Haifa-bay subjects do have greater knowledge about it. This might suggest that on average, Haifa-bay subjects not only have greater motivation to scrutinize the communication on the policy, but also slightly greater ability to do so. 
 
-
+[^footnote_air-pollution_causes]: The three causes are: emissions of pollutants from the factories and refineries in the area; emissions of diesel smoke from vehicles in the area; emissions of pollutants from unauthorized coal production sites. 
 <br>
 
 ## Relevance manipulation
 
-I tested whether the priming questions in the relevance treatment condition increased the perceived personal relevance of the two policy plans. For this purpose, I relied on the following question, which was included in the survey, regarding both policy plans: 
+I tested whether the priming questions in the relevance treatment condition increased the perceived personal relevance of the two policy plans (in each of the two areas). For this purpose, I relied on the above perceived personal relevance items. Table A1 shows the results of regression analyses. For each of the two policy plans, I first regress perceived personal relevance on the relevance treatment and the areas, and thereafter I add their interaction. Counter to my expectations, the relevance manipulation did not have a positive main effect on either of these two policy plans. Regarding the air-pollution policy, the interaction between the relevance treatment and the center area is positive and significant, and the coefficient of the relevance treatment is negative (model 2). The interpretation of this interaction suggests that the priming questions decreased the perceived personal relevance of the air-pollution policy among Haifa-Bay subjects, but increased it among those who reside in the Center. Regarding the recycling policy, the interaction is insignificant.      
 
-"To what extent did you feel that the policy on ["Reducing the air-pollution in the Haifa-Bay" / “reducing waste and increasing recycling”] is personally relevant to you?" (1="very little"; 7="very much").
-
-I analyze the effect of the relevance manipulation, across the two areas, on this variable, via OLS regression. Table AX shows the results of these regression analyses. For each of the two policy plans, I first regress perceived personal relevance on the relevance treatment and the areas, and thereafer I add their interaction. Counter to my expectations, the relevance manipulation did not have a positive main effect on either of these two policy plans. In Model 2, the interaction between the relevance treatment and the center area is positive and significant and the coefficient of the relevance treatment is negative and significant. The interpretation of this interaction model suggests that the priming questions had a negative effect on Haifa-Bay subjects, and a positive effect on those who reside in the Center. Regarding the recycling policy, the interaction is insignificant in Model 4.      
-
-**Table AX: Regression table - effect of relevance manipulation, across areas, on perceived personal relevance**
+**Table A1: Regression table - effect of relevance manipulation, across areas, on perceived personal relevance**
 
 ```{r,results="asis",echo=FALSE,warning=FALSE,message=FALSE}
 mod_relevance_air_1.1_apx = lm(RELEVANCE_air_obs~AREA_center+RELEVANCE_exp,data=SVIVA2_01_comb)
@@ -411,16 +411,13 @@ stargazer(mod_relevance_air_1.1_apx,mod_relevance_air_1.2_apx,
           notes.append = FALSE)
 ```
 
-<br>
-
-
 
 <br>
 
 #3. Summary statistics
 
 
-**Table A1: summary statistics of research variables**
+**Table A2: summary statistics of research variables**
 
 ```{r,results="asis", echo=FALSE,warning=FALSE,message=FALSE}
 SVIVA2_01 %>% 
@@ -462,7 +459,7 @@ SVIVA2_01 %>%
 
 <br>
 
-**Table A2: Correlation matrix**
+**Table A3: Correlation matrix**
 
 <font size="0.5">
 
@@ -556,17 +553,17 @@ SVIVA2_comb_robust_1 = SVIVA2_00 %>%
 
 
 
-In the tables below, I report the results of additional robust analyses testing the moderating role of the perceived personal relevance of the communications. In **Table A3** I analyze subjects' subjective reporting on the personal relevance of each of the two policy plans, and its interaction with the symbols and information manipulations, controlling for the areas. These analyses show that higher scores of perceived personal relevance did not attentuate the positive effect of the real symbols. However, in line with Hypothesis 2, it did slightly increase the effect of the weak information with regard to the air-pollution policy.
+In the tables below, I report the results of additional robust analyses testing the moderating role of the perceived personal relevance of the communications. In **Table A4** I analyze subjects' subjective reporting on the personal relevance of each of the two policy plans, and its interaction with the symbols and information manipulations, controlling for the areas. These analyses show that higher scores of perceived personal relevance did not attenuate the positive effect of the real symbols. However, it did slightly increase the effect of the weak information with regard to the air-pollution policy, consistent with Hypothesis 2.
 
-In **Tables A4 - A6**, I examine the effects of relevance treatment and the differences between the areas on subjects elaboration of the two policy plans, using three additional measures. The first measure is the number of seconds participants spent on scanning the policy plans, log transformed (hereafter: reaction time). The second measure is participants' score in a memory test, which was conducted during the survey. Participants were asked to indicate whether a list of four items were included in the second policy plan which was presented to them, of which two were/were not included (participants could also select “I don’t know”). The memory score is calculated as the number of correct items selected by the participant minus the number of incorrect items, with a minimum score of zero. Accordingly, participants could receive the scores of 0, 1 or 2. The third measure is the delta between trust in the strong and weak policy plans presented to each subject. This within-subject analysis utilizes the research design in which every participant was presented with one weak and one strong policies. Neither residing in the Haifa-bay nor the relevance treatment increase the elaboration of policy plans, based on these three measures.  
+In **Tables A5 - A7**, I examine the effects of relevance treatment and the differences between the areas on subjects elaboration of the two policy plans, using three additional measures. The first measure is the number of seconds participants spent on scanning the policy plans, log transformed (hereafter: reaction time). The second measure is participants' score in a memory test, which was conducted during the survey. Participants were asked to indicate whether a list of four items were included in the second policy plan which was presented to them, of which two were/were not included (participants could also select “I don’t know”). The memory score is calculated as the number of correct items selected by the participant minus the number of incorrect items, with a minimum score of zero. Accordingly, participants could receive the scores of 0, 1 or 2. The third measure is the delta between trust in the strong and weak policy plans presented to each subject. This within-subject analysis utilizes the research design in which every participant was presented with one weak and one strong policies. Neither residing in the Haifa-bay nor the relevance treatment increase the elaboration of policy plans, based on these three measures.  
 
-In **Tables A7 and A8**, I replicate the main analyses while adding additional control variables. In Tables A7, I control for demographics and additional individual-level covariates, including ideology and trust in government ministries in general. In Table A8 I further control for factors that can be related to participants' motivation to elaborate, including having young children, general interest in environmental issues and following environmental issues in the media. The two final variables are based on survey items which were presented only to those subjects assigned to the relevance treatment condition, and therefore, their analysis is based only on that sample (n = `r SVIVA2_01 %>% filter(RELEVANCE_exp==1) %>% nrow()`).Finally, in **Table A9**, I add those subjects who were filttered, except for those who are under the age of 18 (n_subjects = `r SVIVA2_comb_robust_1 %>%distinct(IP) %>% nrow()`). In all these analyses, the effects of the symbols and information manipulations and their interaction with the areas and the relevance manipulation are consistent with the main models.       
+In **Tables A8 and A9**, I replicate the main analyses while adding additional control variables. In Tables A7, I control for demographics and additional individual-level covariates, including ideology and trust in government ministries in general. In Table A8 I further control for factors that can be related to participants' motivation to elaborate, including having young children, general interest in environmental issues and following environmental issues in the media. The two final variables are based on survey items which were presented only to those subjects assigned to the relevance treatment condition, and therefore, their analysis is based only on that sample (n = `r SVIVA2_01 %>% filter(RELEVANCE_exp==1) %>% nrow()`).Finally, in **Table A10**, I add those subjects who were filtered, except for those who are under the age of 18 (n_subjects = `r SVIVA2_comb_robust_1 %>%distinct(IP) %>% nrow()`). In all these analyses, the effects of the symbols and information manipulations and their interaction with the areas and the relevance manipulation are consistent with the main models.       
 
 <br>
 
 
 
-**Table A3: Regression table - subjective reporting of perceived personal relevance**
+**Table A4: Regression table - subjective reporting of perceived personal relevance**
 
 ```{r,results="asis",echo=FALSE,warning=FALSE,message=FALSE}
 mod_air_1.1_apx = lm(TRUST_air_INDEX~SYMBOL_t+INFORMATION_weak,data=SVIVA2_01_comb)
@@ -599,7 +596,7 @@ stargazer(mod_air_1.2_apx,mod_air_1.3_apx,
 
 <br>
 
-**Table A4: Regression table - effect of personal relevance on reaction time**
+**Table A5: Regression table - effect of personal relevance on reaction time**
 
 ```{r,results="asis",echo=FALSE,warning=FALSE,message=FALSE}
 mod_RT_air_1.1_apx = lm(ELABORATION_air_time_log~AREA_center+RELEVANCE_exp,data=SVIVA2_01_comb)
@@ -625,7 +622,7 @@ stargazer(mod_RT_air_1.1_apx,mod_RT_air_1.2_apx,
 
 <br>
 
-**Table A5: Regression table - effect of personal relevance on memory score**
+**Table A6: Regression table - effect of personal relevance on memory score**
 
 ```{r,results="asis",echo=FALSE,warning=FALSE,message=FALSE}
 mod_memory_air_1.1_apx = lm(MEMORY_air_score~AREA_center+RELEVANCE_exp,data=SVIVA2_01_comb)
@@ -651,7 +648,7 @@ stargazer(mod_memory_air_1.1_apx,mod_memory_air_1.2_apx,
 
 <br>
 
-**Table A6: Regression table - effect of personal relevance on within-subject delta between strong and weak policies**
+**Table A7: Regression table - effect of personal relevance on within-subject delta between strong and weak policies**
 
 ```{r,results="asis",echo=FALSE,warning=FALSE,message=FALSE}
 mod_delta_1.1_apx = lm(WITHIN_DELTA~AREA_center+RELEVANCE_exp,data=SVIVA2_01)
@@ -674,7 +671,7 @@ stargazer(mod_delta_1.1_apx,mod_delta_1.2_apx,
 <br>
 
 
-**Table A7: Regression table - adding control variables**
+**Table A8: Regression table - adding control variables**
 
 ```{r,results="asis",echo=FALSE,warning=FALSE,message=FALSE}
 mod_air_1.1_apx = lm(TRUST_air_INDEX~SYMBOL_t+INFORMATION_weak+AREA_center+RELEVANCE_exp+GENDER+IDEOLOGY+GOV_TRUST+INCOME+EDUCATION,data=SVIVA2_01_comb)
@@ -715,7 +712,7 @@ stargazer(mod_air_1.1_apx,mod_air_1.2_apx,
 <br>
 
 
-**Table A8: Regression table - adding personal relevance and motivational control variables**
+**Table A9: Regression table - adding personal relevance and motivational control variables**
 
 ```{r,results="asis",echo=FALSE,warning=FALSE,message=FALSE}
 mod_air_1.1_apx = lm(TRUST_air_INDEX~SYMBOL_t+INFORMATION_weak+AREA_center+RELEVANCE_exp+CHILDREN_young,data=SVIVA2_01_comb)
@@ -754,7 +751,7 @@ stargazer(mod_air_1.1_apx,mod_air_1.2_apx,mod_air_1.3_apx,mod_air_1.4_apx,
 
 <br>
 
-**Table A9: Regression table - unfiltered sample**
+**Table A10: Regression table - unfiltered sample**
 
 ```{r,results="asis",echo=FALSE,warning=FALSE,message=FALSE}
 mod_air_1.1_apx = lm(TRUST_air_INDEX~SYMBOL_t+INFORMATION_weak+AREA_center+RELEVANCE_exp,data=SVIVA2_comb_robust_1)
@@ -791,7 +788,7 @@ stargazer(mod_air_1.1_apx,mod_air_1.2_apx,
 
 #5. English translation of the survey experiment
 
-Below is the full text of the survey. Additional comments are presented in square beackets. The different experimental conditions of the two policy plans are included in the appendix of the main paper, and therefore were not included here. The original Qualtrics file is available upon request. 
+Below is the full text of the survey. Additional comments are presented in square brackets. The different experimental conditions of the two policy plans are included in the appendix of the main paper, and therefore were not included here. The original Qualtrics file is available upon request. 
 
 
 
@@ -1633,7 +1630,7 @@ Below is the full text of the survey. Additional comments are presented in squar
 
 <br>
 
-[For subjets assigned to the no symbols]:
+[For subjects assigned to the no symbols]:
 
 **Finally, we would like to show you a few images which were taken from advertisements of the Environmental Protection Ministry.**
 
