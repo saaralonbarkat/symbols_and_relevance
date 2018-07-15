@@ -1,11 +1,8 @@
 ---
-title: "The persuasion of symbolic elements in government public communications, and their moderation by the personal relevance of the communication"
+title: "The persuasion of symbolic elements in government public communications, and their moderation by personal relevance"
 author: '**Saar Alon-Barkat**, PhD candidate; the Hebrew University of Jerusalem;   saar.barkat@mail.huji.ac.il'
 date: " "
 output:
-  word_document: default
-  pdf_document:
-    toc: yes
   html_document:
     theme: flatly
     toc: yes
@@ -13,8 +10,12 @@ output:
       collapsed: no
       smooth_scroll: yes
       toc_depth: 3
+  pdf_document:
+    toc: yes
+  word_document: default
 link-citations: yes
 bibliography: phd_paper_2.bib
+#csl: apsa.csl
 urlcolor: blue
 ---
 
@@ -70,7 +71,7 @@ N_1_center = filter(SVIVA2_01,AREA==0)%>%nrow()
 
 # Abstract
 
-*Recent studies have demonstrated that symbolic elements in government public communications can enhance citizens' trust in government organizations and their policies. Moreover, the emotive effect of these symbols can compensate for organizations' poor performane and inefficient policies, and distort public opinion. This study explores the boundaries of governments' persuasion of citizens through symbolic communication. Building on social psychology literature, I hypothesize that citizens are less susceptible to symbols and more likely to scrutinize the substantive content of the communication, the more they perceive the policy issue in the communication as personally relevant. I test this expectation through a survey experiment, where I examine Israeli citizens' trust in the Environment Protection Ministry's policy plans for reducing air pollution in a highly polluted geographical area. The perceived personal relevance of the policy is operationalized both experimentally, and by comparing between citizens residing in the polluted area and elsewhere. The results indicate that even high levels of perceived personal relevance do not attentuate the positive effect of symbols. This may suggest that the boundaries of the effect of symbolic communication are wider than expected, which carries serious implications.*
+*Recent studies have demonstrated that symbolic elements in government public communications can enhance citizens' trust in government organizations and their policies. They also suggested that the emotive effect of these symbols can compensate for organizations' poor performance and inefficient policies, thereby eliciting undue trust. This study explores the boundaries of governments' persuasion of citizens through symbolic communication. Building on social psychology literature, I hypothesize that citizens are less susceptible to symbols and more likely to scrutinize the substantive content of the communication, the more they perceive the policy issue in the communication as personally relevant. I test this expectation through a survey experiment, where I examine Israeli citizens' trust in the Environment Protection Ministry's policy plans for reducing air pollution in a highly polluted area. The perceived personal relevance of the policy is operationalized both experimentally, and by comparing between citizens residing in the polluted area and elsewhere. The results indicate that even high levels of perceived personal relevance do not attenuate the positive effect of symbols. These findings may suggest that the boundaries of the effect of symbolic communication are wider than expected, which carries significant implications.*
 
 ---
 
@@ -79,15 +80,17 @@ N_1_center = filter(SVIVA2_01,AREA==0)%>%nrow()
 
 # Introduction
 
-A growing public administration literature explores whether government public communications can enhance citizens' trust in public organizations and policies. Whereas most of the studies have focused on the *informative* aspects of government communications [e.g. @marvel_2015; @im_2014; @porumbescu_2017; @porumbescu_2016; @grimmelikhuijsen_2015; @ho_2017], recent experimental studies further pointed to the emotive effect of *symbolic* elements entangled in them, such as  brand names [@teodoro_2018], logos [@karens_2016], and figures [@alonbarkat_2017]. Such symbols and others exist in almost every government communication, and most prominently in public campaigns, which have been increasingly used by public-sector organizations [@eshuis_2012; @marland_2017]. 
+A growing public administration literature explores whether government public communications can enhance citizens' trust in public organizations and policies. Whereas most of the priovious studies have focused on the *informative* aspects of government communications [e.g. @marvel_2015; @im_2014; @porumbescu_2017; @porumbescu_2016; @grimmelikhuijsen_2015; @ho_2017; @james_2014; @james_2011], recent studies further pointed to the emotive effect of *symbolic* elements entangled in them, such as brand names [@teodoro_2018], logos [@karens_2016], and figures [@alonbarkat_2017]. Such symbols and others exist in almost every government communication, and most prominently in public campaigns, which have been increasingly used by public-sector organizations [@eshuis_2012; @marland_2017]. 
 
-While previous studies have substantiated the distinct effect of symbols on citizens' trust, they did not theorize, nor empirically examine, the conditions under which these symbols are likely to be more, or less, effective. This research gap has great significance. First, from the practical point of view of government organizations, understanding the boundaries of the effects of symbols may enable them to design more effective communications which may enhance citizens' collaboration with their policies. Second, employing a broader perspective of democratic theory, one can argue that in the public-sector domain the emotive effect of symbols undermines the fundamental normative expectation that citizens' judgments of government should be based on their critical judgment. Furthermore, the positive symbolic message can compensate for poor performance and create a misalignment between citizens' perceptions and the "real world" [@alonbarkat_2017]. Hence, by identifying the circumstances under which citizens are more/less likely to be affected by symbols, we could better assess the potential risk for governments' manipulative use of public communications.  
+Persuasion through symbolic communications and branding can be perceived favorably, insofar as it enables governments to engage more effectively with relevant publics, thereby to increase their trust and enhance their collaboration. The effectiveness of symbols, as opposed to communication of "objective" information, stems from their potency to overcome citizens' negative biases. On the other hand, employing a broader perspective of democratic theory, one can argue that in the public-sector domain, the emotive effect of symbols undermines the fundamental normative expectation that citizens' judgments of government should be based on their critical judgment. Furthermore, as previous studies demonstrated, positive symbolic messages can compensate for poor performance and create a misalignment between citizens' positive perceptions and the "real world" [@alonbarkat_2017; @alonbarkat_2018]. Accordingly, symbols can mitigate justified public criticism of government failures.   
 
-To address this gap, I draw upon the social psychology Elaboration Likelihood Model (ELM) [@petty_1986; @petty_2011]. I hypothesize that citizens are less susceptible to symbols the more they perceive the policy issue in the communication as having personal relevance for themselves, which enhances their motivation to engage in elaborate processing of information. Similarly, higher perceived personal relevance is expected to enhance citizens' inclination to scrutinize the substantive content of communication. Employing a survey experiment, I test this hypothesis in the context of the Israeli Environment Protection Ministry, and its policy plan for reducing the air pollution in a specific area (the Haifa-Bay). I operationalize the perceived personal relevance of the policy plan both experimentally, and by comparing between citizens from the polluted Haifa-Bay area and others. 
+In this study I explore the boundaries of governments' persuasion of citizens through symbolic communication. Namely, I seek to explore the conditions under which symbolic elements are likely to be more, or less, effective in shaping (and possibly manipulating) citizens' trust. Building on the social psychology Elaboration Likelihood Model (ELM) [@petty_1986; @petty_2011], I hypothesize that citizens are less susceptible to symbols the more they perceive the policy issue in the communication as having personal relevance for themselves, which enhances their motivation to engage in elaborate processing of information. Similarly, high perceived personal relevance is expected to enhance citizens' inclination to scrutinize the substantive content of communication. 
+
+Employing a survey experiment, I test these hypotheses in the context of the Israeli Environment Protection Ministry, and its policy plan for reducing the air pollution in a specific area (the Haifa-Bay). I operationalize the perceived personal relevance of the policy plan both experimentally, and by comparing between citizens from the polluted Haifa-Bay area and others. contrary to my expectations, the results indicate that even high levels of perceived personal relevance do not attenuate the effect of symbols on citizens' trust. These findings may suggest that the boundaries of the effect of symbolic communication are wider than expected. I discuss the theoretical and normative implications of these findings. 
 
 <br>
 
-# The Elaboration Likelihood Model (ELM) and the effect of symbols and information in communications. 
+# The persuasion of symbols and information in government public communications. 
 
 The Elaboration Likelihood Model (ELM), developed in the late 1970s by social psychology scholars Richard Petty and John Cacioppo, provides a theoretical framework for investigating the effects of "persuasive" communications on people's attitudes [@petty_1986; @petty_2011]. According to ELM, people may respond differently to a communication, depending on the amount of thinking that they dedicate to it. When people have high motivation and ability to elaborate on a message, they are likely to focus on the arguments in the communication that are central to the merits of the issue, and scrutinize them ("central route"). Conversely, when they are unmotivated or unable to elaborate, they may rely on available heuristic cues that require relatively little amount of cognitive effort ("peripheral route"). These two routes for persuasion are regarded as two ends of an "elaboration continuum". People may also be located between these two edges, and then a mixture of these processes will determine their persuasion. 
 
