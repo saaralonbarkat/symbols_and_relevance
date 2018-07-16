@@ -3,6 +3,9 @@ title: "The persuasion of symbolic elements in government public communications,
 author: '**Saar Alon-Barkat**, PhD candidate; the Hebrew University of Jerusalem;   saar.barkat@mail.huji.ac.il'
 date: " "
 output:
+  word_document: default
+  pdf_document:
+    toc: yes
   html_document:
     theme: flatly
     toc: yes
@@ -10,9 +13,6 @@ output:
       collapsed: no
       smooth_scroll: yes
       toc_depth: 3
-  pdf_document:
-    toc: yes
-  word_document: default
 link-citations: yes
 bibliography: phd_paper_2.bib
 #csl: apsa.csl
@@ -21,9 +21,7 @@ urlcolor: blue
 
 <br>
 
-Last edited at `r Sys.Date()`.[^footnote_scripts]
-
-[^footnote_scripts]: Original R scripts available at:  https://github.com/saaralonbarkat/symbols_and_relevance
+Draft, last edited at `r Sys.Date()`.
 
 
 ```{r , include=FALSE, echo=FALSE}
@@ -71,7 +69,11 @@ N_1_center = filter(SVIVA2_01,AREA==0)%>%nrow()
 
 # Abstract
 
-*Recent studies have demonstrated that symbolic elements in government public communications can enhance citizens' trust in government organizations and their policies. They also suggested that the emotive effect of these symbols can compensate for organizations' poor performance and inefficient policies, thereby eliciting undue trust. This study explores the boundaries of governments' persuasion of citizens through symbolic communication. Building on social psychology literature, I hypothesize that citizens are less susceptible to symbols and more likely to scrutinize the substantive content of the communication, the more they perceive the policy issue in the communication as personally relevant. I test this expectation through a survey experiment, where I examine Israeli citizens' trust in the Environment Protection Ministry's policy plans for reducing air pollution in a highly polluted area. The perceived personal relevance of the policy is operationalized both experimentally, and by comparing between citizens residing in the polluted area and elsewhere. The results indicate that even high levels of perceived personal relevance do not attenuate the positive effect of symbols. These findings may suggest that the boundaries of the effect of symbolic communication are wider than expected, which carries significant implications.*
+*Recent studies demonstrated that symbolic elements in government communications can enhance citizens' trust in government organizations and policies. The emotive effect of symbols can further compensate for organizations' poor functioning, thereby eliciting undue trust. This study explores the boundaries of governments' persuasion of citizens through symbolic communication. Building on social psychology, I hypothesize that citizens are less susceptible to symbols, the more they perceive the policy issue in the communication as personally relevant. I test this expectation through a survey experiment, where I examine Israeli citizens' trust in the Environment Protection Ministry's policy plans for reducing air pollution in a highly polluted area. The policy's perceived personal relevance is operationalized both experimentally, and by comparing between citizens residing in the polluted area and elsewhere. The results indicate that even high levels of perceived personal relevance do not attenuate the symbols' effect, which entails that the boundaries of persuasion through symbols are wider than expected.*
+
+<br>
+
+*Keywords: Government communications; Government branding; Trust; Experiment*
 
 ---
 
@@ -80,9 +82,11 @@ N_1_center = filter(SVIVA2_01,AREA==0)%>%nrow()
 
 # Introduction
 
-A growing public administration literature explores whether government public communications can enhance citizens' trust in public organizations and policies. Whereas most of the priovious studies have focused on the *informative* aspects of government communications [e.g. @marvel_2015; @im_2014; @porumbescu_2017; @porumbescu_2016; @grimmelikhuijsen_2015; @ho_2017; @james_2014; @james_2011], recent studies further pointed to the emotive effect of *symbolic* elements entangled in them, such as brand names [@teodoro_2018], logos [@karens_2016], and figures [@alonbarkat_2017]. Such symbols and others exist in almost every government communication, and most prominently in public campaigns and branding activities, which have been increasingly used by public-sector organizations [@eshuis_2012; @marland_2017]. 
+A growing public administration literature explores whether government public communications can enhance citizens' trust in public organizations and policies. Whereas most of the studies have focused on the *informative* aspects of government communications [e.g. @marvel_2015; @im_2014; @porumbescu_2017; @porumbescu_2016; @porumbescu_2017a; @porumbescu_2017b; @porumbescu_2018; @grimmelikhuijsen_2015; @ho_2017; @james_2014; @james_2011], recent studies further pointed to the emotive effect of *symbolic* elements entangled in them, such as brand names [@teodoro_2018], logos [@karens_2016], and figures [@alonbarkat_2017]. Such symbols and others exist in almost every government communication, and most prominently in public campaigns and branding activities,[^footnote_branding] which have been increasingly used by public-sector organizations [@eshuis_2012; @marland_2017]. 
 
-Persuasion through symbolic communications and branding can be perceived favorably, insofar as it enables governments to engage more effectively with relevant publics, thereby to increase their trust and enhance their collaboration. The effectiveness of symbols, as opposed to communication of "objective" information, stems from their potency to overcome citizens' negative biases. On the other hand, employing a broader perspective of democratic theory, one can argue that in the public-sector domain, the emotive effect of symbols undermines the fundamental normative expectation that citizens' evaluation of their government should be based on their critical judgment. Furthermore, previous studies have demonstrated that the positive effect of symbols can compensate for organizations' poor performance [@alonbarkat_2017] and for logically unpersuasive informative content [@alonbarkat_2018]. Accordingly, they can create a misalignment between citizens' positive perceptions and the "real world", and mitigate justified public criticism of government failures.     
+Governments' employment of symbolic communications and branding can be perceived favorably, insofar as it enables organizations to engage more effectively with citizens and overcome their negative prior beliefs and biases against the public sector [@marvel_2015a; @marvel_2015; @hvidman_2016]. Accordingly, it can mitigate citizens' distrust in government organizations and enhance their collaboration with their policies. On the other hand, one can argue that the persuasion of citizens through symbols is problematic, since the emotive effect of symbols undermines the fundamental normative expectation that citizens' evaluation of their government should be based on their critical judgment. Furthermore, symbols can compensate for organizations' poor performance and for logically unpersuasive informative content, as empirically demonstrated in previous studies [@alonbarkat_2017; @alonbarkat_2018]. They can yield a misalignment between citizens' positive perceptions and the "real world". This raises the concern that government organizations will strategically use symbols to manipulate public opinion and mitigate justified public criticism of their failures.      
+
+[^footnote_branding]: A symbol can be as *"any object used by human beings to index meanings that are not inherent in, nor discernible from, the object itself"* [@elder_1983, pp. 28-29]. Eshuis and Klijn [-@eshuis_2012, p. 19] define brand as *a symbolic construct that consists of a name, term, sign, symbol, or design, or combination of these, created deliberately to identify and phenomenon and differentiate it from similar phenomena by adding particular meaning to it*. Brand elements, therefore, can be regarded as symbolic elements.    
 
 In this study, I explore the boundaries of governments' persuasion of citizens through symbolic communication, to assess the above concern. Namely, I seek to explore the conditions under which symbolic elements are likely to be more, or less, effective in shaping (and possibly manipulating) citizens' trust. Building on the social psychology Elaboration Likelihood Model (ELM) [@petty_1986; @petty_2011], I theorize that citizens are less susceptible to symbols the more they perceive the policy issue in the communication as having personal relevance for themselves, which enhances their motivation to engage in elaborate processing of information. Similarly, high perceived personal relevance is expected to enhance citizens' inclination to scrutinize the substantive content of communication. Employing a survey experiment, I test these hypotheses in the context of the Israeli Environment Protection Ministry, and its policy plan for reducing the air pollution in a specific area (the Haifa-Bay). I operationalize the perceived personal relevance of the policy plan both experimentally, and by comparing between citizens from the polluted Haifa-Bay area and others. The results indicate that even high levels of perceived personal relevance do not attenuate the effect of symbols on citizens' trust, contrary to my expectations. These findings may suggest that the boundaries of the effect of symbolic communication are wider than expected. I discuss the theoretical and normative implications of these findings. 
 
@@ -90,7 +94,7 @@ In this study, I explore the boundaries of governments' persuasion of citizens t
 
 # The persuasion of symbols and information in government public communications. 
 
-The Elaboration Likelihood Model (ELM), developed in the late 1970s by social psychology scholars Richard Petty and John Cacioppo, provides a theoretical framework for investigating the effects of communications on people's attitudes [@petty_1986; @petty_2011]. According to ELM, people may respond differently to a communication, depending on the amount of thinking that they dedicate to it. When people have high motivation and ability to elaborate on a message, they are likely to focus on the arguments in the communication that are central to the merits of the issue, and scrutinize them ("central route"). Conversely, when they are unmotivated or unable to elaborate, they may rely on available heuristic cues that require relatively little amount of cognitive effort ("peripheral route"). These two routes for persuasion are regarded as two ends of an "elaboration continuum". People may also be located between these two edges, and then a mixture of these processes will determine their persuasion.
+The Elaboration Likelihood Model (ELM), developed in the late 1970s by social psychology scholars Richard Petty and John Cacioppo, provides a comprehensive theoretical framework for investigating the effects of communications on people's attitudes [@petty_1986; @petty_2011]. According to ELM, people may respond differently to a communication, depending on the amount of thinking that they dedicate to it. When people have high motivation and ability to elaborate on a message, they are likely to focus on the arguments in the communication that are central to the merits of the issue, and scrutinize them ("central route"). Conversely, when they are unmotivated or unable to elaborate, they may rely on available heuristic cues that require relatively little amount of cognitive effort ("peripheral route"). These two routes for persuasion are regarded as two ends of an "elaboration continuum". People may also be located between these two edges, and then a mixture of these processes will determine their persuasion.
 
 Viewed against the above theoretical framework, substantive information in government public communications represent message arguments, which can be critically evaluated based on their logical quality (central route). Conversely, symbolic elements can be regarded as potential peripheral cues, which can affect attitudes by evoking emotions and associations attributed to government organizations and their policies (peripheral route). Accordingly, the more citizens are motivated to think about the content of the communication, and the more capable they are of doing so, the more they are likely to form their attitudes based on substantive information. Conversely, the less motivated and capable they are to elaborate, the more susceptible they are to symbolic elements in the communication.      
 
@@ -107,11 +111,10 @@ Connecting the above public administration literature on citizens' responses to 
 These theoretical hypotheses are graphically displayed in **Figure 1**.
 
 <br>
-**Figure 1: Theoretical model**
-![](D:/UNIVERSITY/R/SVIVA/experiment 2 01-2018/myfigures/theoretical_model_relevance.png) 
+
+[Figure 1 about here]
 
 <br>
-
 
 # Research design
 
@@ -144,10 +147,12 @@ Altogether, per each policy plan, the experiment has a factorial design of 3 (sy
 [^footnote_information_symbols_paper]: In addition to the above-mentioned hypotheses, the experiment was also designed to test a different set of hypotheses regarding the interaction between symbols and information, and its moderation by the effect of symbols on elaboration. In this paper, however, I focus on those methodological and empirical parts of the study that are consequential for the examination of the moderating role or perceived personal relevance. The methodological aspects which are relevant for examining the additional hypotheses are described in a separate paper. 
 
 <br>
-**Figure 2: Experimental design for policy plan communications**
-![](D:/UNIVERSITY/R/SVIVA/experiment 2 01-2018/myfigures/experiment_flow_relevance.png) 
+
+[Figure 2 about here]
 
 <br>
+
+
 
 
 ##*Variables*
@@ -207,104 +212,21 @@ mod_waste_1.1_r1 = lm(TRUST_waste_INDEX~SYMBOL_t.r+INFORMATION_weak,data=SVIVA2_
 
 Keeping in mind these main effects, I now turn to analyze the interactions between the manipulations and the areas. With regard to the air-pollution policy, my first hypothesis entails a positive coefficient to the interaction between residence in the center (i.e. low personal relevance) and the real symbols. Based on my second hypothesis, I expect to find a positive interaction between center residents and weak information. Counter to these expectations, in Model 1.3, the interaction between residence in the center and the real symbols is negative (*p*<.1), and the interaction with the weak information is insignificant. These findings suggest that the real symbols were more effective in increasing the trust of those reside in the polluted area and that the latter were no more likely to scrutinize the content of the communication. I also found similar patterns regarding the recycling policy. In Model 1.6, the interaction between the areas and the information is insignificant, and the interaction with the real symbols is negative. **Figure 3** provides a descriptive demonstration of the interaction between the areas and the symbols manipulation for the two policies.     
 
+<br>
 
-**Table 1: Regression analyses – observational measure for perceived personal relevance.**
+[Table 1 about here]
 
-```{r,results="asis",echo=FALSE,warning=FALSE,message=FALSE}
-stargazer(mod_air_1.1,mod_air_1.2,mod_air_1.3,
-          mod_waste_1.1,mod_waste_1.2,mod_waste_1.3,
-          type="html",style = "apsr",
-          dep.var.labels=c("Trust in air-pollution policy","Trust in recycling policy"),
-          covariate.labels=c("Real symbols",
-                             "Fake-symbols",
-                             "Weak Information",
-                             "Area (0=Haifa-Bay; 1=center)",
-                             "Area x Real symbols",
-                             "Area x Fake symbols",
-                             "Area x Weak Information"),
-          omit.stat = c("rsq","ser", "f"),
-          initial.zero = FALSE,
-          notes = "*Notes*: Table entries are nonstandardized OLS-regression coefficients, with Standard errors in parentheses. The reference category for the symbols manipulation conditions is the control (no symbols).",
-          notes.append = FALSE)
+<br>
 
-```
+[Figure 3 about here]
 
-&ast;*p*<.1; &ast;&ast;*p*<.05; &ast;&ast;&ast;*p*<.01 (two-tailed).
-
-
-**Figure 3: The effect of symbolic elements on trust across areas**
-
-```{r, echo=FALSE,warning=FALSE,message=FALSE, fig.width=8,fig.height=4}
-SVIVA2_01_comb = SVIVA2_01_comb %>% 
-  mutate(POLICY_n = Recode(policy,"'TRUST_air_INDEX'='Air-pollution'; 'TRUST_waste_INDEX'='Recycling'"))
-
-ggplot(SVIVA2_01_comb, aes(factor(SYMBOL_n),trust,shape=factor(AREA_names)))+ 
-  theme_classic()+
-  #geom_boxplot(width=0.25,color="gray70")+
-  stat_summary(fun.data = mean_cl_normal, geom = "errorbar",
-               fun.args = list(mult = 1.65),
-               width=0.2,size=0.5,position=position_dodge(0.2),color="gray70") + 
-  stat_summary(fun.y = mean, geom = "point", size=1.6,position=position_dodge(0.2))+
-  stat_summary(fun.y = mean, geom = "line", size=0.6, aes(group = AREA_names,linetype=AREA_names),position=position_dodge(0.2),alpha=0.8)+
-  scale_shape_manual(guide=F,values=c(19,1))+
-  scale_linetype_manual(name="Area",values=c(1,4))+
-  facet_grid(~POLICY_n)+
-  scale_x_discrete(name="",labels=c("No symbols","Fake symbols","Real symbols"))+
-  scale_y_continuous(name = "Trust in policy",breaks = seq(1,7,by=0.1))
-
-```
-
-<font size="0.5">
-
-*Note*: Error bars represent 90% confidence intervals.
-
-</font>
-
+<br>
 
 Next, I examine whether those subjects who were primed to think about the personal relevance of these policy plans were more likely to scrutinize them, and less likely to be affected by the familiar symbols. The interaction between the relevance manipulation and the symbols and information manipulations is presented in **Table 2**. Again, the first three models regard the Air-pollution policy, and the remaining models regard the recycling policy. Models 2.1, 2.4 replicate models 1.1, 1.4 while adding the relevance manipulation. Thereafter, I add the interactions between the relevance manipulation and the symbols and information manipulations (Models 2.2, 2.5). Finally, to test the moderation of the relevance manipulation within each area, I add three-way interactions with the areas (Models 2.3, 2.6). In all these models, the relevance treatment did not yield significant effects, and there are no significant interactions with the symbols and information manipulations. The triple interactions with the areas are also insignificant (in Models 2.3, 2.6), which indicates that in neither of these areas did the relevance treatment moderate the effects of the symbols and information manipulations.
 
+<br>
 
-**Table 2: Regression analyses – experimental manipulation of perceived personal relevance.**
-
-```{r,results="asis",echo=FALSE,warning=FALSE,message=FALSE}
-mod_air_2.1 = lm(TRUST_air_INDEX~SYMBOL_t+RELEVANCE_exp+INFORMATION_weak,data=SVIVA2_01_comb)
-mod_air_2.2 = lm(TRUST_air_INDEX~RELEVANCE_exp*(SYMBOL_t+INFORMATION_weak),data=SVIVA2_01_comb)
-mod_air_2.3 = lm(TRUST_air_INDEX~RELEVANCE_exp*(SYMBOL_t+INFORMATION_weak)+SYMBOL_t*AREA_center,data=SVIVA2_01_comb)
-mod_air_2.4 = lm(TRUST_air_INDEX~RELEVANCE_exp*(SYMBOL_t+INFORMATION_weak)+SYMBOL_t*AREA_center+RELEVANCE_exp*SYMBOL_t*AREA_center+RELEVANCE_exp*INFORMATION_weak*AREA_center,data=SVIVA2_01_comb)
-
-
-mod_waste_2.1 = lm(TRUST_waste_INDEX~SYMBOL_t+RELEVANCE_exp+INFORMATION_weak,data=SVIVA2_01_comb)
-mod_waste_2.2 = lm(TRUST_waste_INDEX~RELEVANCE_exp*(SYMBOL_t+INFORMATION_weak),data=SVIVA2_01_comb)
-mod_waste_2.3 = lm(TRUST_waste_INDEX~RELEVANCE_exp*(SYMBOL_t+INFORMATION_weak)+SYMBOL_t*AREA_center,data=SVIVA2_01_comb)
-mod_waste_2.4 = lm(TRUST_waste_INDEX~RELEVANCE_exp*(SYMBOL_t+INFORMATION_weak)+SYMBOL_t*AREA_center+RELEVANCE_exp*SYMBOL_t*AREA_center+RELEVANCE_exp*INFORMATION_weak*AREA_center,data=SVIVA2_01_comb)
-
-
-stargazer(mod_air_2.1,mod_air_2.2,mod_air_2.4,
-          mod_waste_2.1,mod_waste_2.2,mod_waste_2.4,
-          type="html",style = "apsr",
-          dep.var.labels=c("Trust in air-pollution policy","Trust in recycling policy"),
-          covariate.labels=c("Real symbols",
-                             "Fake-symbols",
-                             "Weak Information",
-                             "Relevance treatment",
-                             "Relevance treatment x Real symbols",
-                             "Relevance treatment x Fake symbols",
-                             "Relevance treatment x Weak Information",
-                             "Area (0=Haifa-Bay; 1=center)",
-                             "Area x Real symbols",
-                             "Area x Fake symbols",
-                             "Area x Weak Information",
-                             "Relevance treatment x Area",
-                             "Relevance treatment x Area x Real symbols",
-                             "Relevance treatment x Area x Fake symbols",
-                             "Relevance treatment x Area x Weak Information"),
-          omit.stat = c("rsq","ser", "f"),
-          order = c(1,2,4,3,6:8,5,9,10,12,11,13:15),
-          initial.zero = FALSE,
-          notes = "",
-          notes.append = FALSE)
-
-```
+[Table 2 about here]
 
 <br>
 
@@ -314,7 +236,7 @@ I further explored the robustness of these findings through additional analyses,
 
 #Discussion and conclusion 
 
-Public communications has been proposed as a remedy for citizens’ low trust in government, and their underestimation of public-service performance. Congruently, governments' investments in public communications, and specifically in branding and advertising, has increased over the past generation in many economically-developed democratic countries. This study contributes to the growing public administration research on citizens' responses to government public communications, and specifically to symbolic elements entangled in these communications. I explored the expectation, derived from social psychology, that citizens are less affected by symbols and more likely to scrutinize the content of the communication the more they perceive it as relevant to their own lives. I put these hypotheses to rigorous empirical testing, using a randomized survey experiment focusing on the Israeli Environmental Protection Ministry. I exploited the natural variation in citizens' perceptions of the personal relevance of the ministry’s policy plan regarding air pollution in a specific area. In addition to utilizing these natural differences, I also manipulated the personal relevance of the policy plans. To the best of my knowledge, this is the first study to assess the moderating role of perceived personal relevance on citizens' responses to government symbolic communications or branding.
+Public communications has been proposed as a remedy for citizens’ low trust in government, and their underestimation of public-service performance. Congruently, governments' investments in public communications, and specifically in branding and advertising, has increased over the past generation in many economically-developed democratic countries. This study contributes to the growing Public-Administration research on citizens' responses to government public communications, and specifically to symbolic elements entangled in these communications. I explored the expectation, derived from social psychology, that citizens are less affected by symbols and more likely to scrutinize the content of the communication the more they perceive it as relevant to their own lives. I put these hypotheses to rigorous empirical testing, using a randomized survey experiment focusing on the Israeli Environmental Protection Ministry. I exploited the natural variation in citizens' perceptions of the personal relevance of the ministry’s policy plan regarding air pollution in a specific area. In addition to utilizing these natural differences, I also manipulated the personal relevance of the policy plans. To the best of my knowledge, this is the first study to assess the moderating role of perceived personal relevance on citizens' responses to government symbolic communications or branding.
 
 Contrary to my expectations, and those of extant research in social psychology and marketing, I did not find that high levels of perceived personal relevance attenuate the effect of symbols on citizens' trust. Subjects residing in the polluted Haifa-Bay indeed reported that they perceive the policy plan for reducing air-pollution in that area as highly relevant for their lives, compared to those who reside in the center. However, despite these significant differences, Haifa-bay subjects did not pay more attention to the logical quality of the policy plan, and they were equally affected by the symbols in the communication. If anything, the results suggest that the symbols had a greater effect on Haifa-bay subjects. Furthermore, priming subjects to think about the personal relevance of environmental policy, and of the consequences of air-pollution in particular, also failed to moderate the effects of the symbols and information in the communications. These findings are also consistent with the findings of @alonbarkat_2017, where they found that citizens who recently personally experienced prolonged blackouts (and presumably perceived electricity services as personally relevant) were nonetheless significantly affected by a symbol of the government-owned electricity company.   
 
@@ -326,7 +248,7 @@ How can we explain the finding that the positive effect of the real symbols was 
 
 How can we reconcile the findings of this study with the proposed theory? One plausible explanation is that despite the relatively high involvement of Haifa-bay residents, they were still not motivated enough to rely only on the central route and disregard the peripheral cues. If this explanation holds, it entails that citizens may resist the emotional effect of symbols only in rare circumstances, which are characterized by extremely high levels of personal relevance. Indeed, Petty and Cacioppo have admitted that the high and low personal relevance conditions generated in their experimental settings were deliberately created for theory testing purposes, and can be rarely found in the world outside the laboratory [@petty_1986, p. 206]. 
 
-The results of this study, if generalizable, have significant implications. They challenge the view of government direct communications with citizens as a means to inform citizens about government organizations actions and promote transparency and accountability. Instead, they suggest that more often than not, citizens rely on symbols and other peripheral cues in public communications, even when these communications concern issues that have direct implications on their own lives. Indeed, these findings highlight the role played by symbols in shaping citizens view of governments, in line with the recent literature on government branding. Moreover, they suggest that the boundaries of persuasion via symbols and branding are wider than expected, based on previous social psychology and marketing studies. These conclusions buttress the concern that government organizations will strategically use symbolic communications to manipulate public opinion, and cause citizens to view them more favorably regardless (or even in contrast) to their actual capacities and achievements.
+The results of this study, if generalizable, have significant implications. They challenge the rationalistic view of government direct communications with citizens as a means to inform citizens about government organizations actions and promote transparency and accountability. Instead, they suggest that more often than not, citizens rely on brands and other symbolic elements in public communications, even with regard to policy issues that have direct implications on their own lives. Altogether, this study highlights the role played by government branding and other forms of symbolic communication in shaping citizens view of governments. It suggests that the boundaries of persuasion via symbols and branding are much wider than expected, based on previous social psychology and marketing studies. From the practical point of view of government organizations, this entails that organizations can overcome citizens distrust by investing in symbolic communications. Nonetheless, employing a broader perspective of democratic theory, these conclusions are disturbing insofar as they buttress the concern that government organizations will deliberately use symbolic communications to cause citizens to view them more favorably regardless (or even in contrast) to their actual capacities and achievements, namely as "propaganda". For good or for ill, citizens are affected by the emotional connections and associations of symbols.    
 
 Notwithstanding these conclusions, the limitations of this study should be acknowledged. The study focuses, empirically, on one specific case. Future studies may put these findings to further test by examining additional cases of public organizations and policy areas, as well as different forms of communications. Additionally, the comparison between the two areas is imperfect, insofar as the differences in personal relevance are confounded with differences in prior beliefs about the subject, which I cannot effectively control. A comparison between two groups that have similar prior beliefs would be more reliable. Finally, one can question the validity of the relevance manipulation, which has not yielded significant effect on subjects' subjective reporting on the perceived personal relevance of the communications. Still, the main results are robust to different model specifications, and operationalizations of personal relevance and message elaboration, which substantiate their validity. 
 
@@ -391,12 +313,123 @@ In recent years, the Ministry has taken steps to encourage the reduction of wast
 <br>
 
 
-<br>
-
 #References
 
+<br>
+
+#Figures and tables
 
 
+<br>
+**Figure 1: Theoretical model**
+![](D:/UNIVERSITY/R/SVIVA/experiment 2 01-2018/myfigures/theoretical_model_relevance.png) 
+
+<br>
+
+**Figure 2: Experimental design for policy plan communications**
+![](D:/UNIVERSITY/R/SVIVA/experiment 2 01-2018/myfigures/experiment_flow_relevance.png) 
+
+<br>
+
+
+**Table 1: Regression analyses – observational measure for perceived personal relevance.**
+
+```{r,results="asis",echo=FALSE,warning=FALSE,message=FALSE}
+stargazer(mod_air_1.1,mod_air_1.2,mod_air_1.3,
+          mod_waste_1.1,mod_waste_1.2,mod_waste_1.3,
+          type="html",style = "apsr",
+          dep.var.labels=c("Trust in air-pollution policy","Trust in recycling policy"),
+          covariate.labels=c("Real symbols",
+                             "Fake-symbols",
+                             "Weak Information",
+                             "Area (0=Haifa-Bay; 1=center)",
+                             "Area x Real symbols",
+                             "Area x Fake symbols",
+                             "Area x Weak Information"),
+          omit.stat = c("rsq","ser", "f"),
+          initial.zero = FALSE,
+          notes = "*Notes*: Table entries are nonstandardized OLS-regression coefficients, with Standard errors in parentheses. The reference category for the symbols manipulation conditions is the control (no symbols).",
+          notes.append = FALSE)
+
+```
+
+&ast;*p*<.1; &ast;&ast;*p*<.05; &ast;&ast;&ast;*p*<.01 (two-tailed).
+
+<br>
+
+**Figure 3: The effect of symbolic elements on trust across areas**
+
+```{r, echo=FALSE,warning=FALSE,message=FALSE, fig.width=8,fig.height=4}
+SVIVA2_01_comb = SVIVA2_01_comb %>% 
+  mutate(POLICY_n = Recode(policy,"'TRUST_air_INDEX'='Air-pollution'; 'TRUST_waste_INDEX'='Recycling'"))
+
+ggplot(SVIVA2_01_comb, aes(factor(SYMBOL_n),trust,shape=factor(AREA_names)))+ 
+  theme_classic()+
+  #geom_boxplot(width=0.25,color="gray70")+
+  stat_summary(fun.data = mean_cl_normal, geom = "errorbar",
+               fun.args = list(mult = 1.65),
+               width=0.2,size=0.5,position=position_dodge(0.2),color="gray70") + 
+  stat_summary(fun.y = mean, geom = "point", size=1.6,position=position_dodge(0.2))+
+  stat_summary(fun.y = mean, geom = "line", size=0.6, aes(group = AREA_names,linetype=AREA_names),position=position_dodge(0.2),alpha=0.8)+
+  scale_shape_manual(guide=F,values=c(19,1))+
+  scale_linetype_manual(name="Area",values=c(1,4))+
+  facet_grid(~POLICY_n)+
+  scale_x_discrete(name="",labels=c("No symbols","Fake symbols","Real symbols"))+
+  scale_y_continuous(name = "Trust in policy",breaks = seq(1,7,by=0.1))
+
+```
+
+<font size="0.5">
+
+*Note*: Error bars represent 90% confidence intervals.
+
+</font>
+
+<br>
+
+**Table 2: Regression analyses – experimental manipulation of perceived personal relevance.**
+
+```{r,results="asis",echo=FALSE,warning=FALSE,message=FALSE}
+mod_air_2.1 = lm(TRUST_air_INDEX~SYMBOL_t+RELEVANCE_exp+INFORMATION_weak,data=SVIVA2_01_comb)
+mod_air_2.2 = lm(TRUST_air_INDEX~RELEVANCE_exp*(SYMBOL_t+INFORMATION_weak),data=SVIVA2_01_comb)
+mod_air_2.3 = lm(TRUST_air_INDEX~RELEVANCE_exp*(SYMBOL_t+INFORMATION_weak)+SYMBOL_t*AREA_center,data=SVIVA2_01_comb)
+mod_air_2.4 = lm(TRUST_air_INDEX~RELEVANCE_exp*(SYMBOL_t+INFORMATION_weak)+SYMBOL_t*AREA_center+RELEVANCE_exp*SYMBOL_t*AREA_center+RELEVANCE_exp*INFORMATION_weak*AREA_center,data=SVIVA2_01_comb)
+
+
+mod_waste_2.1 = lm(TRUST_waste_INDEX~SYMBOL_t+RELEVANCE_exp+INFORMATION_weak,data=SVIVA2_01_comb)
+mod_waste_2.2 = lm(TRUST_waste_INDEX~RELEVANCE_exp*(SYMBOL_t+INFORMATION_weak),data=SVIVA2_01_comb)
+mod_waste_2.3 = lm(TRUST_waste_INDEX~RELEVANCE_exp*(SYMBOL_t+INFORMATION_weak)+SYMBOL_t*AREA_center,data=SVIVA2_01_comb)
+mod_waste_2.4 = lm(TRUST_waste_INDEX~RELEVANCE_exp*(SYMBOL_t+INFORMATION_weak)+SYMBOL_t*AREA_center+RELEVANCE_exp*SYMBOL_t*AREA_center+RELEVANCE_exp*INFORMATION_weak*AREA_center,data=SVIVA2_01_comb)
+
+
+stargazer(mod_air_2.1,mod_air_2.2,mod_air_2.4,
+          mod_waste_2.1,mod_waste_2.2,mod_waste_2.4,
+          type="html",style = "apsr",
+          dep.var.labels=c("Trust in air-pollution policy","Trust in recycling policy"),
+          covariate.labels=c("Real symbols",
+                             "Fake-symbols",
+                             "Weak Information",
+                             "Relevance treatment",
+                             "Relevance treatment x Real symbols",
+                             "Relevance treatment x Fake symbols",
+                             "Relevance treatment x Weak Information",
+                             "Area (0=Haifa-Bay; 1=center)",
+                             "Area x Real symbols",
+                             "Area x Fake symbols",
+                             "Area x Weak Information",
+                             "Relevance treatment x Area",
+                             "Relevance treatment x Area x Real symbols",
+                             "Relevance treatment x Area x Fake symbols",
+                             "Relevance treatment x Area x Weak Information"),
+          omit.stat = c("rsq","ser", "f"),
+          order = c(1,2,4,3,6:8,5,9,10,12,11,13:15),
+          initial.zero = FALSE,
+          notes = "",
+          notes.append = FALSE)
+
+```
+
+<br>
 
 
 
