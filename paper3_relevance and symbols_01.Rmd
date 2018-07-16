@@ -3,9 +3,6 @@ title: "The persuasion of symbolic elements in government public communications,
 author: '**Saar Alon-Barkat**, PhD candidate; the Hebrew University of Jerusalem;   saar.barkat@mail.huji.ac.il'
 date: " "
 output:
-  word_document: default
-  pdf_document:
-    toc: yes
   html_document:
     theme: flatly
     toc: yes
@@ -13,9 +10,12 @@ output:
       collapsed: no
       smooth_scroll: yes
       toc_depth: 3
+  pdf_document:
+    toc: yes
+  word_document: default
 link-citations: yes
 bibliography: phd_paper_2.bib
-#csl: apsa.csl
+csl: apa.csl
 urlcolor: blue
 ---
 
@@ -230,13 +230,13 @@ Next, I examine whether those subjects who were primed to think about the person
 
 <br>
 
-I further explored the robustness of these findings through additional analyses, reported in the supplementary appendix. *First*, I also relied on subjects' subjective reporting of the personal relevance of the policy plans, in addition to the above operationalizations. *Second*, I further explored the effect of personal relevance on subjects inclination to scrutinize the policy plans, using additional measures for message elaboration available in the survey, which were again insignificant: the time participants spent on scanning the policy plans and their score in a memory test. I also tested whether personal relevance decreased the delta (within-subjects) between trust in the strong and weak policy plans presented to each subject. *Third*, I added a set of individual-level controls, and factors related to personal relevance of air-pollution, and to personal interest in environmental issues. Finally, I replicated my analyses on the unfiltered sample. None of these multiple robust analyses supports the theoretical hypotheses regarding the moderating effect of personal relevance.
+I further explored the robustness of these findings through additional analyses, reported in the supplementary appendix. *First*, I also relied on subjects' subjective reporting of the personal relevance of the policy plans, in addition to the above operationalizations. *Second*, I further explored the effect of personal relevance on subjects inclination to scrutinize the policy plans, using additional measures for message elaboration available in the survey, which were again insignificant: the time participants spent on scanning the policy plans and their score in a memory test. I also tested whether personal relevance decreased the delta (within-subjects) between trust in the strong and weak policy plans presented to each subject. *Third*, I added a set of individual-level controls, and factors related to personal relevance of air-pollution, and to personal interest in environmental issues. Finally, I replicated my analyses on the unfiltered sample. None of these multiple robust analyses supports the theoretical hypotheses regarding the moderation of personal relevance on the effect of symbols. The interaction between personal relevance and information is confirmed only by the analysis of analysis of participants' subjective reporting of the personal relevance, and only with regard to the air-pollution policy. 
 
 <br>
 
 #Discussion and conclusion 
 
-Public communications has been proposed as a remedy for citizens’ low trust in government, and their underestimation of public-service performance. Congruently, governments' investments in public communications, and specifically in branding and advertising, has increased over the past generation in many economically-developed democratic countries. This study contributes to the growing Public-Administration research on citizens' responses to government public communications, and specifically to symbolic elements entangled in these communications. I explored the expectation, derived from social psychology, that citizens are less affected by symbols and more likely to scrutinize the content of the communication the more they perceive it as relevant to their own lives. I put these hypotheses to rigorous empirical testing, using a randomized survey experiment focusing on the Israeli Environmental Protection Ministry. I exploited the natural variation in citizens' perceptions of the personal relevance of the ministry’s policy plan regarding air pollution in a specific area. In addition to utilizing these natural differences, I also manipulated the personal relevance of the policy plans. To the best of my knowledge, this is the first study to assess the moderating role of perceived personal relevance on citizens' responses to government symbolic communications or branding.
+Public communications have been proposed as a remedy for citizens’ low trust in government, and their underestimation of public-service performance. Congruently, governments' investments in public communications, and specifically in branding and advertising, has increased over the past generation in many economically-developed democratic countries. This study contributes to the growing Public-Administration research on citizens' responses to government public communications, and specifically to symbolic elements entangled in these communications. I explored the expectation, derived from social psychology, that citizens are less affected by symbols and more likely to scrutinize the content of the communication the more they perceive it as relevant to their own lives. I put these hypotheses to rigorous empirical testing, using a randomized survey experiment focusing on the Israeli Environmental Protection Ministry. I exploited the natural variation in citizens' perceptions of the personal relevance of the ministry’s policy plan regarding air pollution in a specific area. In addition to utilizing these natural differences, I also manipulated the personal relevance of the policy plans. To the best of my knowledge, this is the first study to assess the moderating role of perceived personal relevance on citizens' responses to government symbolic communications or branding.
 
 Contrary to my expectations, and those of extant research in social psychology and marketing, I did not find that high levels of perceived personal relevance attenuate the effect of symbols on citizens' trust. Subjects residing in the polluted Haifa-Bay indeed reported that they perceive the policy plan for reducing air-pollution in that area as highly relevant for their lives, compared to those who reside in the center. However, despite these significant differences, Haifa-bay subjects did not pay more attention to the logical quality of the policy plan, and they were equally affected by the symbols in the communication. If anything, the results suggest that the symbols had a greater effect on Haifa-bay subjects. Furthermore, priming subjects to think about the personal relevance of environmental policy, and of the consequences of air-pollution in particular, also failed to moderate the effects of the symbols and information in the communications. These findings are also consistent with the findings of @alonbarkat_2017, where they found that citizens who recently personally experienced prolonged blackouts (and presumably perceived electricity services as personally relevant) were nonetheless significantly affected by a symbol of the government-owned electricity company.   
 
